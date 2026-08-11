@@ -1,1773 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Mtoto wa Kambo Foundation is a community-focused organization creating opportunities, supporting vulnerable communities and contributing to sustainable development in Tanzania."
+  >
+
+  <meta
+    name="keywords"
+    content="Mtoto wa Kambo Foundation, Tanzania Foundation, children support Tanzania, community development Tanzania, vulnerable children Tanzania, charity Tanzania"
+  >
+
+  <meta name="author" content="Mtoto wa Kambo Foundation">
+
+  <meta name="theme-color" content="#004d2c">
 
   <title>
     Mtoto wa Kambo Foundation | Building Hope. Changing Lives.
   </title>
 
-  <meta name="description"
-        content="Mtoto wa Kambo Foundation is a community-focused organization committed to creating opportunities, supporting vulnerable communities and contributing to sustainable development in Tanzania.">
-
-  <meta name="keywords"
-        content="Mtoto wa Kambo Foundation, Tanzania Foundation, children, community development, education, youth empowerment">
-
-  <meta name="author"
-        content="Mtoto wa Kambo Foundation">
-
-
-  <!-- =========================
-       CSS
-  ========================== -->
-
-  <style>
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    :root {
-
-      --green: #063d2d;
-      --dark-green: #021f17;
-      --yellow: #f5b400;
-      --light-yellow: #fff5ce;
-      --white: #ffffff;
-      --light: #f5f8f6;
-      --text: #24332d;
-      --gray: #68756e;
-      --border: #e1e7e3;
-
-    }
-
-    body {
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      color: var(--text);
-
-      background: white;
-
-      line-height: 1.6;
-
-    }
-
-    img {
-
-      width: 100%;
-
-      display: block;
-
-    }
-
-    a {
-
-      text-decoration: none;
-
-      color: inherit;
-
-    }
-
-
-    /* =========================
-       HEADER
-    ========================== */
-
-    header {
-
-      position: fixed;
-
-      top: 0;
-
-      left: 0;
-
-      width: 100%;
-
-      z-index: 1000;
-
-      background:
-        rgba(3, 48, 35, 0.97);
-
-      backdrop-filter:
-        blur(10px);
-
-      border-bottom:
-        1px solid
-        rgba(255,255,255,0.08);
-
-    }
-
-
-    .navbar {
-
-      max-width: 1200px;
-
-      margin: auto;
-
-      padding:
-        13px 25px;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: space-between;
-
-    }
-
-
-    .brand {
-
-      display: flex;
-
-      align-items: center;
-
-      gap: 12px;
-
-      color: white;
-
-    }
-
-
-    .logo {
-
-      width: 48px;
-
-      height: 48px;
-
-      border-radius: 50%;
-
-      background:
-        var(--yellow);
-
-      color:
-        var(--green);
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-      font-size: 23px;
-
-      font-weight: 900;
-
-    }
-
-
-    .brand-text h2 {
-
-      font-size: 17px;
-
-      line-height: 1.1;
-
-    }
-
-
-    .brand-text small {
-
-      display: block;
-
-      color:
-        var(--yellow);
-
-      font-size: 9px;
-
-      font-weight: bold;
-
-      letter-spacing: 1px;
-
-      margin-top: 3px;
-
-    }
-
-
-    nav {
-
-      display: flex;
-
-      align-items: center;
-
-      gap: 21px;
-
-    }
-
-
-    nav a {
-
-      color: white;
-
-      font-size: 13px;
-
-      font-weight: 600;
-
-      transition: 0.3s;
-
-    }
-
-
-    nav a:hover {
-
-      color:
-        var(--yellow);
-
-    }
-
-
-    .nav-button {
-
-      background:
-        var(--yellow);
-
-      color:
-        var(--green) !important;
-
-      padding:
-        10px 17px;
-
-      border-radius:
-        25px;
-
-      font-weight:
-        800 !important;
-
-    }
-
-
-    .menu-btn {
-
-      display: none;
-
-      color: white;
-
-      font-size: 29px;
-
-      cursor: pointer;
-
-    }
-
-
-    /* =========================
-       HERO
-    ========================== */
-
-    .hero {
-
-      min-height:
-        100vh;
-
-      display: flex;
-
-      align-items: center;
-
-      padding:
-        130px 25px 80px;
-
-      background:
-
-        linear-gradient(
-          90deg,
-          rgba(0,42,31,0.92),
-          rgba(0,42,31,0.63),
-          rgba(0,42,31,0.20)
-        ),
-
-        url(
-          "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=2000&q=90"
-        )
-
-        center/cover
-        no-repeat;
-
-    }
-
-
-    .hero-content {
-
-      max-width:
-        1200px;
-
-      width: 100%;
-
-      margin: auto;
-
-      color: white;
-
-    }
-
-
-    .hero-label {
-
-      color:
-        var(--yellow);
-
-      font-size: 14px;
-
-      font-weight: 800;
-
-      letter-spacing: 3px;
-
-      text-transform:
-        uppercase;
-
-      margin-bottom:
-        16px;
-
-    }
-
-
-    .hero h1 {
-
-      max-width:
-        850px;
-
-      font-size:
-        clamp(48px, 7vw, 88px);
-
-      line-height:
-        0.98;
-
-      margin-bottom:
-        25px;
-
-    }
-
-
-    .hero h1 span {
-
-      color:
-        var(--yellow);
-
-    }
-
-
-    .hero p {
-
-      max-width:
-        720px;
-
-      font-size:
-        18px;
-
-      color:
-        #edf3f0;
-
-      margin-bottom:
-        32px;
-
-    }
-
-
-    .hero-buttons {
-
-      display:
-        flex;
-
-      flex-wrap:
-        wrap;
-
-      gap:
-        15px;
-
-    }
-
-
-    .btn {
-
-      display:
-        inline-block;
-
-      padding:
-        14px 25px;
-
-      border-radius:
-        30px;
-
-      font-weight:
-        800;
-
-      transition:
-        0.3s;
-
-    }
-
-
-    .btn-primary {
-
-      background:
-        var(--yellow);
-
-      color:
-        var(--green);
-
-    }
-
-
-    .btn-primary:hover {
-
-      transform:
-        translateY(-3px);
-
-      background:
-        #ffc62c;
-
-    }
-
-
-    .btn-outline {
-
-      border:
-        2px solid white;
-
-      color:
-        white;
-
-    }
-
-
-    .btn-outline:hover {
-
-      background:
-        white;
-
-      color:
-        var(--green);
-
-    }
-
-
-    /* =========================
-       SECTIONS
-    ========================== */
-
-    section {
-
-      padding:
-        90px 25px;
-
-    }
-
-
-    .container {
-
-      max-width:
-        1200px;
-
-      margin:
-        auto;
-
-    }
-
-
-    .section-heading {
-
-      text-align:
-        center;
-
-      margin-bottom:
-        50px;
-
-    }
-
-
-    .section-heading span {
-
-      color:
-        var(--yellow);
-
-      font-size:
-        13px;
-
-      font-weight:
-        800;
-
-      letter-spacing:
-        2px;
-
-      text-transform:
-        uppercase;
-
-    }
-
-
-    .section-heading h2 {
-
-      color:
-        var(--green);
-
-      font-size:
-        clamp(32px,5vw,48px);
-
-      margin:
-        8px 0 15px;
-
-    }
-
-
-    .section-heading p {
-
-      max-width:
-        720px;
-
-      margin:
-        auto;
-
-      color:
-        var(--gray);
-
-    }
-
-
-    /* =========================
-       ABOUT
-    ========================== */
-
-    .about {
-
-      background:
-        var(--light);
-
-    }
-
-
-    .about-grid {
-
-      display:
-        grid;
-
-      grid-template-columns:
-        1fr 1fr;
-
-      gap:
-        55px;
-
-      align-items:
-        center;
-
-    }
-
-
-    .about-image {
-
-      overflow:
-        hidden;
-
-      border-radius:
-        20px;
-
-      box-shadow:
-        0 20px 50px
-        rgba(0,0,0,0.12);
-
-    }
-
-
-    .about-image img {
-
-      height:
-        500px;
-
-      object-fit:
-        cover;
-
-    }
-
-
-    .about-text h2 {
-
-      color:
-        var(--green);
-
-      font-size:
-        42px;
-
-      line-height:
-        1.1;
-
-      margin-bottom:
-        20px;
-
-    }
-
-
-    .about-text p {
-
-      color:
-        var(--gray);
-
-      margin-bottom:
-        18px;
-
-    }
-
-
-    .check-list {
-
-      list-style:
-        none;
-
-      margin-top:
-        25px;
-
-    }
-
-
-    .check-list li {
-
-      margin-bottom:
-        13px;
-
-      font-weight:
-        600;
-
-    }
-
-
-    .check-list li::before {
-
-      content:
-        "✓";
-
-      width:
-        25px;
-
-      height:
-        25px;
-
-      display:
-        inline-flex;
-
-      align-items:
-        center;
-
-      justify-content:
-        center;
-
-      border-radius:
-        50%;
-
-      background:
-        var(--yellow);
-
-      color:
-        var(--green);
-
-      margin-right:
-        10px;
-
-      font-weight:
-        bold;
-
-    }
-
-
-    /* =========================
-       PROGRAMS
-    ========================== */
-
-    .programs-grid {
-
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(3,1fr);
-
-      gap:
-        25px;
-
-    }
-
-
-    .program-card {
-
-      background:
-        white;
-
-      border:
-        1px solid
-        var(--border);
-
-      border-radius:
-        18px;
-
-      overflow:
-        hidden;
-
-      box-shadow:
-        0 8px 25px
-        rgba(0,0,0,0.05);
-
-      transition:
-        0.3s;
-
-    }
-
-
-    .program-card:hover {
-
-      transform:
-        translateY(-8px);
-
-      box-shadow:
-        0 18px 40px
-        rgba(0,0,0,0.12);
-
-    }
-
-
-    .program-card img {
-
-      height:
-        220px;
-
-      object-fit:
-        cover;
-
-    }
-
-
-    .program-content {
-
-      padding:
-        25px;
-
-    }
-
-
-    .program-content h3 {
-
-      color:
-        var(--green);
-
-      font-size:
-        22px;
-
-      margin-bottom:
-        10px;
-
-    }
-
-
-    .program-content p {
-
-      color:
-        var(--gray);
-
-    }
-
-
-    /* =========================
-       VISION & MISSION
-    ========================== */
-
-    .vision-mission {
-
-      background:
-        var(--green);
-
-      color:
-        white;
-
-    }
-
-
-    .vision-mission .section-heading h2 {
-
-      color:
-        white;
-
-    }
-
-
-    .vision-mission .section-heading p {
-
-      color:
-        #dbe8e1;
-
-    }
-
-
-    .vision-grid {
-
-      display:
-        grid;
-
-      grid-template-columns:
-        1fr 1fr;
-
-      gap:
-        30px;
-
-    }
-
-
-    .vision-card {
-
-      padding:
-        45px;
-
-      border-radius:
-        20px;
-
-      background:
-        rgba(255,255,255,0.07);
-
-      border:
-        1px solid
-        rgba(255,255,255,0.12);
-
-    }
-
-
-    .vision-icon {
-
-      width:
-        60px;
-
-      height:
-        60px;
-
-      display:
-        flex;
-
-      align-items:
-        center;
-
-      justify-content:
-        center;
-
-      border-radius:
-        50%;
-
-      background:
-        var(--yellow);
-
-      color:
-        var(--green);
-
-      font-size:
-        25px;
-
-      font-weight:
-        bold;
-
-      margin-bottom:
-        20px;
-
-    }
-
-
-    .vision-card h3 {
-
-      color:
-        var(--yellow);
-
-      font-size:
-        30px;
-
-      margin-bottom:
-        15px;
-
-    }
-
-
-    .vision-card p {
-
-      color:
-        #e2ebe6;
-
-      font-size:
-        17px;
-
-    }
-
-
-    /* =========================
-       IMPACT
-    ========================== */
-
-    .impact {
-
-      background:
-        var(--light-yellow);
-
-    }
-
-
-    .impact-grid {
-
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(4,1fr);
-
-      gap:
-        20px;
-
-    }
-
-
-    .impact-card {
-
-      background:
-        white;
-
-      padding:
-        35px 20px;
-
-      border-radius:
-        18px;
-
-      text-align:
-        center;
-
-    }
-
-
-    .impact-card h3 {
-
-      color:
-        var(--green);
-
-      font-size:
-        42px;
-
-    }
-
-
-    .impact-card p {
-
-      color:
-        var(--gray);
-
-      font-weight:
-        600;
-
-    }
-
-
-    /* =========================
-       GALLERY
-    ========================== */
-
-    .gallery-grid {
-
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(3,1fr);
-
-      gap:
-        15px;
-
-    }
-
-
-    .gallery-item {
-
-      height:
-        280px;
-
-      overflow:
-        hidden;
-
-      border-radius:
-        15px;
-
-    }
-
-
-    .gallery-item img {
-
-      height:
-        100%;
-
-      object-fit:
-        cover;
-
-      transition:
-        0.5s;
-
-    }
-
-
-    .gallery-item:hover img {
-
-      transform:
-        scale(1.08);
-
-    }
-
-
-    /* =========================
-       SUPPORT
-    ========================== */
-
-    .support {
-
-      text-align:
-        center;
-
-      color:
-        white;
-
-      background:
-
-        linear-gradient(
-          rgba(3,48,35,0.90),
-          rgba(3,48,35,0.90)
-        ),
-
-        url(
-          "https://images.unsplash.com/photo-1504159506876-f8338247a14a?auto=format&fit=crop&w=2000&q=90"
-        )
-
-        center/cover
-        no-repeat;
-
-    }
-
-
-    .support h2 {
-
-      font-size:
-        clamp(35px,5vw,55px);
-
-      margin-bottom:
-        20px;
-
-    }
-
-
-    .support p {
-
-      max-width:
-        720px;
-
-      margin:
-        auto auto 30px;
-
-      color:
-        #e4ebe7;
-
-    }
-
-
-    /* =========================
-       CONTACT
-    ========================== */
-
-    .contact {
-
-      background:
-        var(--light);
-
-    }
-
-
-    .contact-grid {
-
-      display:
-        grid;
-
-      grid-template-columns:
-        0.8fr 1.2fr;
-
-      gap:
-        45px;
-
-      align-items:
-        start;
-
-    }
-
-
-    .contact-info h2 {
-
-      color:
-        var(--green);
-
-      font-size:
-        40px;
-
-    }
-
-
-    .contact-info > p {
-
-      color:
-        var(--gray);
-
-      margin:
-        15px 0 25px;
-
-    }
-
-
-    .contact-item {
-
-      margin-bottom:
-        20px;
-
-    }
-
-
-    .contact-item strong {
-
-      display:
-        block;
-
-      color:
-        var(--green);
-
-      margin-bottom:
-        4px;
-
-    }
-
-
-    .contact-item a,
-    .contact-item span {
-
-      color:
-        var(--gray);
-
-      word-break:
-        break-word;
-
-    }
-
-
-    .contact-form {
-
-      background:
-        white;
-
-      padding:
-        35px;
-
-      border-radius:
-        20px;
-
-      box-shadow:
-        0 15px 40px
-        rgba(0,0,0,0.08);
-
-    }
-
-
-    .form-group {
-
-      margin-bottom:
-        15px;
-
-    }
-
-
-    .form-group input,
-    .form-group textarea {
-
-      width:
-        100%;
-
-      border:
-        1px solid
-        var(--border);
-
-      padding:
-        15px;
-
-      border-radius:
-        10px;
-
-      font-family:
-        inherit;
-
-      font-size:
-        15px;
-
-      outline:
-        none;
-
-    }
-
-
-    .form-group input:focus,
-    .form-group textarea:focus {
-
-      border-color:
-        var(--yellow);
-
-    }
-
-
-    .form-group textarea {
-
-      min-height:
-        150px;
-
-      resize:
-        vertical;
-
-    }
-
-
-    .submit-btn {
-
-      width:
-        100%;
-
-      border:
-        none;
-
-      cursor:
-        pointer;
-
-      font-size:
-        16px;
-
-    }
-
-
-    /* =========================
-       FOOTER
-    ========================== */
-
-    footer {
-
-      background:
-        var(--dark-green);
-
-      color:
-        white;
-
-      padding:
-        65px 25px 20px;
-
-    }
-
-
-    .footer-grid {
-
-      max-width:
-        1200px;
-
-      margin:
-        auto;
-
-      display:
-        grid;
-
-      grid-template-columns:
-        1.5fr 1fr 1fr;
-
-      gap:
-        50px;
-
-    }
-
-
-    .footer-brand h3 {
-
-      color:
-        var(--yellow);
-
-      margin-bottom:
-        12px;
-
-      font-size:
-        21px;
-
-    }
-
-
-    .footer-brand p {
-
-      color:
-        #b7c3bd;
-
-      max-width:
-        450px;
-
-    }
-
-
-    footer h4 {
-
-      color:
-        var(--yellow);
-
-      margin-bottom:
-        18px;
-
-      font-size:
-        18px;
-
-    }
-
-
-    .footer-links {
-
-      list-style:
-        none;
-
-    }
-
-
-    .footer-links li {
-
-      margin-bottom:
-        10px;
-
-      color:
-        #c5cec9;
-
-    }
-
-
-    .footer-links a {
-
-      color:
-        #c5cec9;
-
-      transition:
-        0.3s;
-
-    }
-
-
-    .footer-links a:hover {
-
-      color:
-        var(--yellow);
-
-    }
-
-
-    /* =========================
-       SOCIAL MEDIA
-    ========================== */
-
-    .socials {
-
-      display:
-        flex;
-
-      gap:
-        10px;
-
-      margin-top:
-        20px;
-
-    }
-
-
-    .socials a {
-
-      width:
-        42px;
-
-      height:
-        42px;
-
-      border:
-        1px solid
-        rgba(255,255,255,0.25);
-
-      border-radius:
-        50%;
-
-      display:
-        flex;
-
-      align-items:
-        center;
-
-      justify-content:
-        center;
-
-      color:
-        white;
-
-      font-size:
-        13px;
-
-      font-weight:
-        bold;
-
-      transition:
-        0.3s;
-
-    }
-
-
-    .socials a:hover {
-
-      background:
-        var(--yellow);
-
-      color:
-        var(--green);
-
-      border-color:
-        var(--yellow);
-
-    }
-
-
-    .copyright {
-
-      max-width:
-        1200px;
-
-      margin:
-        45px auto 0;
-
-      padding-top:
-        20px;
-
-      border-top:
-        1px solid
-        rgba(255,255,255,0.10);
-
-      text-align:
-        center;
-
-      color:
-        #9ba8a2;
-
-      font-size:
-        14px;
-
-    }
-
-
-    /* =========================
-       WHATSAPP
-    ========================== */
-
-    .whatsapp {
-
-      position:
-        fixed;
-
-      right:
-        22px;
-
-      bottom:
-        22px;
-
-      width:
-        58px;
-
-      height:
-        58px;
-
-      border-radius:
-        50%;
-
-      background:
-        #25D366;
-
-      color:
-        white;
-
-      display:
-        flex;
-
-      align-items:
-        center;
-
-      justify-content:
-        center;
-
-      font-size:
-        14px;
-
-      font-weight:
-        bold;
-
-      z-index:
-        2000;
-
-      box-shadow:
-        0 8px 25px
-        rgba(0,0,0,0.25);
-
-    }
-
-
-    /* =========================
-       MOBILE
-    ========================== */
-
-    @media(max-width:900px) {
-
-      nav {
-
-        position:
-          absolute;
-
-        top:
-          74px;
-
-        left:
-          0;
-
-        width:
-          100%;
-
-        background:
-          var(--green);
-
-        display:
-          none;
-
-        flex-direction:
-          column;
-
-        padding:
-          25px;
-
-      }
-
-
-      nav.active {
-
-        display:
-          flex;
-
-      }
-
-
-      .menu-btn {
-
-        display:
-          block;
-
-      }
-
-
-      .about-grid,
-      .vision-grid,
-      .contact-grid {
-
-        grid-template-columns:
-          1fr;
-
-      }
-
-
-      .programs-grid {
-
-        grid-template-columns:
-          1fr 1fr;
-
-      }
-
-
-      .impact-grid {
-
-        grid-template-columns:
-          1fr 1fr;
-
-      }
-
-
-      .gallery-grid {
-
-        grid-template-columns:
-          1fr 1fr;
-
-      }
-
-
-      .footer-grid {
-
-        grid-template-columns:
-          1fr 1fr;
-
-      }
-
-    }
-
-
-    @media(max-width:600px) {
-
-      .hero {
-
-        min-height:
-          90vh;
-
-      }
-
-
-      .hero h1 {
-
-        font-size:
-          50px;
-
-      }
-
-
-      .hero p {
-
-        font-size:
-          16px;
-
-      }
-
-
-      section {
-
-        padding:
-          65px 18px;
-
-      }
-
-
-      .programs-grid,
-      .impact-grid,
-      .gallery-grid,
-      .footer-grid {
-
-        grid-template-columns:
-          1fr;
-
-      }
-
-
-      .about-image img {
-
-        height:
-          350px;
-
-      }
-
-
-      .vision-card {
-
-        padding:
-          30px;
-
-      }
-
-
-      .contact-form {
-
-        padding:
-          22px;
-
-      }
-
-
-      .brand-text h2 {
-
-        font-size:
-          14px;
-
-      }
-
-    }
-
-  </style>
-
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon / Logo -->
+  <link rel="icon" type="image/png" href="logo.png">
 </head>
-
 
 <body>
 
-
-  <!-- =========================
+  <!-- =====================================================
        HEADER
-  ========================== -->
+       ===================================================== -->
 
-  <header>
+  <header class="site-header">
 
-    <div class="navbar">
+    <div class="container navbar">
 
+      <!-- Logo / Brand -->
 
-      <a href="#home"
-         class="brand">
+      <a href="#home" class="brand">
 
-        <div class="logo">
-          M
-        </div>
+        <img
+          src="logo.png"
+          alt="Mtoto wa Kambo Foundation Logo"
+        >
 
         <div class="brand-text">
 
-          <h2>
+          <strong>
             Mtoto wa Kambo Foundation
-          </h2>
+          </strong>
 
-          <small>
+          <span>
             BUILDING HOPE. CHANGING LIVES.
-          </small>
+          </span>
 
         </div>
 
       </a>
 
 
-      <div class="menu-btn"
-           onclick="toggleMenu()">
+      <!-- Navigation -->
 
-        ☰
+      <nav aria-label="Main Navigation">
 
-      </div>
+        <ul class="nav-links">
 
+          <li>
+            <a href="#home">
+              Home
+            </a>
+          </li>
 
-      <nav id="navMenu">
+          <li>
+            <a href="#about">
+              About Us
+            </a>
+          </li>
 
-        <a href="#home">
-          Home
-        </a>
+          <li>
+            <a href="#programs">
+              Programs
+            </a>
+          </li>
 
-        <a href="#about">
-          About Us
-        </a>
+          <li>
+            <a href="#vision-mission">
+              Vision & Mission
+            </a>
+          </li>
 
-        <a href="#programs">
-          Programs
-        </a>
+          <li>
+            <a href="#impact">
+              Our Impact
+            </a>
+          </li>
 
-        <a href="#vision">
-          Vision & Mission
-        </a>
+          <li>
+            <a href="#gallery">
+              Gallery
+            </a>
+          </li>
 
-        <a href="#impact">
-          Our Impact
-        </a>
+          <li>
+            <a href="#support">
+              Support Us
+            </a>
+          </li>
 
-        <a href="#gallery">
-          Gallery
-        </a>
+          <li>
+            <a href="#contact">
+              Contact
+            </a>
+          </li>
 
-        <a href="#support"
-           class="nav-button">
-
-          Support Us
-
-        </a>
-
-        <a href="#contact">
-          Contact
-        </a>
+        </ul>
 
       </nav>
 
@@ -1776,1201 +130,456 @@
   </header>
 
 
+  <!-- =====================================================
+       HERO / HOME
+       ===================================================== -->
 
-  <!-- =========================
-       HOME
-  ========================== -->
+  <main>
 
-  <section
-    class="hero"
-    id="home"
-  >
+    <section
+      id="home"
+      class="hero"
+    >
 
-    <div class="hero-content">
+      <div class="hero-content">
 
-
-      <div class="hero-label">
-
-        Get Involved
-
-      </div>
+        <div class="hero-kicker">
+          GET INVOLVED
+        </div>
 
 
-      <h1>
-
-        Mtoto wa Kambo
-
-        <span>
-          Foundation
-        </span>
-
-      </h1>
+        <h1>
+          Mtoto wa Kambo
+          <span>Foundation</span>
+        </h1>
 
 
-      <p>
-
-        Building Hope. Changing Lives.
-        Strengthening Communities.
-
-        We create opportunities, support
-        vulnerable communities and contribute
-        to positive and sustainable development
-        in Tanzania.
-
-      </p>
+        <p>
+          Building Hope. Changing Lives. Strengthening Communities.
+          We create opportunities, support vulnerable communities
+          and contribute to positive and sustainable development
+          in Tanzania.
+        </p>
 
 
-      <div class="hero-buttons">
+        <div class="hero-buttons">
 
-        <a
-          href="#about"
-          class="btn btn-primary"
-        >
-
-          Learn More
-
-        </a>
-
-
-        <a
-          href="#support"
-          class="btn btn-outline"
-        >
-
-          Support Us
-
-        </a>
-
-      </div>
-
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =========================
-       ABOUT US
-  ========================== -->
-
-  <section
-    class="about"
-    id="about"
-  >
-
-    <div class="container">
-
-
-      <div class="about-grid">
-
-
-        <div class="about-image">
-
-          <img
-            src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=90"
-            alt="Children supported by Mtoto wa Kambo Foundation"
+          <a
+            href="#support"
+            class="btn btn-primary"
           >
+            Support Our Work
+          </a>
+
+
+          <a
+            href="#about"
+            class="btn btn-outline"
+          >
+            Learn More
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         ABOUT US
+         =================================================== -->
+
+    <section
+      id="about"
+      class="section"
+    >
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <div class="eyebrow">
+            WHO WE ARE
+          </div>
+
+          <h2>
+            About Mtoto wa Kambo Foundation
+          </h2>
+
+          <p>
+            Creating hope, opportunities and stronger communities
+            across Tanzania.
+          </p>
 
         </div>
 
 
-        <div class="about-text">
+        <div class="about-grid">
 
+          <div class="about-image">
 
-          <div
-            class="section-heading"
-            style="text-align:left;margin-bottom:20px;"
-          >
+            <!--
+              Logo is used temporarily.
+              Replace with a children/community photo later
+              by changing the filename below.
+            -->
 
-            <span>
-              About Us
-            </span>
+            <img
+              src="logo.png"
+              alt="Mtoto wa Kambo Foundation"
+            >
 
           </div>
 
 
-          <h2>
+          <div class="about-content">
 
-            Creating Opportunities.
-            Changing Lives.
-
-          </h2>
-
-
-          <p>
-
-            Mtoto wa Kambo Foundation is a
-            community-focused organization
-            committed to creating opportunities
-            and supporting sustainable development
-            in Tanzania.
-
-          </p>
+            <h3>
+              Building Hope. Changing Lives.
+            </h3>
 
 
-          <p>
-
-            We work with communities, children,
-            young people, families, partners,
-            volunteers and other stakeholders to
-            build stronger and more resilient
-            communities.
-
-          </p>
+            <p>
+              Mtoto wa Kambo Foundation is a community-focused
+              organization committed to creating opportunities,
+              supporting vulnerable communities and contributing
+              to positive and sustainable development in Tanzania.
+            </p>
 
 
-          <ul class="check-list">
+            <p>
+              We believe that every child, family and community
+              deserves an opportunity to grow, participate and
+              build a better future.
+            </p>
 
-            <li>
-              Supporting vulnerable children
-              and families
-            </li>
 
-            <li>
-              Promoting education and
-              opportunities
-            </li>
+            <ul class="check-list">
 
-            <li>
-              Empowering young people
-              and communities
-            </li>
+              <li>
+                Supporting vulnerable children and families
+              </li>
 
-            <li>
-              Supporting sustainable
-              community development
-            </li>
+              <li>
+                Strengthening communities
+              </li>
 
-          </ul>
+              <li>
+                Creating sustainable opportunities
+              </li>
 
+              <li>
+                Promoting education and empowerment
+              </li>
+
+              <li>
+                Supporting positive community development
+              </li>
+
+            </ul>
+
+          </div>
 
         </div>
 
       </div>
 
-    </div>
-
-  </section>
+    </section>
 
 
+    <!-- ===================================================
+         PROGRAMS
+         =================================================== -->
 
-  <!-- =========================
-       PROGRAMS
-  ========================== -->
+    <section
+      id="programs"
+      class="section section-light"
+    >
 
-  <section
-    id="programs"
-  >
+      <div class="container">
 
-    <div class="container">
+        <div class="section-title">
 
+          <div class="eyebrow">
+            WHAT WE DO
+          </div>
 
-      <div class="section-heading">
+          <h2>
+            Our Programs
+          </h2>
 
-        <span>
-          What We Do
-        </span>
+          <p>
+            Our programs focus on practical solutions that
+            create lasting positive change.
+          </p>
 
-        <h2>
-          Our Programs
-        </h2>
-
-        <p>
-
-          Our programs are designed to create
-          practical opportunities and improve
-          the lives of vulnerable people and
-          communities.
-
-        </p>
-
-      </div>
+        </div>
 
 
-      <div class="programs-grid">
+        <div class="programs-grid">
 
 
-        <div class="program-card">
+          <!-- Program 1 -->
+
+          <article class="program-card">
+
+            <div class="program-icon">
+              ♥
+            </div>
+
+            <h3>
+              Child Welfare
+            </h3>
+
+            <p>
+              Supporting vulnerable children by promoting
+              protection, care, dignity and access to
+              opportunities that improve their wellbeing.
+            </p>
+
+          </article>
 
 
-          <img
-            src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1000&q=90"
-            alt="Education program"
-          >
+          <!-- Program 2 -->
 
+          <article class="program-card">
 
-          <div class="program-content">
+            <div class="program-icon">
+              🎓
+            </div>
 
             <h3>
               Education
             </h3>
 
             <p>
-
-              Supporting access to education,
-              learning opportunities, school
-              materials and skills development
-              for children and youth.
-
+              Supporting educational opportunities and
+              encouraging children and young people to
+              develop the knowledge and skills they need
+              for a better future.
             </p>
 
-          </div>
-
-        </div>
+          </article>
 
 
+          <!-- Program 3 -->
 
-        <div class="program-card">
+          <article class="program-card">
 
-
-          <img
-            src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=1000&q=90"
-            alt="Community empowerment"
-          >
-
-
-          <div class="program-content">
+            <div class="program-icon">
+              🤝
+            </div>
 
             <h3>
-              Community Empowerment
+              Community Development
             </h3>
 
             <p>
-
-              Empowering communities through
-              opportunities, skills, partnerships
-              and sustainable development
-              initiatives.
-
+              Working with communities to identify challenges,
+              create opportunities and strengthen sustainable
+              local development.
             </p>
 
-          </div>
-
-        </div>
+          </article>
 
 
+          <!-- Program 4 -->
 
-        <div class="program-card">
+          <article class="program-card">
 
-
-          <img
-            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1000&q=90"
-            alt="Child and family support"
-          >
-
-
-          <div class="program-content">
+            <div class="program-icon">
+              💡
+            </div>
 
             <h3>
-              Child & Family Support
+              Youth Empowerment
             </h3>
 
             <p>
-
-              Supporting vulnerable children
-              and families and connecting them
-              with opportunities that can improve
-              their future.
-
+              Creating opportunities for young people through
+              skills development, participation, mentorship
+              and entrepreneurship initiatives.
             </p>
 
+          </article>
+
+
+          <!-- Program 5 -->
+
+          <article class="program-card">
+
+            <div class="program-icon">
+              🌱
+            </div>
+
+            <h3>
+              Sustainable Development
+            </h3>
+
+            <p>
+              Promoting initiatives that support communities
+              while contributing to long-term social,
+              economic and environmental sustainability.
+            </p>
+
+          </article>
+
+
+          <!-- Program 6 -->
+
+          <article class="program-card">
+
+            <div class="program-icon">
+              🌍
+            </div>
+
+            <h3>
+              Community Support
+            </h3>
+
+            <p>
+              Connecting communities with partners,
+              supporters and resources to address
+              important social and development needs.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         VISION & MISSION
+         =================================================== -->
+
+    <section
+      id="vision-mission"
+      class="section"
+    >
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <div class="eyebrow">
+            OUR DIRECTION
           </div>
 
+          <h2>
+            Vision & Mission
+          </h2>
+
+          <p>
+            Our direction is guided by a commitment to
+            children, communities and sustainable development.
+          </p>
+
         </div>
 
 
+        <div class="vm-grid">
+
+
+          <!-- Vision -->
+
+          <article class="vm-card vision">
+
+            <div class="label">
+              Our Vision
+            </div>
+
+            <h3>
+              A Better Future for Every Child
+            </h3>
+
+            <p>
+              To see empowered children, stronger communities
+              and a Tanzania where every child has access to
+              hope, care, opportunity and a meaningful future.
+            </p>
+
+          </article>
+
+
+          <!-- Mission -->
+
+          <article class="vm-card mission">
+
+            <div class="label">
+              Our Mission
+            </div>
+
+            <h3>
+              Creating Opportunities for Change
+            </h3>
+
+            <p>
+              To create opportunities, support vulnerable
+              children and communities, strengthen local
+              capacity and promote sustainable development
+              through partnerships, innovation and community
+              participation.
+            </p>
+
+          </article>
+
+        </div>
+
       </div>
 
-    </div>
-
-  </section>
+    </section>
 
 
+    <!-- ===================================================
+         OUR IMPACT
+         =================================================== -->
 
-  <!-- =========================
-       VISION & MISSION
-  ========================== -->
+    <section
+      id="impact"
+      class="section impact"
+    >
 
-  <section
-    class="vision-mission"
-    id="vision"
-  >
+      <div class="container">
 
-    <div class="container">
+        <div class="section-title">
 
-
-      <div class="section-heading">
-
-        <span>
-          Our Direction
-        </span>
-
-        <h2>
-          Vision & Mission
-        </h2>
-
-        <p>
-
-          Our commitment is guided by a
-          clear vision and mission.
-
-        </p>
-
-      </div>
-
-
-      <div class="vision-grid">
-
-
-        <div class="vision-card">
-
-
-          <div class="vision-icon">
-            ◉
+          <div class="eyebrow">
+            OUR IMPACT
           </div>
 
-
-          <h3>
-            Our Vision
-          </h3>
-
+          <h2>
+            Making a Difference
+          </h2>
 
           <p>
-
-            To build empowered, resilient
-            and inclusive communities where
-            children, young people and
-            vulnerable people have opportunities
-            to live healthy, productive and
-            dignified lives.
-
+            We are committed to measuring our progress by
+            the positive change we create in people's lives.
           </p>
 
         </div>
 
 
+        <div class="impact-grid">
 
-        <div class="vision-card">
-
-
-          <div class="vision-icon">
-            ✓
-          </div>
-
-
-          <h3>
-            Our Mission
-          </h3>
-
-
-          <p>
-
-            To create opportunities, strengthen
-            communities and support vulnerable
-            people through sustainable programs,
-            partnerships, advocacy and
-            community-driven solutions.
-
-          </p>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =========================
-       OUR IMPACT
-  ========================== -->
-
-  <section
-    class="impact"
-    id="impact"
-  >
-
-    <div class="container">
-
-
-      <div class="section-heading">
-
-        <span>
-          Making A Difference
-        </span>
-
-        <h2>
-          Our Impact
-        </h2>
-
-        <p>
-
-          Every partnership, volunteer and
-          contribution helps us move closer
-          to creating meaningful and sustainable
-          change.
-
-        </p>
-
-      </div>
-
-
-      <div class="impact-grid">
-
-
-        <div class="impact-card">
-
-          <h3>
-            01
-          </h3>
-
-          <p>
-            Community Focus
-          </p>
-
-        </div>
-
-
-        <div class="impact-card">
-
-          <h3>
-            04
-          </h3>
-
-          <p>
-            Key Program Areas
-          </p>
-
-        </div>
-
-
-        <div class="impact-card">
-
-          <h3>
-            100%
-          </h3>
-
-          <p>
-            Commitment
-          </p>
-
-        </div>
-
-
-        <div class="impact-card">
-
-          <h3>
-            TZ
-          </h3>
-
-          <p>
-            Starting in Tanzania
-          </p>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =========================
-       GALLERY
-  ========================== -->
-
-  <section
-    id="gallery"
-  >
-
-    <div class="container">
-
-
-      <div class="section-heading">
-
-        <span>
-          Our Community
-        </span>
-
-        <h2>
-          Gallery
-        </h2>
-
-        <p>
-
-          A glimpse of the communities,
-          children and people we aim to
-          support through our work.
-
-        </p>
-
-      </div>
-
-
-      <div class="gallery-grid">
-
-
-        <div class="gallery-item">
-
-          <img
-            src="https://images.unsplash.com/photo-1504159506876-f8338247a14a?auto=format&fit=crop&w=1000&q=90"
-            alt="Children"
-          >
-
-        </div>
-
-
-        <div class="gallery-item">
-
-          <img
-            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1000&q=90"
-            alt="Community children"
-          >
-
-        </div>
-
-
-        <div class="gallery-item">
-
-          <img
-            src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1000&q=90"
-            alt="Children smiling"
-          >
-
-        </div>
-
-
-        <div class="gallery-item">
-
-          <img
-            src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1000&q=90"
-            alt="Education"
-          >
-
-        </div>
-
-
-        <div class="gallery-item">
-
-          <img
-            src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=1000&q=90"
-            alt="Community work"
-          >
-
-        </div>
-
-
-        <div class="gallery-item">
-
-          <img
-            src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1000&q=90"
-            alt="Community support"
-          >
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =========================
-       SUPPORT
-  ========================== -->
-
-  <section
-    class="support"
-    id="support"
-  >
-
-    <div class="container">
-
-
-      <h2>
-        Help Us Change Lives
-      </h2>
-
-
-      <p>
-
-        Your support can help us create
-        opportunities, strengthen communities
-        and support vulnerable children and
-        families across Tanzania.
-
-      </p>
-
-
-      <a
-        href="#contact"
-        class="btn btn-primary"
-      >
-
-        Support Our Work
-
-      </a>
-
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =========================
-       CONTACT
-  ========================== -->
-
-  <section
-    class="contact"
-    id="contact"
-  >
-
-    <div class="container">
-
-
-      <div class="contact-grid">
-
-
-        <div class="contact-info">
-
-
-          <div
-            class="section-heading"
-            style="text-align:left;margin-bottom:20px;"
-          >
-
-            <span>
-              Get In Touch
-            </span>
-
-            <h2>
-              Contact Us
-            </h2>
-
-          </div>
-
-
-          <p>
-
-            We welcome partnerships,
-            volunteers, donors, organizations
-            and individuals who want to
-            contribute to positive change.
-
-          </p>
-
-
-          <div class="contact-item">
+          <div class="impact-card">
 
             <strong>
-              Email
-            </strong>
-
-            <a href="mailto:mtotowakambofoundation@gmail.com">
-
-              mtotowakambofoundation@gmail.com
-
-            </a>
-
-          </div>
-
-
-          <div class="contact-item">
-
-            <strong>
-              Phone
-            </strong>
-
-            <a href="tel:+255766669666">
-
-              +255 766 669 666
-
-            </a>
-
-          </div>
-
-
-          <div class="contact-item">
-
-            <strong>
-              Alternative Phone
-            </strong>
-
-            <a href="tel:+255715056883">
-
-              +255 715 056 883
-
-            </a>
-
-          </div>
-
-
-          <div class="contact-item">
-
-            <strong>
-              Location
+              01
             </strong>
 
             <span>
-              Tanzania
+              Community Focus
             </span>
 
           </div>
 
 
-          <div class="contact-item">
+          <div class="impact-card">
 
             <strong>
-              Instagram
-            </strong>
-
-            <a
-              href="https://www.instagram.com/mtotowakambo_foundation/"
-              target="_blank"
-              rel="noopener"
-            >
-
-              @mtotowakambo_foundation
-
-            </a>
-
-          </div>
-
-
-        </div>
-
-
-
-        <!-- FORM -->
-
-        <div class="contact-form">
-
-
-          <form
-            action="https://formsubmit.co/mtotowakambofoundation@gmail.com"
-            method="POST"
-          >
-
-
-            <input
-              type="hidden"
-              name="_subject"
-              value="New Message - Mtoto wa Kambo Foundation"
-            >
-
-
-            <input
-              type="hidden"
-              name="_captcha"
-              value="false"
-            >
-
-
-            <input
-              type="hidden"
-              name="_template"
-              value="table"
-            >
-
-
-            <input
-              type="hidden"
-              name="_next"
-              value="https://mtotowakambo-foundation-star.github.io/"
-            >
-
-
-            <div class="form-group">
-
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                required
-              >
-
-            </div>
-
-
-            <div class="form-group">
-
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Your Phone Number"
-                required
-              >
-
-            </div>
-
-
-            <div class="form-group">
-
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              >
-
-            </div>
-
-
-            <div class="form-group">
-
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                required
-              >
-
-            </div>
-
-
-            <div class="form-group">
-
-              <textarea
-                name="message"
-                placeholder="Write your message..."
-                required
-              ></textarea>
-
-            </div>
-
-
-            <button
-              type="submit"
-              class="btn btn-primary submit-btn"
-            >
-
-              Send Message
-
-            </button>
-
-
-          </form>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
-  <footer>
-
-
-    <div class="footer-grid">
-
-
-      <div class="footer-brand">
-
-
-        <h3>
-          Mtoto wa Kambo Foundation
-        </h3>
-
-
-        <p>
-
-          Building Hope. Changing Lives.
-          Strengthening Communities.
-
-          Creating opportunities and supporting
-          sustainable development in Tanzania.
-
-        </p>
-
-
-        <!-- SOCIAL MEDIA -->
-
-        <div class="socials">
-
-
-          <!-- Instagram -->
-
-          <a
-            href="https://www.instagram.com/mtotowakambo_foundation/"
-            target="_blank"
-            rel="noopener"
-            aria-label="Instagram"
-          >
-
-            IG
-
-          </a>
-
-
-          <!-- WhatsApp -->
-
-          <a
-            href="https://wa.me/255766669666"
-            target="_blank"
-            rel="noopener"
-            aria-label="WhatsApp"
-          >
-
-            WA
-
-          </a>
-
-
-          <!-- Email -->
-
-          <a
-            href="mailto:mtotowakambofoundation@gmail.com"
-            aria-label="Email"
-          >
-
-            @
-
-          </a>
-
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- QUICK LINKS -->
-
-      <div>
-
-
-        <h4>
-          Quick Links
-        </h4>
-
-
-        <ul class="footer-links">
-
-
-          <li>
-            <a href="#home">
-              Home
-            </a>
-          </li>
-
-
-          <li>
-            <a href="#about">
-              About Us
-            </a>
-          </li>
-
-
-          <li>
-            <a href="#programs">
-              Programs
-            </a>
-          </li>
-
-
-          <li>
-            <a href="#vision">
-              Vision & Mission
-            </a>
-          </li>
-
-
-          <li>
-            <a href="#impact">
-              Our Impact
-            </a>
-          </li>
-
-
-          <li>
-            <a href="#gallery">
-              Gallery
-            </a>
-          </li>
-
-
-          <li>
-            <a href="#contact">
-              Contact
-            </a>
-          </li>
-
-
-        </ul>
-
-
-      </div>
-
-
-
-      <!-- CONTACT -->
-
-      <div>
-
-
-        <h4>
-          Contact
-        </h4>
-
-
-        <ul class="footer-links">
-
-
-          <li>
-
-            <a
-              href="mailto:mtotowakambofoundation@gmail.com"
-            >
-
-              mtotowakambofoundation@gmail.com
-
-            </a>
-
-          </li>
-
-
-          <li>
-
-            <a href="tel:+255766669666">
-
-              +255 766 669 666
-
-            </a>
-
-          </li>
-
-
-          <li>
-
-            <a href="tel:+255715056883">
-
-              +255 715 056 883
-
-            </a>
-
-          </li>
-
-
-          <li>
-            Tanzania
-          </li>
-
-
-        </ul>
-
-
-      </div>
-
-
-    </div>
-
-
-
-    <div class="copyright">
-
-      ©
-
-      <span id="year"></span>
-
-      Mtoto wa Kambo Foundation.
-      All Rights Reserved.
-
-    </div>
-
-
-  </footer>
-
-
-
-  <!-- =========================
-       WHATSAPP BUTTON
-  ========================== -->
-
-  <a
-    class="whatsapp"
-    href="https://wa.me/255766669666?text=Hello%20Mtoto%20wa%20Kambo%20Foundation"
-    target="_blank"
-    rel="noopener"
-    aria-label="WhatsApp"
-  >
-
-    WA
-
-  </a>
-
-
-
-  <!-- =========================
-       JAVASCRIPT
-  ========================== -->
-
-  <script>
-
-
-    /* Mobile Menu */
-
-    function toggleMenu() {
-
-      document
-        .getElementById("navMenu")
-        .classList
-        .toggle("active");
-
-    }
-
-
-    /* Close menu after clicking */
-
-    document
-      .querySelectorAll("#navMenu a")
-      .forEach(function(link) {
-
-        link.addEventListener(
-          "click",
-          function() {
-
-            document
-              .getElementById("navMenu")
-              .classList
-              .remove("active");
-
-          }
-        );
-
-      });
-
-
-    /* Current Year */
-
-    document
-      .getElementById("year")
-      .textContent =
-      new Date().getFullYear();
-
-
-  </script>
-
-
-</body>
-</html>
+              
