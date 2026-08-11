@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Mtoto Wakambo Foundation - Building Hope, Changing Lives, Strengthening Communities in Tanzania.">
 
   <title>Mtoto Wakambo Foundation</title>
 
-  <meta name="description" content="Mtoto Wakambo Foundation - Building Hope, Changing Lives, Strengthening Communities in Tanzania.">
-  <meta name="keywords" content="Mtoto Wakambo Foundation, Tanzania, children, community development, education, support">
-  <meta name="author" content="Mtoto Wakambo Foundation">
-
   <style>
+
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
       scroll-behavior: smooth;
     }
 
@@ -30,7 +32,7 @@
     }
 
     img {
-      max-width: 100%;
+      width: 100%;
       display: block;
     }
 
@@ -39,74 +41,79 @@
     ========================= */
 
     header {
-      background: #12372a;
-      color: white;
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+      background: #12372a;
+      color: white;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.15);
     }
 
     .navbar {
       max-width: 1200px;
       margin: auto;
       padding: 15px 25px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
-    .logo-area {
+    .brand {
       display: flex;
       align-items: center;
       gap: 12px;
     }
 
-    .logo-circle {
+    .brand-logo {
       width: 48px;
       height: 48px;
-      border-radius: 50%;
+
       background: #f4b400;
       color: #12372a;
+
+      border-radius: 50%;
+
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: bold;
+
       font-size: 22px;
+      font-weight: bold;
     }
 
-    .logo-text h2 {
-      font-size: 18px;
+    .brand-name h2 {
       color: #f4b400;
+      font-size: 18px;
     }
 
-    .logo-text p {
-      font-size: 11px;
+    .brand-name p {
       color: white;
+      font-size: 11px;
     }
 
     nav ul {
-      list-style: none;
       display: flex;
+      list-style: none;
       gap: 25px;
     }
 
-    nav a {
+    nav ul li a {
       color: white;
       font-weight: bold;
       font-size: 14px;
-      transition: 0.3s;
     }
 
-    nav a:hover {
+    nav ul li a:hover {
       color: #f4b400;
     }
 
-    .menu-btn {
+    .menu {
       display: none;
-      font-size: 28px;
+      font-size: 30px;
       cursor: pointer;
     }
+
 
     /* =========================
        HERO
@@ -114,16 +121,22 @@
 
     .hero {
       min-height: 90vh;
+
       background:
-        linear-gradient(rgba(18,55,42,0.72), rgba(18,55,42,0.72)),
+        linear-gradient(
+          rgba(18,55,42,0.78),
+          rgba(18,55,42,0.78)
+        ),
         url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1800&q=85")
         center/cover no-repeat;
 
       display: flex;
       align-items: center;
       justify-content: center;
+
       text-align: center;
       color: white;
+
       padding: 60px 20px;
     }
 
@@ -131,11 +144,18 @@
       max-width: 900px;
     }
 
+    .hero-small {
+      color: #f4b400;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
     .hero h1 {
       font-size: clamp(42px, 7vw, 78px);
       line-height: 1.05;
-      margin-bottom: 20px;
-      color: white;
+      margin-bottom: 25px;
     }
 
     .hero h1 span {
@@ -143,19 +163,10 @@
     }
 
     .hero p {
-      font-size: 21px;
-      max-width: 750px;
+      font-size: 20px;
+      max-width: 760px;
       margin: auto;
       margin-bottom: 30px;
-    }
-
-    .tagline {
-      color: #f4b400;
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 15px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
     }
 
     .buttons {
@@ -167,7 +178,7 @@
 
     .btn {
       display: inline-block;
-      padding: 14px 27px;
+      padding: 14px 28px;
       border-radius: 30px;
       font-weight: bold;
       transition: 0.3s;
@@ -184,8 +195,8 @@
     }
 
     .btn-outline {
-      border: 2px solid white;
       color: white;
+      border: 2px solid white;
     }
 
     .btn-outline:hover {
@@ -193,8 +204,9 @@
       color: #12372a;
     }
 
+
     /* =========================
-       GENERAL
+       GENERAL SECTIONS
     ========================= */
 
     section {
@@ -214,27 +226,28 @@
     .section-title small {
       color: #f4b400;
       font-weight: bold;
-      text-transform: uppercase;
       letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
     .section-title h2 {
       color: #12372a;
-      font-size: 38px;
+      font-size: 40px;
       margin-top: 8px;
     }
 
     .section-title p {
-      max-width: 700px;
-      margin: 10px auto;
+      max-width: 750px;
+      margin: 12px auto;
       color: #666;
     }
+
 
     /* =========================
        ABOUT
     ========================= */
 
-    .about {
+    #about {
       background: #f7f9f7;
     }
 
@@ -246,7 +259,6 @@
     }
 
     .about-image img {
-      width: 100%;
       height: 480px;
       object-fit: cover;
       border-radius: 18px;
@@ -260,23 +272,26 @@
     }
 
     .about-text p {
-      margin-bottom: 18px;
       color: #555;
+      margin-bottom: 18px;
     }
 
     .mission-box {
+      margin-top: 25px;
+      padding: 25px;
+
       background: #12372a;
       color: white;
-      padding: 25px;
+
       border-left: 6px solid #f4b400;
       border-radius: 10px;
-      margin-top: 25px;
     }
 
     .mission-box h3 {
       color: #f4b400;
       margin-bottom: 8px;
     }
+
 
     /* =========================
        PROGRAMS
@@ -292,7 +307,9 @@
       background: white;
       border-radius: 15px;
       overflow: hidden;
+
       box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+
       transition: 0.3s;
     }
 
@@ -301,7 +318,6 @@
     }
 
     .program-card img {
-      width: 100%;
       height: 220px;
       object-fit: cover;
     }
@@ -319,94 +335,117 @@
       color: #666;
     }
 
+
     /* =========================
-       IMPACT
+       MISSION
     ========================= */
 
-    .impact {
+    #mission {
       background:
-        linear-gradient(rgba(18,55,42,0.92), rgba(18,55,42,0.92)),
+        linear-gradient(
+          rgba(18,55,42,0.93),
+          rgba(18,55,42,0.93)
+        ),
         url("https://images.unsplash.com/photo-1504159506876-f8338247a14a?auto=format&fit=crop&w=1800&q=85")
-        center/cover;
+        center/cover no-repeat;
+
       color: white;
     }
 
-    .impact .section-title h2 {
+    #mission .section-title h2 {
       color: white;
     }
 
-    .impact .section-title p {
+    #mission .section-title p {
       color: #ddd;
     }
 
-    .impact-grid {
+    .mission-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 25px;
-      text-align: center;
     }
 
-    .impact-box {
-      padding: 25px;
+    .mission-card {
+      text-align: center;
+      padding: 30px 20px;
+
       border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 12px;
+      border-radius: 15px;
+
       background: rgba(255,255,255,0.05);
     }
 
-    .impact-box h3 {
+    .mission-card .number {
       color: #f4b400;
-      font-size: 40px;
+      font-size: 42px;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
 
-    .impact-box p {
-      color: white;
+    .mission-card h3 {
+      margin-bottom: 8px;
     }
+
 
     /* =========================
-       GET INVOLVED
+       SUPPORT
     ========================= */
 
-    .involved {
+    #support {
       background: #f7f9f7;
     }
 
-    .involved-grid {
+    .support-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 25px;
     }
 
-    .involved-card {
-      text-align: center;
-      padding: 35px 25px;
+    .support-card {
       background: white;
+      text-align: center;
+
+      padding: 35px 25px;
+
       border-radius: 15px;
+
       box-shadow: 0 8px 25px rgba(0,0,0,0.07);
     }
 
-    .icon {
+    .support-icon {
       width: 65px;
       height: 65px;
-      border-radius: 50%;
+
       margin: 0 auto 20px;
+
+      border-radius: 50%;
+
       background: #f4b400;
       color: #12372a;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       font-size: 28px;
     }
 
-    .involved-card h3 {
+    .support-card h3 {
       color: #12372a;
       margin-bottom: 10px;
     }
+
+    .support-card p {
+      color: #666;
+    }
+
 
     /* =========================
        CONTACT
     ========================= */
 
-    .contact {
+    #contact {
       background: white;
     }
 
@@ -425,7 +464,7 @@
 
     .contact-info h2 {
       color: #f4b400;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     .contact-item {
@@ -453,11 +492,15 @@
     .form-group input,
     .form-group textarea {
       width: 100%;
+
       padding: 15px;
+
       border: 1px solid #ddd;
       border-radius: 8px;
+
       font-size: 15px;
-      font-family: inherit;
+      font-family: Arial, sans-serif;
+
       outline: none;
     }
 
@@ -466,16 +509,17 @@
       border-color: #12372a;
     }
 
-    textarea {
+    .form-group textarea {
       min-height: 160px;
       resize: vertical;
     }
 
-    .submit-btn {
+    .send-button {
       border: none;
       cursor: pointer;
       font-size: 16px;
     }
+
 
     /* =========================
        FOOTER
@@ -490,47 +534,53 @@
     .footer-grid {
       max-width: 1200px;
       margin: auto;
+
       display: grid;
       grid-template-columns: 1.5fr 1fr 1fr 1fr;
+
       gap: 40px;
     }
 
-    .footer-col h3 {
+    .footer-column h3 {
       color: #f4b400;
       margin-bottom: 18px;
     }
 
-    .footer-col p {
+    .footer-column p {
       color: #ccc;
       font-size: 14px;
     }
 
-    .footer-col ul {
+    .footer-column ul {
       list-style: none;
     }
 
-    .footer-col li {
+    .footer-column li {
       margin-bottom: 10px;
     }
 
-    .footer-col a {
+    .footer-column a {
       color: #ccc;
-      transition: 0.3s;
     }
 
-    .footer-col a:hover {
+    .footer-column a:hover {
       color: #f4b400;
     }
 
     .copyright {
       max-width: 1200px;
       margin: 40px auto 0;
+
       padding-top: 20px;
+
       border-top: 1px solid rgba(255,255,255,0.15);
+
       text-align: center;
+
       color: #aaa;
       font-size: 13px;
     }
+
 
     /* =========================
        MOBILE
@@ -538,7 +588,7 @@
 
     @media (max-width: 900px) {
 
-      .menu-btn {
+      .menu {
         display: block;
       }
 
@@ -557,8 +607,8 @@
 
       nav ul {
         flex-direction: column;
-        padding-top: 20px;
         gap: 15px;
+        padding-top: 20px;
       }
 
       .about-grid,
@@ -566,12 +616,15 @@
         grid-template-columns: 1fr;
       }
 
-      .program-grid,
-      .involved-grid {
+      .program-grid {
         grid-template-columns: 1fr 1fr;
       }
 
-      .impact-grid {
+      .mission-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .support-grid {
         grid-template-columns: 1fr 1fr;
       }
 
@@ -579,6 +632,7 @@
         grid-template-columns: 1fr 1fr;
       }
     }
+
 
     @media (max-width: 600px) {
 
@@ -602,57 +656,98 @@
         font-size: 30px;
       }
 
-      .program-grid,
-      .involved-grid,
-      .impact-grid,
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
       .about-image img {
         height: 320px;
+      }
+
+      .program-grid,
+      .mission-grid,
+      .support-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
       }
 
       .contact-info {
         padding: 28px;
       }
+
     }
+
   </style>
 </head>
 
+
 <body>
+
 
   <!-- =========================
        HEADER
   ========================= -->
 
   <header>
+
     <div class="navbar">
 
-      <div class="logo-area">
-        <div class="logo-circle">M</div>
+      <div class="brand">
 
-        <div class="logo-text">
-          <h2>Mtoto Wakambo Foundation</h2>
-          <p>Building Hope • Changing Lives</p>
+        <div class="brand-logo">
+          M
         </div>
+
+        <div class="brand-name">
+
+          <h2>Mtoto Wakambo Foundation</h2>
+
+          <p>
+            Building Hope • Changing Lives
+          </p>
+
+        </div>
+
       </div>
 
-      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+      <div class="menu" onclick="toggleMenu()">
+        ☰
+      </div>
+
 
       <nav id="navigation">
+
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#programs">Programs</a></li>
-          <li><a href="#mission">Mission</a></li>
-          <li><a href="#support">Support Us</a></li>
-          <li><a href="#contact">Contact</a></li>
+
+          <li>
+            <a href="#home">Home</a>
+          </li>
+
+          <li>
+            <a href="#about">About Us</a>
+          </li>
+
+          <li>
+            <a href="#programs">Programs</a>
+          </li>
+
+          <li>
+            <a href="#mission">Mission</a>
+          </li>
+
+          <li>
+            <a href="#support">Support Us</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+
         </ul>
+
       </nav>
 
     </div>
+
   </header>
+
 
 
   <!-- =========================
@@ -663,8 +758,8 @@
 
     <div class="hero-content">
 
-      <div class="tagline">
-        Building Hope • Changing Lives
+      <div class="hero-small">
+        Get Involved
       </div>
 
       <h1>
@@ -672,19 +767,23 @@
       </h1>
 
       <p>
-        Creating opportunities, supporting children and families,
-        strengthening communities and contributing to positive
-        and sustainable development in Tanzania.
+        Building Hope, Changing Lives and Strengthening Communities
+        through opportunities, partnerships and sustainable development
+        in Tanzania.
       </p>
 
       <div class="buttons">
-        <a href="#about" class="btn btn-primary">
+
+        <a href="#about"
+           class="btn btn-primary">
           Learn More
         </a>
 
-        <a href="#support" class="btn btn-outline">
-          Support Our Work
+        <a href="#support"
+           class="btn btn-outline">
+          Support Us
         </a>
+
       </div>
 
     </div>
@@ -692,63 +791,82 @@
   </section>
 
 
+
   <!-- =========================
        ABOUT US
   ========================= -->
 
-  <section class="about" id="about">
+  <section id="about">
 
     <div class="container">
 
       <div class="section-title">
-        <small>Who We Are</small>
-        <h2>About Mtoto Wakambo Foundation</h2>
+
+        <small>
+          Who We Are
+        </small>
+
+        <h2>
+          About Mtoto Wakambo Foundation
+        </h2>
 
         <p>
           A community-focused foundation committed to creating
-          opportunities and supporting sustainable development.
+          opportunities and supporting sustainable development
+          in Tanzania.
         </p>
+
       </div>
+
 
       <div class="about-grid">
 
+
         <div class="about-image">
+
           <img
             src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=85"
-            alt="Children and community"
-          >
+            alt="Mtoto Wakambo Foundation community">
+
         </div>
+
 
         <div class="about-text">
 
-          <h2>Building Hope. Changing Lives.</h2>
+          <h2>
+            Building Hope. Changing Lives.
+          </h2>
 
           <p>
-            <strong>Mtoto Wakambo Foundation</strong> is a community-focused
-            organization committed to creating opportunities and supporting
-            sustainable development in Tanzania.
+            <strong>
+              Mtoto Wakambo Foundation
+            </strong>
+            is committed to creating opportunities for children,
+            families and communities.
           </p>
 
           <p>
-            We believe that every child, family and community deserves
-            an opportunity to grow, learn, participate and build a better
-            future.
+            We believe that every child and every community deserves
+            an opportunity to learn, grow, participate and build
+            a better future.
           </p>
 
           <p>
-            Through partnerships, volunteers, donors and community members,
-            we work to develop practical initiatives that create lasting
-            positive change.
+            Through partnerships, volunteers, donors and community
+            members, we support practical initiatives designed to
+            create positive and sustainable change.
           </p>
+
 
           <div class="mission-box">
 
-            <h3>Our Commitment</h3>
+            <h3>
+              Our Commitment
+            </h3>
 
             <p>
-              To create opportunities and support sustainable development
-              while empowering communities and improving the lives of
-              children and families.
+              To create opportunities, empower communities and
+              support sustainable development in Tanzania.
             </p>
 
           </div>
@@ -760,6 +878,7 @@
     </div>
 
   </section>
+
 
 
   <!-- =========================
@@ -772,13 +891,17 @@
 
       <div class="section-title">
 
-        <small>What We Do</small>
+        <small>
+          What We Do
+        </small>
 
-        <h2>Our Programs</h2>
+        <h2>
+          Our Programs
+        </h2>
 
         <p>
-          Our work focuses on practical programs that respond to
-          community needs and create sustainable opportunities.
+          We focus on programs that respond to community needs
+          and create sustainable opportunities.
         </p>
 
       </div>
@@ -786,41 +909,45 @@
 
       <div class="program-grid">
 
+
         <div class="program-card">
 
           <img
             src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=85"
-            alt="Education program"
-          >
+            alt="Education">
 
           <div class="program-content">
 
-            <h3>Education & Children</h3>
+            <h3>
+              Education & Children
+            </h3>
 
             <p>
-              Supporting children through education, learning opportunities,
-              mentorship and initiatives that help them reach their potential.
+              Supporting education, learning opportunities,
+              mentorship and child development.
             </p>
 
           </div>
 
         </div>
+
 
 
         <div class="program-card">
 
           <img
             src="https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=1000&q=85"
-            alt="Community development"
-          >
+            alt="Community development">
 
           <div class="program-content">
 
-            <h3>Community Development</h3>
+            <h3>
+              Community Development
+            </h3>
 
             <p>
-              Supporting community-led initiatives that improve livelihoods,
-              participation and sustainable development.
+              Supporting community-led initiatives that improve
+              livelihoods and participation.
             </p>
 
           </div>
@@ -828,19 +955,21 @@
         </div>
 
 
+
         <div class="program-card">
 
           <img
             src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=1000&q=85"
-            alt="Volunteers"
-          >
+            alt="Volunteers">
 
           <div class="program-content">
 
-            <h3>Volunteer & Partnerships</h3>
+            <h3>
+              Volunteer & Partnerships
+            </h3>
 
             <p>
-              Connecting volunteers, organizations, donors and partners
+              Connecting volunteers, organizations and partners
               who want to contribute to positive change.
             </p>
 
@@ -849,62 +978,68 @@
         </div>
 
 
+
         <div class="program-card">
 
           <img
             src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1000&q=85"
-            alt="Community support"
-          >
+            alt="Family support">
 
           <div class="program-content">
 
-            <h3>Family Support</h3>
+            <h3>
+              Family Support
+            </h3>
 
             <p>
-              Supporting vulnerable families and creating opportunities
-              that contribute to stronger and healthier communities.
+              Supporting vulnerable families and strengthening
+              community wellbeing.
             </p>
 
           </div>
 
         </div>
+
 
 
         <div class="program-card">
 
           <img
             src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1000&q=85"
-            alt="Youth empowerment"
-          >
+            alt="Youth empowerment">
 
           <div class="program-content">
 
-            <h3>Youth Empowerment</h3>
+            <h3>
+              Youth Empowerment
+            </h3>
 
             <p>
-              Encouraging young people to develop skills, confidence,
-              entrepreneurship and leadership capabilities.
+              Encouraging young people to develop skills,
+              confidence and leadership.
             </p>
 
           </div>
 
         </div>
+
 
 
         <div class="program-card">
 
           <img
             src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?auto=format&fit=crop&w=1000&q=85"
-            alt="Sustainable development"
-          >
+            alt="Sustainable development">
 
           <div class="program-content">
 
-            <h3>Sustainable Development</h3>
+            <h3>
+              Sustainable Development
+            </h3>
 
             <p>
-              Supporting initiatives that promote long-term community
-              resilience and sustainable development.
+              Supporting initiatives that promote long-term
+              community resilience and development.
             </p>
 
           </div>
@@ -918,48 +1053,108 @@
   </section>
 
 
+
   <!-- =========================
-       IMPACT
+       MISSION
   ========================= -->
 
-  <section class="impact" id="mission">
+  <section id="mission">
 
     <div class="container">
 
       <div class="section-title">
 
-        <small>Our Vision</small>
+        <small>
+          Our Mission
+        </small>
 
-        <h2>Making a Positive Difference</h2>
+        <h2>
+          Making a Positive Difference
+        </h2>
 
         <p>
-          We believe meaningful change begins when communities,
+          Meaningful change happens when communities,
           organizations and individuals work together.
         </p>
 
       </div>
 
 
-      <div class="impact-grid">
+      <div class="mission-grid">
 
-        <div class="impact-box">
-          <h3>01</h3>
-          <p>Community First</p>
+
+        <div class="mission-card">
+
+          <div class="number">
+            01
+          </div>
+
+          <h3>
+            Community First
+          </h3>
+
+          <p>
+            Putting community needs and participation at the centre
+            of our work.
+          </p>
+
         </div>
 
-        <div class="impact-box">
-          <h3>02</h3>
-          <p>Children & Families</p>
+
+
+        <div class="mission-card">
+
+          <div class="number">
+            02
+          </div>
+
+          <h3>
+            Children & Families
+          </h3>
+
+          <p>
+            Supporting children and families to access opportunities
+            for a better future.
+          </p>
+
         </div>
 
-        <div class="impact-box">
-          <h3>03</h3>
-          <p>Partnerships</p>
+
+
+        <div class="mission-card">
+
+          <div class="number">
+            03
+          </div>
+
+          <h3>
+            Partnerships
+          </h3>
+
+          <p>
+            Building strong partnerships with organizations,
+            donors and communities.
+          </p>
+
         </div>
 
-        <div class="impact-box">
-          <h3>04</h3>
-          <p>Sustainable Change</p>
+
+
+        <div class="mission-card">
+
+          <div class="number">
+            04
+          </div>
+
+          <h3>
+            Sustainable Change
+          </h3>
+
+          <p>
+            Promoting initiatives that create lasting positive
+            change.
+          </p>
+
         </div>
 
       </div>
@@ -969,35 +1164,44 @@
   </section>
 
 
+
   <!-- =========================
        SUPPORT US
   ========================= -->
 
-  <section class="involved" id="support">
+  <section id="support">
 
     <div class="container">
 
       <div class="section-title">
 
-        <small>Get Involved</small>
+        <small>
+          Get Involved
+        </small>
 
-        <h2>Be Part of the Change</h2>
+        <h2>
+          Be Part of the Change
+        </h2>
 
         <p>
-          There are many ways to support the work of
-          Mtoto Wakambo Foundation.
+          You can support Mtoto Wakambo Foundation in different ways.
         </p>
 
       </div>
 
 
-      <div class="involved-grid">
+      <div class="support-grid">
 
-        <div class="involved-card">
 
-          <div class="icon">❤</div>
+        <div class="support-card">
 
-          <h3>Donate</h3>
+          <div class="support-icon">
+            ❤
+          </div>
+
+          <h3>
+            Donate
+          </h3>
 
           <p>
             Support programs that create opportunities for children,
@@ -1007,25 +1211,35 @@
         </div>
 
 
-        <div class="involved-card">
 
-          <div class="icon">🤝</div>
+        <div class="support-card">
 
-          <h3>Partner With Us</h3>
+          <div class="support-icon">
+            🤝
+          </div>
+
+          <h3>
+            Partner With Us
+          </h3>
 
           <p>
-            Organizations and institutions can partner with us
-            to implement meaningful community initiatives.
+            Partner with us to implement meaningful community
+            development initiatives.
           </p>
 
         </div>
 
 
-        <div class="involved-card">
 
-          <div class="icon">★</div>
+        <div class="support-card">
 
-          <h3>Volunteer</h3>
+          <div class="support-icon">
+            ★
+          </div>
+
+          <h3>
+            Volunteer
+          </h3>
 
           <p>
             Share your skills, time and experience to contribute
@@ -1041,23 +1255,28 @@
   </section>
 
 
+
   <!-- =========================
        CONTACT
   ========================= -->
 
-  <section class="contact" id="contact">
+  <section id="contact">
 
     <div class="container">
 
       <div class="section-title">
 
-        <small>Get In Touch</small>
+        <small>
+          Get In Touch
+        </small>
 
-        <h2>Contact Mtoto Wakambo Foundation</h2>
+        <h2>
+          Contact Mtoto Wakambo Foundation
+        </h2>
 
         <p>
-          We welcome partnerships, volunteers, donors, organizations
-          and individuals who want to contribute to positive change.
+          We welcome partnerships, volunteers, donors,
+          organizations and individuals.
         </p>
 
       </div>
@@ -1065,13 +1284,19 @@
 
       <div class="contact-grid">
 
+
         <div class="contact-info">
 
-          <h2>Contact Information</h2>
+          <h2>
+            Contact Information
+          </h2>
+
 
           <div class="contact-item">
 
-            <strong>Phone</strong>
+            <strong>
+              Phone
+            </strong>
 
             <a href="tel:+255766669666">
               +255 766 669 666
@@ -1082,7 +1307,9 @@
 
           <div class="contact-item">
 
-            <strong>Alternative Phone</strong>
+            <strong>
+              Alternative Phone
+            </strong>
 
             <a href="tel:+255715056883">
               +255 715 056 883
@@ -1093,27 +1320,37 @@
 
           <div class="contact-item">
 
-            <strong>Location</strong>
+            <strong>
+              Location
+            </strong>
 
-            <span>Tanzania</span>
+            <span>
+              Tanzania
+            </span>
 
           </div>
 
 
           <div class="contact-item">
 
-            <strong>Organization</strong>
+            <strong>
+              Organization
+            </strong>
 
-            <span>Mtoto Wakambo Foundation</span>
+            <span>
+              Mtoto Wakambo Foundation
+            </span>
 
           </div>
 
         </div>
 
 
+
         <div class="contact-form">
 
           <form onsubmit="sendMessage(event)">
+
 
             <div class="form-group">
 
@@ -1121,8 +1358,7 @@
                 type="text"
                 id="name"
                 placeholder="Your Name"
-                required
-              >
+                required>
 
             </div>
 
@@ -1133,8 +1369,17 @@
                 type="tel"
                 id="phone"
                 placeholder="Your Phone Number"
-                required
-              >
+                required>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email">
 
             </div>
 
@@ -1145,8 +1390,7 @@
                 type="text"
                 id="subject"
                 placeholder="Subject"
-                required
-              >
+                required>
 
             </div>
 
@@ -1156,17 +1400,17 @@
               <textarea
                 id="message"
                 placeholder="Write your message..."
-                required
-              ></textarea>
+                required></textarea>
 
             </div>
 
 
             <button
               type="submit"
-              class="btn btn-primary submit-btn"
-            >
+              class="btn btn-primary send-button">
+
               Send Message
+
             </button>
 
           </form>
@@ -1180,6 +1424,7 @@
   </section>
 
 
+
   <!-- =========================
        FOOTER
   ========================= -->
@@ -1188,48 +1433,70 @@
 
     <div class="footer-grid">
 
-      <div class="footer-col">
 
-        <h3>Mtoto Wakambo Foundation</h3>
+      <div class="footer-column">
+
+        <h3>
+          Mtoto Wakambo Foundation
+        </h3>
 
         <p>
-          Building Hope. Changing Lives. Strengthening Communities.
+          Building Hope • Changing Lives • Strengthening Communities.
         </p>
 
         <p style="margin-top:15px;">
           A community-focused foundation committed to creating
-          opportunities and supporting sustainable development in Tanzania.
+          opportunities and supporting sustainable development
+          in Tanzania.
         </p>
 
       </div>
 
 
-      <div class="footer-col">
 
-        <h3>Quick Links</h3>
+      <div class="footer-column">
+
+        <h3>
+          Quick Links
+        </h3>
 
         <ul>
 
-          <li><a href="#home">Home</a></li>
+          <li>
+            <a href="#home">Home</a>
+          </li>
 
-          <li><a href="#about">About Us</a></li>
+          <li>
+            <a href="#about">About Us</a>
+          </li>
 
-          <li><a href="#programs">Programs</a></li>
+          <li>
+            <a href="#programs">Programs</a>
+          </li>
 
-          <li><a href="#mission">Mission</a></li>
+          <li>
+            <a href="#mission">Mission</a>
+          </li>
 
-          <li><a href="#support">Support Us</a></li>
+          <li>
+            <a href="#support">Support Us</a>
+          </li>
 
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
 
         </ul>
 
       </div>
 
 
-      <div class="footer-col">
 
-        <h3>Contact</h3>
+      <div class="footer-column">
+
+        <h3>
+          Contact
+        </h3>
 
         <ul>
 
@@ -1245,26 +1512,47 @@
             </a>
           </li>
 
-          <li>Tanzania</li>
+          <li>
+            Tanzania
+          </li>
 
         </ul>
 
       </div>
 
 
-      <div class="footer-col">
 
-        <h3>Get Involved</h3>
+      <div class="footer-column">
+
+        <h3>
+          Get Involved
+        </h3>
 
         <ul>
 
-          <li><a href="#support">Donate</a></li>
+          <li>
+            <a href="#support">
+              Donate
+            </a>
+          </li>
 
-          <li><a href="#support">Volunteer</a></li>
+          <li>
+            <a href="#support">
+              Volunteer
+            </a>
+          </li>
 
-          <li><a href="#support">Partnership</a></li>
+          <li>
+            <a href="#support">
+              Partnership
+            </a>
+          </li>
 
-          <li><a href="#contact">Contact Us</a></li>
+          <li>
+            <a href="#contact">
+              Contact Us
+            </a>
+          </li>
 
         </ul>
 
@@ -1283,6 +1571,7 @@
   </footer>
 
 
+
   <!-- =========================
        JAVASCRIPT
   ========================= -->
@@ -1291,9 +1580,10 @@
 
     function toggleMenu() {
 
-      const nav = document.getElementById("navigation");
+      const navigation =
+        document.getElementById("navigation");
 
-      nav.classList.toggle("active");
+      navigation.classList.toggle("active");
 
     }
 
@@ -1302,11 +1592,15 @@
 
       event.preventDefault();
 
+
       const name =
         document.getElementById("name").value;
 
       const phone =
         document.getElementById("phone").value;
+
+      const email =
+        document.getElementById("email").value;
 
       const subject =
         document.getElementById("subject").value;
@@ -1315,23 +1609,34 @@
         document.getElementById("message").value;
 
 
-      const text =
+      const whatsappMessage =
         "Hello Mtoto Wakambo Foundation,%0A%0A" +
+
         "Name: " + name + "%0A" +
+
         "Phone: " + phone + "%0A" +
+
+        "Email: " + email + "%0A" +
+
         "Subject: " + subject + "%0A%0A" +
+
         message;
 
 
-      const whatsapp =
-        "https://wa.me/255766669666?text=" + text;
+      const whatsappURL =
+        "https://wa.me/255766669666?text="
+        + whatsappMessage;
 
 
-      window.open(whatsapp, "_blank");
+      window.open(
+        whatsappURL,
+        "_blank"
+      );
 
     }
 
   </script>
+
 
 </body>
 </html>
