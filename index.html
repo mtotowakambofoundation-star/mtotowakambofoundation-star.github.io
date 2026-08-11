@@ -7,31 +7,27 @@
   <title>Moto Wakambo Foundation | Building Hope. Changing Lives.</title>
 
   <meta name="description"
-        content="Moto Wakambo Foundation - Building Hope, Changing Lives and Strengthening Communities in Tanzania.">
-
-  <meta name="keywords"
-        content="Moto Wakambo Foundation, Tanzania Foundation, Community Development, Education, Support, Charity">
+        content="Moto Wakambo Foundation is a community-focused organization creating opportunities, partnerships and sustainable development in Tanzania.">
 
   <meta name="author" content="Moto Wakambo Foundation">
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
       scroll-behavior: smooth;
     }
 
     body {
       font-family: Arial, Helvetica, sans-serif;
       color: #222;
-      background: #ffffff;
       line-height: 1.6;
+      background: #fff;
     }
 
     a {
       text-decoration: none;
-      color: inherit;
     }
 
     img {
@@ -40,7 +36,7 @@
     }
 
     /* =========================
-       HEADER
+       NAVIGATION
     ========================== */
 
     header {
@@ -49,22 +45,21 @@
       left: 0;
       width: 100%;
       z-index: 1000;
-      background: rgba(5, 48, 39, 0.96);
-      box-shadow: 0 2px 15px rgba(0,0,0,0.15);
+      background: rgba(4, 45, 35, 0.97);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
     }
 
     .navbar {
       max-width: 1200px;
       margin: auto;
-      min-height: 78px;
-      padding: 10px 25px;
+      min-height: 75px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
+      padding: 10px 20px;
     }
 
-    .logo-area {
+    .logo {
       display: flex;
       align-items: center;
       gap: 12px;
@@ -76,36 +71,36 @@
       height: 48px;
       border-radius: 50%;
       background: #f4b400;
-      color: #064332;
+      color: #063d2e;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 25px;
-      font-weight: 800;
-    }
-
-    .logo-text h2 {
-      font-size: 20px;
-      line-height: 1.1;
-    }
-
-    .logo-text span {
-      color: #f4b400;
-      font-size: 11px;
+      font-size: 23px;
       font-weight: bold;
+    }
+
+    .logo-text strong {
+      display: block;
+      font-size: 18px;
+    }
+
+    .logo-text small {
+      display: block;
+      color: #f4b400;
+      font-size: 9px;
       letter-spacing: 1px;
+      font-weight: bold;
     }
 
     nav {
       display: flex;
-      align-items: center;
       gap: 22px;
     }
 
     nav a {
       color: #fff;
-      font-size: 14px;
       font-weight: 600;
+      font-size: 14px;
       transition: 0.3s;
     }
 
@@ -113,15 +108,11 @@
       color: #f4b400;
     }
 
-    .nav-support {
-      background: #f4b400;
-      color: #063d30 !important;
-      padding: 10px 17px;
-      border-radius: 25px;
-    }
-
-    .nav-support:hover {
-      background: #fff;
+    .menu-btn {
+      display: none;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
     }
 
     /* =========================
@@ -130,20 +121,12 @@
 
     .hero {
       min-height: 100vh;
-      padding: 150px 25px 90px;
+      padding-top: 75px;
       display: flex;
       align-items: center;
-      position: relative;
-      overflow: hidden;
-
       background:
-        linear-gradient(
-          90deg,
-          rgba(3, 47, 38, 0.94),
-          rgba(3, 47, 38, 0.78),
-          rgba(3, 47, 38, 0.45)
-        ),
-        url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=2000&q=85")
+        linear-gradient(rgba(2, 48, 37, 0.82), rgba(2, 48, 37, 0.78)),
+        url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1800&q=85")
         center/cover no-repeat;
     }
 
@@ -151,22 +134,22 @@
       max-width: 1200px;
       width: 100%;
       margin: auto;
-      color: #fff;
+      padding: 70px 20px;
+      color: white;
     }
 
-    .hero-small {
+    .hero-label {
       color: #f4b400;
       font-size: 15px;
-      font-weight: 800;
+      font-weight: bold;
       letter-spacing: 3px;
-      margin-bottom: 12px;
-      text-transform: uppercase;
+      margin-bottom: 15px;
     }
 
     .hero h1 {
+      font-size: clamp(42px, 7vw, 82px);
+      line-height: 1;
       max-width: 850px;
-      font-size: clamp(45px, 7vw, 88px);
-      line-height: 1.02;
       margin-bottom: 25px;
     }
 
@@ -175,30 +158,28 @@
     }
 
     .hero p {
-      max-width: 720px;
+      max-width: 650px;
       font-size: 19px;
-      color: #f0f0f0;
       margin-bottom: 35px;
     }
 
-    .hero-buttons {
+    .buttons {
       display: flex;
-      gap: 15px;
       flex-wrap: wrap;
+      gap: 15px;
     }
 
     .btn {
       display: inline-block;
-      padding: 14px 25px;
-      border-radius: 30px;
-      font-weight: 700;
+      padding: 14px 27px;
+      border-radius: 6px;
+      font-weight: bold;
       transition: 0.3s;
-      border: 2px solid transparent;
     }
 
     .btn-primary {
       background: #f4b400;
-      color: #073d30;
+      color: #063d2e;
     }
 
     .btn-primary:hover {
@@ -207,21 +188,21 @@
     }
 
     .btn-outline {
-      border-color: #fff;
+      border: 2px solid #fff;
       color: #fff;
     }
 
     .btn-outline:hover {
       background: #fff;
-      color: #073d30;
+      color: #063d2e;
     }
 
     /* =========================
-       GENERAL SECTIONS
+       GENERAL
     ========================== */
 
     section {
-      padding: 90px 25px;
+      padding: 90px 20px;
     }
 
     .container {
@@ -229,28 +210,23 @@
       margin: auto;
     }
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-
-    .section-title span {
-      color: #d69b00;
-      font-size: 14px;
-      font-weight: 800;
+    .section-label {
+      color: #d99a00;
+      font-weight: bold;
       letter-spacing: 2px;
       text-transform: uppercase;
+      font-size: 13px;
+      margin-bottom: 10px;
     }
 
-    .section-title h2 {
-      color: #064332;
-      font-size: clamp(32px, 5vw, 50px);
-      margin-top: 8px;
+    .section-title {
+      font-size: clamp(32px, 5vw, 48px);
+      color: #063d2e;
+      margin-bottom: 20px;
     }
 
-    .section-title p {
-      max-width: 700px;
-      margin: 15px auto 0;
+    .section-text {
+      max-width: 750px;
       color: #666;
     }
 
@@ -270,42 +246,57 @@
     }
 
     .about-image {
-      min-height: 470px;
-      border-radius: 20px;
+      border-radius: 15px;
       overflow: hidden;
-      background:
-        linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
-        url("https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=1200&q=85")
-        center/cover no-repeat;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
     }
 
-    .about-text h3 {
-      font-size: 36px;
-      color: #064332;
+    .about-image img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
+
+    .about-content h2 {
       margin-bottom: 20px;
     }
 
-    .about-text p {
-      color: #555;
+    .about-content p {
       margin-bottom: 18px;
+      color: #555;
     }
 
-    .about-points {
-      list-style: none;
-      margin-top: 25px;
+    /* =========================
+       CARDS
+    ========================== */
+
+    .cards {
+      margin-top: 45px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
     }
 
-    .about-points li {
-      margin: 12px 0;
-      font-weight: 600;
-      color: #164f40;
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      border-top: 4px solid #f4b400;
     }
 
-    .about-points li::before {
-      content: "✓";
-      color: #d69b00;
-      font-weight: 900;
-      margin-right: 10px;
+    .card-icon {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #063d2e;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #666;
     }
 
     /* =========================
@@ -313,57 +304,22 @@
     ========================== */
 
     .programs {
-      background: #f6f8f6;
-    }
-
-    .program-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+      background: #f5f8f6;
     }
 
     .program-card {
-      background: #fff;
-      border-radius: 18px;
       overflow: hidden;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-      transition: 0.3s;
+      padding: 0;
     }
 
-    .program-card:hover {
-      transform: translateY(-6px);
-    }
-
-    .program-image {
+    .program-card img {
+      width: 100%;
       height: 220px;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .program-1 {
-      background-image: url("https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=900&q=85");
-    }
-
-    .program-2 {
-      background-image: url("https://images.unsplash.com/photo-1494386346843-e12284507169?auto=format&fit=crop&w=900&q=85");
-    }
-
-    .program-3 {
-      background-image: url("https://images.unsplash.com/photo-1594708767771-a7502209ff51?auto=format&fit=crop&w=900&q=85");
+      object-fit: cover;
     }
 
     .program-content {
       padding: 25px;
-    }
-
-    .program-content h3 {
-      color: #064332;
-      margin-bottom: 10px;
-      font-size: 22px;
-    }
-
-    .program-content p {
-      color: #666;
     }
 
     /* =========================
@@ -371,50 +327,35 @@
     ========================== */
 
     .mission {
-      background: #064332;
+      background: #063d2e;
       color: #fff;
     }
 
-    .mission .section-title h2,
-    .mission .section-title p {
+    .mission .section-title {
       color: #fff;
+    }
+
+    .mission .section-text {
+      color: #dce9e4;
     }
 
     .mission-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 25px;
+      margin-top: 45px;
     }
 
-    .mission-card {
-      padding: 35px 25px;
-      text-align: center;
+    .mission-box {
+      padding: 30px;
       border: 1px solid rgba(255,255,255,0.15);
-      border-radius: 18px;
-      background: rgba(255,255,255,0.06);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.05);
     }
 
-    .mission-icon {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      margin: 0 auto 18px;
-      background: #f4b400;
-      color: #064332;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 25px;
-      font-weight: 900;
-    }
-
-    .mission-card h3 {
-      margin-bottom: 10px;
+    .mission-box h3 {
       color: #f4b400;
-    }
-
-    .mission-card p {
-      color: #e5e5e5;
+      margin-bottom: 12px;
     }
 
     /* =========================
@@ -423,26 +364,22 @@
 
     .support {
       background:
-        linear-gradient(
-          rgba(3, 47, 38, 0.92),
-          rgba(3, 47, 38, 0.92)
-        ),
-        url("https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1800&q=85")
-        center/cover no-repeat;
-      color: #fff;
+        linear-gradient(rgba(244,180,0,0.92), rgba(244,180,0,0.92)),
+        url("https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
       text-align: center;
     }
 
     .support h2 {
-      font-size: clamp(35px, 5vw, 58px);
-      margin-bottom: 20px;
+      color: #063d2e;
+      font-size: clamp(32px, 5vw, 52px);
+      margin-bottom: 15px;
     }
 
     .support p {
-      max-width: 750px;
-      margin: auto auto 30px;
-      color: #eee;
-      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      color: #18382e;
     }
 
     /* =========================
@@ -461,109 +398,89 @@
     }
 
     .contact-info {
-      background: #064332;
+      background: #063d2e;
       color: #fff;
-      border-radius: 20px;
       padding: 40px;
+      border-radius: 15px;
     }
 
-    .contact-info h3 {
-      font-size: 35px;
+    .contact-info h2 {
+      font-size: 38px;
       margin-bottom: 15px;
     }
 
-    .contact-info > p {
-      color: #e5e5e5;
-      margin-bottom: 30px;
+    .contact-info p {
+      color: #d8e7e2;
+      margin-bottom: 25px;
     }
 
     .contact-item {
-      margin-bottom: 24px;
+      margin-bottom: 22px;
     }
 
     .contact-item strong {
       display: block;
       color: #f4b400;
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
 
-    .contact-item a:hover {
-      color: #f4b400;
+    .contact-item a {
+      color: #fff;
     }
 
     .contact-form {
-      padding: 10px;
+      background: #f6f8f7;
+      padding: 35px;
+      border-radius: 15px;
     }
 
     .form-group {
-      margin-bottom: 16px;
+      margin-bottom: 17px;
     }
 
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      color: #063d2e;
+      margin-bottom: 7px;
     }
 
     .form-group input,
     .form-group textarea {
       width: 100%;
+      padding: 14px 15px;
       border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 15px;
-      font-family: inherit;
+      border-radius: 6px;
       font-size: 15px;
+      font-family: inherit;
       outline: none;
-      transition: 0.3s;
+      background: #fff;
     }
 
     .form-group input:focus,
     .form-group textarea:focus {
-      border-color: #064332;
-      box-shadow: 0 0 0 3px rgba(6,67,50,0.08);
+      border-color: #063d2e;
     }
 
     .form-group textarea {
-      min-height: 160px;
+      min-height: 150px;
       resize: vertical;
     }
 
-    .form-buttons {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .whatsapp-btn {
-      background: #25d366;
-      color: #fff;
+    .submit-btn {
       border: none;
       cursor: pointer;
+      width: 100%;
+      font-size: 16px;
     }
 
-    .whatsapp-btn:hover {
-      background: #1da851;
-    }
-
-    .email-btn {
-      background: #064332;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-
-    .email-btn:hover {
-      background: #042d23;
-    }
-
-    .status-message {
+    #formMessage {
       display: none;
-      margin-top: 18px;
-      padding: 14px;
-      border-radius: 10px;
-      background: #e8f7ee;
-      color: #17663c;
-      font-weight: 600;
+      margin-top: 15px;
+      padding: 12px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: bold;
     }
 
     /* =========================
@@ -571,41 +488,38 @@
     ========================== */
 
     footer {
-      background: #032d23;
+      background: #022c22;
       color: #fff;
-      padding: 60px 25px 25px;
+      padding: 55px 20px 20px;
     }
 
     .footer-grid {
       max-width: 1200px;
       margin: auto;
       display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr;
-      gap: 45px;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 40px;
     }
 
-    .footer-brand h2 {
-      color: #f4b400;
-      margin-bottom: 12px;
-    }
-
-    .footer-brand p {
-      color: #d7d7d7;
-      max-width: 430px;
-    }
-
-    .footer-column h3 {
+    footer h3 {
       color: #f4b400;
       margin-bottom: 15px;
     }
 
-    .footer-column a {
-      display: block;
-      margin: 8px 0;
-      color: #ddd;
+    footer p,
+    footer a {
+      color: #c7d8d2;
     }
 
-    .footer-column a:hover {
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 8px;
+    }
+
+    footer a:hover {
       color: #f4b400;
     }
 
@@ -613,24 +527,60 @@
       max-width: 1200px;
       margin: 45px auto 0;
       padding-top: 20px;
-      border-top: 1px solid rgba(255,255,255,0.15);
+      border-top: 1px solid rgba(255,255,255,0.1);
       text-align: center;
-      color: #aaa;
-      font-size: 14px;
+      color: #9db4ac;
+      font-size: 13px;
+    }
+
+    /* =========================
+       WHATSAPP
+    ========================== */
+
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 2000;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.08);
     }
 
     /* =========================
        MOBILE
     ========================== */
 
-    @media (max-width: 900px) {
+    @media (max-width: 850px) {
 
-      nav {
-        gap: 10px;
+      .menu-btn {
+        display: block;
       }
 
-      nav a {
-        font-size: 12px;
+      nav {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background: #063d2e;
+        padding: 20px;
+      }
+
+      nav.active {
+        display: flex;
       }
 
       .about-grid,
@@ -638,81 +588,45 @@
         grid-template-columns: 1fr;
       }
 
-      .program-grid,
+      .cards,
       .mission-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
       }
 
       .footer-grid {
         grid-template-columns: 1fr 1fr;
       }
+
+      .about-image img {
+        height: 330px;
+      }
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 550px) {
 
-      .navbar {
-        min-height: auto;
-        padding: 12px 15px;
+      section {
+        padding: 65px 18px;
       }
 
-      .logo-text h2 {
-        font-size: 16px;
-      }
-
-      .logo-text span {
-        font-size: 9px;
-      }
-
-      .logo-circle {
-        width: 42px;
-        height: 42px;
-        font-size: 21px;
-      }
-
-      nav {
-        display: none;
-      }
-
-      .hero {
-        padding: 130px 20px 70px;
-        min-height: 90vh;
+      .hero-content {
+        padding: 60px 18px;
       }
 
       .hero h1 {
-        font-size: 48px;
+        font-size: 46px;
       }
 
       .hero p {
         font-size: 16px;
       }
 
-      section {
-        padding: 65px 20px;
-      }
-
-      .about-grid,
-      .program-grid,
-      .mission-grid,
-      .contact-grid,
       .footer-grid {
         grid-template-columns: 1fr;
       }
 
-      .about-image {
-        min-height: 320px;
-      }
-
-      .form-row {
-        grid-template-columns: 1fr;
-      }
-
-      .form-buttons {
-        flex-direction: column;
-      }
-
-      .form-buttons .btn {
-        width: 100%;
-        text-align: center;
+      .contact-form,
+      .contact-info {
+        padding: 25px;
       }
     }
   </style>
@@ -721,27 +635,29 @@
 <body>
 
   <!-- =========================
-       HEADER
+       NAVIGATION
   ========================== -->
 
   <header>
     <div class="navbar">
 
-      <a href="#home" class="logo-area">
+      <a href="#home" class="logo">
         <div class="logo-circle">M</div>
 
         <div class="logo-text">
-          <h2>Moto Wakambo Foundation</h2>
-          <span>BUILDING HOPE. CHANGING LIVES.</span>
+          <strong>Moto Wakambo Foundation</strong>
+          <small>BUILDING HOPE. CHANGING LIVES.</small>
         </div>
       </a>
 
-      <nav>
+      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+      <nav id="navMenu">
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
         <a href="#programs">Programs</a>
         <a href="#mission">Mission</a>
-        <a href="#support" class="nav-support">Support Us</a>
+        <a href="#support">Support Us</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -750,38 +666,36 @@
 
 
   <!-- =========================
-       HOME
+       HERO
   ========================== -->
 
   <section class="hero" id="home">
 
     <div class="hero-content">
 
-      <div class="hero-small">
-        Get Involved
+      <div class="hero-label">
+        GET INVOLVED
       </div>
 
       <h1>
-        Moto Wakambo
-        <span>Foundation</span>
+        Building Hope.<br>
+        <span>Changing Lives.</span>
       </h1>
 
       <p>
-        Building Hope. Changing Lives. Strengthening Communities.
-        We create opportunities, support vulnerable communities and
-        contribute to positive and sustainable change in Tanzania.
+        Moto Wakambo Foundation is committed to creating opportunities,
+        strengthening communities and supporting sustainable development
+        in Tanzania.
       </p>
 
-      <div class="hero-buttons">
-
-        <a href="#about" class="btn btn-primary">
-          Learn More
+      <div class="buttons">
+        <a href="#support" class="btn btn-primary">
+          Support Our Work
         </a>
 
-        <a href="#support" class="btn btn-outline">
-          Support Us
+        <a href="#contact" class="btn btn-outline">
+          Contact Us
         </a>
-
       </div>
 
     </div>
@@ -790,58 +704,46 @@
 
 
   <!-- =========================
-       ABOUT US
+       ABOUT
   ========================== -->
 
   <section class="about" id="about">
 
     <div class="container">
 
-      <div class="section-title">
-
-        <span>Who We Are</span>
-
-        <h2>About Moto Wakambo Foundation</h2>
-
-        <p>
-          A community-focused foundation committed to creating
-          opportunities and supporting sustainable development.
-        </p>
-
-      </div>
-
-
       <div class="about-grid">
 
-        <div class="about-image"></div>
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1000&q=85"
+            alt="Community and children">
+        </div>
 
-        <div class="about-text">
+        <div class="about-content">
 
-          <h3>Building Hope. Changing Lives.</h3>
+          <div class="section-label">
+            ABOUT US
+          </div>
+
+          <h2 class="section-title">
+            Moto Wakambo Foundation
+          </h2>
 
           <p>
-            Moto Wakambo Foundation is committed to supporting
-            communities and individuals through practical programs
-            that create hope, opportunity and positive change.
+            Moto Wakambo Foundation is a community-focused foundation
+            dedicated to creating opportunities and supporting people
+            and communities to achieve sustainable positive change.
           </p>
 
           <p>
-            Our work focuses on strengthening communities, supporting
-            vulnerable people and promoting sustainable development
-            through partnerships and community participation.
+            We believe that strong communities are built through
+            education, opportunity, partnerships, empowerment and
+            responsible community development.
           </p>
 
-          <ul class="about-points">
-
-            <li>Community Development</li>
-
-            <li>Education & Skills Development</li>
-
-            <li>Support for Vulnerable Communities</li>
-
-            <li>Partnerships & Community Empowerment</li>
-
-          </ul>
+          <a href="#programs" class="btn btn-primary">
+            Explore Our Programs
+          </a>
 
         </div>
 
@@ -860,33 +762,37 @@
 
     <div class="container">
 
-      <div class="section-title">
-
-        <span>Our Work</span>
-
-        <h2>Our Programs</h2>
-
-        <p>
-          We work with communities and partners to create practical
-          solutions and sustainable opportunities.
-        </p>
-
+      <div class="section-label">
+        WHAT WE DO
       </div>
 
+      <h2 class="section-title">
+        Our Programs
+      </h2>
 
-      <div class="program-grid">
+      <p class="section-text">
+        We work with communities, partners, volunteers and other
+        stakeholders to develop practical programs that create
+        long-term positive impact.
+      </p>
 
-        <div class="program-card">
+      <div class="cards">
 
-          <div class="program-image program-1"></div>
+        <div class="card program-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1509099836639-18ba02c7b5f8?auto=format&fit=crop&w=900&q=85"
+            alt="Education">
 
           <div class="program-content">
 
-            <h3>Education</h3>
+            <div class="card-icon">📚</div>
+
+            <h3>Education & Skills</h3>
 
             <p>
-              Supporting access to education, learning opportunities
-              and skills development for children and young people.
+              Supporting education, skills development and opportunities
+              that help children and young people build a better future.
             </p>
 
           </div>
@@ -894,17 +800,21 @@
         </div>
 
 
-        <div class="program-card">
+        <div class="card program-card">
 
-          <div class="program-image program-2"></div>
+          <img
+            src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=900&q=85"
+            alt="Community development">
 
           <div class="program-content">
+
+            <div class="card-icon">🤝</div>
 
             <h3>Community Development</h3>
 
             <p>
-              Supporting community initiatives that improve livelihoods,
-              opportunity and sustainable local development.
+              Supporting communities through partnerships, empowerment,
+              social initiatives and sustainable development projects.
             </p>
 
           </div>
@@ -912,17 +822,21 @@
         </div>
 
 
-        <div class="program-card">
+        <div class="card program-card">
 
-          <div class="program-image program-3"></div>
+          <img
+            src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&w=900&q=85"
+            alt="Youth empowerment">
 
           <div class="program-content">
 
-            <h3>Community Support</h3>
+            <div class="card-icon">🌱</div>
+
+            <h3>Youth Empowerment</h3>
 
             <p>
-              Working with partners and volunteers to support vulnerable
-              communities and individuals in need.
+              Creating opportunities for young people through skills,
+              mentorship, entrepreneurship and community participation.
             </p>
 
           </div>
@@ -944,67 +858,46 @@
 
     <div class="container">
 
-      <div class="section-title">
-
-        <span>What Drives Us</span>
-
-        <h2>Our Mission</h2>
-
-        <p>
-          Creating opportunities, strengthening communities and
-          supporting sustainable development.
-        </p>
-
+      <div class="section-label">
+        OUR PURPOSE
       </div>
 
+      <h2 class="section-title">
+        Our Mission
+      </h2>
+
+      <p class="section-text">
+        To create opportunities and strengthen communities through
+        partnerships, innovation, education and sustainable development.
+      </p>
 
       <div class="mission-grid">
 
-        <div class="mission-card">
-
-          <div class="mission-icon">
-            H
-          </div>
-
-          <h3>Hope</h3>
+        <div class="mission-box">
+          <h3>Our Vision</h3>
 
           <p>
-            Creating hope by supporting people and communities
-            to achieve a better future.
+            A stronger and more empowered Tanzania where communities
+            have opportunities to build sustainable and dignified lives.
           </p>
-
         </div>
 
-
-        <div class="mission-card">
-
-          <div class="mission-icon">
-            C
-          </div>
-
-          <h3>Community</h3>
+        <div class="mission-box">
+          <h3>Our Values</h3>
 
           <p>
-            Strengthening communities through cooperation,
-            empowerment and meaningful participation.
+            Integrity, compassion, inclusion, accountability,
+            partnership and commitment to positive change.
           </p>
-
         </div>
 
-
-        <div class="mission-card">
-
-          <div class="mission-icon">
-            S
-          </div>
-
-          <h3>Sustainability</h3>
+        <div class="mission-box">
+          <h3>Our Approach</h3>
 
           <p>
-            Promoting solutions that create lasting social
-            and economic impact.
+            We work with communities and partners to identify practical
+            solutions and create measurable long-term impact.
           </p>
-
         </div>
 
       </div>
@@ -1015,22 +908,25 @@
 
 
   <!-- =========================
-       SUPPORT US
+       SUPPORT
   ========================== -->
 
   <section class="support" id="support">
 
     <div class="container">
 
-      <h2>Be Part of the Change</h2>
+      <h2>
+        Help Us Create Positive Change
+      </h2>
 
       <p>
-        Your support can help create opportunities, strengthen
-        communities and change lives.
+        We welcome partnerships, volunteers, donors, organizations and
+        individuals who want to contribute to meaningful and sustainable
+        community development.
       </p>
 
       <a href="#contact" class="btn btn-primary">
-        Support Moto Wakambo Foundation
+        Get Involved
       </a>
 
     </div>
@@ -1046,74 +942,53 @@
 
     <div class="container">
 
-      <div class="section-title">
-
-        <span>Get In Touch</span>
-
-        <h2>Contact Moto Wakambo Foundation</h2>
-
-        <p>
-          We welcome partnerships, volunteers, donors, organizations
-          and individuals who want to contribute to positive change.
-        </p>
-
-      </div>
-
-
       <div class="contact-grid">
-
 
         <!-- CONTACT INFORMATION -->
 
         <div class="contact-info">
 
-          <h3>Foundation</h3>
+          <div class="section-label">
+            GET IN TOUCH
+          </div>
+
+          <h2>
+            Contact Moto Wakambo Foundation
+          </h2>
 
           <p>
-            We are open to partnerships and opportunities that
-            contribute to positive change in Tanzania.
+            We welcome partnerships, volunteers, donors, organizations
+            and individuals who want to contribute to positive change.
           </p>
 
-
           <div class="contact-item">
-
             <strong>Phone</strong>
 
             <a href="tel:+255766669666">
               +255 766 669 666
             </a>
-
           </div>
 
-
           <div class="contact-item">
-
             <strong>Alternative Phone</strong>
 
             <a href="tel:+255715056883">
               +255 715 056 883
             </a>
-
           </div>
 
-
           <div class="contact-item">
-
             <strong>Email</strong>
 
             <a href="mailto:marianbendera93@gmail.com">
               marianbendera93@gmail.com
             </a>
-
           </div>
 
-
           <div class="contact-item">
-
             <strong>Location</strong>
 
             Tanzania
-
           </div>
 
         </div>
@@ -1134,7 +1009,7 @@
             <input
               type="hidden"
               name="_subject"
-              value="New Contact Message - Moto Wakambo Foundation"
+              value="New Message - Moto Wakambo Foundation Website"
             >
 
             <input
@@ -1149,50 +1024,61 @@
               value="table"
             >
 
+            <!-- Reply to visitor -->
+
             <input
               type="hidden"
-              name="_next"
-              value="https://motowakambofoundation-star.github.io/"
+              name="_replyto"
+              id="replyTo"
+              value=""
             >
 
 
-            <div class="form-row">
+            <div class="form-group">
 
-              <div class="form-group">
+              <label for="name">
+                Your Name
+              </label>
 
-                <input
-                  type="text"
-                  id="name"
-                  name="Name"
-                  placeholder="Your Name"
-                  required
-                >
-
-              </div>
-
-
-              <div class="form-group">
-
-                <input
-                  type="tel"
-                  id="phone"
-                  name="Phone"
-                  placeholder="Your Phone Number"
-                  required
-                >
-
-              </div>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+              >
 
             </div>
 
 
             <div class="form-group">
+
+              <label for="phone">
+                Your Phone Number
+              </label>
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+255..."
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="email">
+                Your Email
+              </label>
 
               <input
                 type="email"
                 id="email"
-                name="Email"
-                placeholder="Your Email"
+                name="email"
+                placeholder="you@example.com"
                 required
               >
 
@@ -1200,12 +1086,16 @@
 
 
             <div class="form-group">
+
+              <label for="subject">
+                Subject
+              </label>
 
               <input
                 type="text"
                 id="subject"
-                name="Subject"
-                placeholder="Subject"
+                name="subject"
+                placeholder="What would you like to discuss?"
                 required
               >
 
@@ -1214,9 +1104,13 @@
 
             <div class="form-group">
 
+              <label for="message">
+                Message
+              </label>
+
               <textarea
                 id="message"
-                name="Message"
+                name="message"
                 placeholder="Write your message..."
                 required
               ></textarea>
@@ -1224,37 +1118,15 @@
             </div>
 
 
-            <div class="form-buttons">
-
-              <!-- WhatsApp -->
-
-              <button
-                type="button"
-                class="btn whatsapp-btn"
-                onclick="sendWhatsApp()"
-              >
-                Send via WhatsApp
-              </button>
-
-
-              <!-- Email -->
-
-              <button
-                type="submit"
-                class="btn email-btn"
-              >
-                Send Message
-              </button>
-
-            </div>
-
-
-            <div
-              id="statusMessage"
-              class="status-message"
+            <button
+              type="submit"
+              class="btn btn-primary submit-btn"
             >
-              Your message is being prepared. Please check your email/WhatsApp.
-            </div>
+              Send Message
+            </button>
+
+
+            <div id="formMessage"></div>
 
           </form>
 
@@ -1275,56 +1147,76 @@
 
     <div class="footer-grid">
 
+      <div>
 
-      <div class="footer-brand">
-
-        <h2>Moto Wakambo Foundation</h2>
+        <h3>Moto Wakambo Foundation</h3>
 
         <p>
-          Building Hope. Changing Lives. Strengthening Communities.
+          Building Hope. Changing Lives.
+        </p>
+
+        <p style="margin-top:12px;">
+          Creating opportunities, strengthening communities and
+          supporting sustainable development in Tanzania.
         </p>
 
       </div>
 
 
-      <div class="footer-column">
+      <div>
 
         <h3>Quick Links</h3>
 
-        <a href="#home">Home</a>
-
-        <a href="#about">About Us</a>
-
-        <a href="#programs">Programs</a>
-
-        <a href="#mission">Mission</a>
-
-        <a href="#support">Support Us</a>
-
-        <a href="#contact">Contact</a>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#support">Support Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
       </div>
 
 
-      <div class="footer-column">
+      <div>
+
+        <h3>Programs</h3>
+
+        <ul>
+          <li><a href="#programs">Education & Skills</a></li>
+          <li><a href="#programs">Community Development</a></li>
+          <li><a href="#programs">Youth Empowerment</a></li>
+        </ul>
+
+      </div>
+
+
+      <div>
 
         <h3>Contact</h3>
 
-        <a href="tel:+255766669666">
-          +255 766 669 666
-        </a>
+        <ul>
+          <li>
+            <a href="tel:+255766669666">
+              +255 766 669 666
+            </a>
+          </li>
 
-        <a href="tel:+255715056883">
-          +255 715 056 883
-        </a>
+          <li>
+            <a href="tel:+255715056883">
+              +255 715 056 883
+            </a>
+          </li>
 
-        <a href="mailto:marianbendera93@gmail.com">
-          marianbendera93@gmail.com
-        </a>
+          <li>
+            <a href="mailto:marianbendera93@gmail.com">
+              marianbendera93@gmail.com
+            </a>
+          </li>
 
-        <a href="#contact">
-          Tanzania
-        </a>
+          <li>Tanzania</li>
+        </ul>
 
       </div>
 
@@ -1332,12 +1224,24 @@
 
 
     <div class="copyright">
-
       © 2026 Moto Wakambo Foundation. All Rights Reserved.
-
     </div>
 
   </footer>
+
+
+  <!-- =========================
+       WHATSAPP
+  ========================== -->
+
+  <a
+    class="whatsapp"
+    href="https://wa.me/255766669666?text=Hello%20Moto%20Wakambo%20Foundation"
+    target="_blank"
+    aria-label="Chat on WhatsApp"
+  >
+    ☎
+  </a>
 
 
   <!-- =========================
@@ -1346,79 +1250,45 @@
 
   <script>
 
-    function sendWhatsApp() {
+    /* Mobile menu */
 
-      const name =
-        document.getElementById("name").value.trim();
+    function toggleMenu() {
 
-      const phone =
-        document.getElementById("phone").value.trim();
+      const nav = document.getElementById("navMenu");
 
-      const email =
-        document.getElementById("email").value.trim();
-
-      const subject =
-        document.getElementById("subject").value.trim();
-
-      const message =
-        document.getElementById("message").value.trim();
-
-
-      if (
-        !name ||
-        !phone ||
-        !email ||
-        !subject ||
-        !message
-      ) {
-
-        alert(
-          "Please fill in all fields before sending your message."
-        );
-
-        return;
-      }
-
-
-      const whatsappNumber =
-        "255766669666";
-
-
-      const text =
-        "Hello Moto Wakambo Foundation.%0A%0A" +
-        "Name: " + encodeURIComponent(name) + "%0A" +
-        "Phone: " + encodeURIComponent(phone) + "%0A" +
-        "Email: " + encodeURIComponent(email) + "%0A" +
-        "Subject: " + encodeURIComponent(subject) + "%0A%0A" +
-        "Message:%0A" +
-        encodeURIComponent(message);
-
-
-      const whatsappURL =
-        "https://api.whatsapp.com/send?phone=" +
-        whatsappNumber +
-        "&text=" +
-        text;
-
-
-      window.open(
-        whatsappURL,
-        "_blank"
-      );
+      nav.classList.toggle("active");
 
     }
 
 
-    document
-      .getElementById("contactForm")
-      .addEventListener("submit", function() {
+    /* Close mobile menu after clicking */
 
-        const status =
-          document.getElementById("statusMessage");
+    document.querySelectorAll("#navMenu a").forEach(function(link) {
 
-        status.style.display = "block";
+      link.addEventListener("click", function() {
+
+        document
+          .getElementById("navMenu")
+          .classList.remove("active");
 
       });
+
+    });
+
+
+    /* Contact form */
+
+    const contactForm =
+      document.getElementById("contactForm");
+
+    contactForm.addEventListener("submit", function(event) {
+
+      const email =
+        document.getElementById("email").value.trim();
+
+      document.getElementById("replyTo").value = email;
+
+    });
 
   </script>
 
