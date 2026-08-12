@@ -2,941 +2,931 @@
 <html lang="en">
 
 <head>
+<meta charset="UTF-8">
 
-    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+<title>Mtoto wa Kambo Foundation | Building Hope. Changing Lives.</title>
 
-    <title>
-        Mtoto wa Kambo Foundation | Building Hope. Changing Lives.
-    </title>
+<meta name="description"
+content="Mtoto wa Kambo Foundation creates opportunities, supports vulnerable communities and contributes to positive and sustainable change across Tanzania.">
 
-    <meta name="description"
-          content="Mtoto wa Kambo Foundation creates opportunities, supports vulnerable communities and contributes to positive and sustainable change across Tanzania.">
+<meta name="keywords"
+content="Mtoto wa Kambo Foundation, Tanzania Foundation, children, education, health, community development, Kibaha, Pwani, Tanzania">
 
-    <meta name="keywords"
-          content="Mtoto wa Kambo Foundation, Tanzania Foundation, children, education, health, community development, Kibaha, Pwani, Tanzania">
+<meta name="author" content="Mtoto wa Kambo Foundation">
 
-    <meta name="author"
-          content="Mtoto wa Kambo Foundation">
+<meta name="robots" content="index, follow">
 
-    <meta name="robots"
-          content="index, follow">
-
-    <meta property="og:title"
-          content="Mtoto wa Kambo Foundation">
+<meta property="og:title"
+content="Mtoto wa Kambo Foundation">
 
-    <meta property="og:description"
-          content="Building Hope. Changing Lives. Strengthening Communities.">
+<meta property="og:description"
+content="Building Hope. Changing Lives. Strengthening Communities.">
 
-    <meta property="og:type"
-          content="website">
+<meta property="og:type" content="website">
 
 
-    <style>
+<style>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #123f3d;
-            background: #ffffff;
-            line-height: 1.6;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-
-        /* ================================
-           HEADER
-        ================================= */
-
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: #ffffff;
-            box-shadow: 0 2px 14px rgba(0,0,0,.08);
-        }
-
-        .navbar {
-            max-width: 1300px;
-            height: 88px;
-            margin: auto;
-            padding: 0 25px;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+/* =========================
+   RESET
+========================= */
 
-
-        /* LOGO */
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo img {
-            width: 68px;
-            height: 68px;
-            object-fit: contain;
-        }
-
-        .logo-text {
-            line-height: 1.05;
-        }
-
-        .logo-text h1 {
-            color: #087c78;
-            font-size: 20px;
-            font-weight: 800;
-        }
-
-        .logo-text h1 span {
-            display: block;
-        }
-
-        .logo-text small {
-            display: block;
-            margin-top: 6px;
-            color: #555;
-            font-size: 8px;
-            letter-spacing: 1px;
-            font-weight: bold;
-        }
-
-
-        /* NAV */
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 27px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            font-size: 14px;
-            font-weight: 600;
-            color: #333;
-            transition: .3s;
-        }
-
-        .nav-links a:hover {
-            color: #087c78;
-        }
-
-        .nav-links a.active {
-            color: #087c78;
-            border-bottom: 3px solid #087c78;
-            padding-bottom: 7px;
-        }
-
-        .donate {
-            background: #087c78;
-            color: white !important;
-            padding: 14px 24px;
-            border-radius: 7px;
-        }
-
-        .donate:hover {
-            background: #f4a51c;
-        }
-
-        .menu-btn {
-            display: none;
-            font-size: 30px;
-            color: #087c78;
-            cursor: pointer;
-        }
-
-
-        /* ================================
-           HERO
-        ================================= */
-
-        .hero {
-
-            min-height: 590px;
-
-            display: flex;
-            align-items: center;
-
-            background-image:
-
-                linear-gradient(
-                    90deg,
-                    rgba(0,0,0,.82),
-                    rgba(0,0,0,.62) 42%,
-                    rgba(0,0,0,.12)
-                ),
-
-                url("images/hero.jpg");
-
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .hero-content {
-            max-width: 1300px;
-            width: 100%;
-            margin: auto;
-            padding: 70px 25px;
-            color: white;
-        }
-
-        .hero h2 {
-            max-width: 700px;
-            font-size: clamp(42px, 5vw, 68px);
-            line-height: 1.02;
-            margin-bottom: 20px;
-            font-weight: 800;
-        }
-
-        .tagline {
-            color: #35d2ce;
-            font-size: 21px;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            max-width: 650px;
-            font-size: 17px;
-            margin-bottom: 30px;
-        }
-
-        .buttons {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 15px 25px;
-            border-radius: 7px;
-            font-weight: bold;
-            transition: .3s;
-        }
-
-        .btn-primary {
-            background: #087c78;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: #f4a51c;
-        }
-
-        .btn-white {
-            background: white;
-            color: #123f3d;
-        }
-
-        .btn-white:hover {
-            background: #f4a51c;
-            color: white;
-        }
-
-
-        /* ================================
-           MISSION
-        ================================= */
-
-        .three-columns {
-            max-width: 1200px;
-            margin: auto;
-            padding: 45px 25px;
-
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-        }
-
-        .info {
-            padding: 10px 35px;
-            border-right: 1px solid #ddd;
-
-            display: flex;
-            gap: 20px;
-        }
-
-        .info:last-child {
-            border-right: none;
-        }
-
-        .icon {
-            width: 50px;
-            height: 50px;
-            min-width: 50px;
-
-            border-radius: 50%;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            color: white;
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        .teal {
-            background: #087c78;
-        }
-
-        .green {
-            background: #72b82b;
-        }
-
-        .orange {
-            background: #f4a51c;
-        }
-
-        .info h3 {
-            margin-bottom: 8px;
-            font-size: 18px;
-        }
-
-        .info p {
-            color: #555;
-            font-size: 13px;
-        }
-
-
-        /* ================================
-           GENERAL
-        ================================= */
-
-        .section {
-            padding: 70px 25px;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .section-title h2 {
-            font-size: 34px;
-            margin-bottom: 8px;
-        }
-
-        .section-title p {
-            color: #666;
-        }
-
-
-        /* ================================
-           ABOUT
-        ================================= */
-
-        .about {
-            max-width: 1150px;
-            margin: auto;
-
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 55px;
-            align-items: center;
-        }
-
-        .about-image {
-            height: 410px;
-            border-radius: 12px;
-            overflow: hidden;
-        }
-
-        .about-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .about h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        .about p {
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-
-        /* ================================
-           PROGRAMS
-        ================================= */
-
-        .programs {
-            max-width: 1200px;
-            margin: auto;
-
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 9px;
-            overflow: hidden;
-
-            box-shadow:
-                0 5px 20px rgba(0,0,0,.10);
-
-            transition: .3s;
-        }
-
-        .card:hover {
-            transform: translateY(-7px);
-            box-shadow:
-                0 12px 30px rgba(0,0,0,.15);
-        }
-
-        .card-image {
-            height: 185px;
-            overflow: hidden;
-        }
-
-        .card-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: .4s;
-        }
-
-        .card:hover img {
-            transform: scale(1.05);
-        }
-
-        .card-content {
-            padding: 21px;
-        }
-
-        .card-content h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .card-content p {
-            color: #666;
-            font-size: 13px;
-        }
-
-
-        /* ================================
-           IMPACT
-        ================================= */
-
-        .impact {
-
-            padding: 65px 25px;
-
-            color: white;
-
-            background-image:
-
-                linear-gradient(
-                    rgba(0,91,89,.94),
-                    rgba(0,91,89,.94)
-                ),
-
-                url("images/gallery-1.jpg");
-
-            background-size: cover;
-            background-position: center;
-        }
-
-        .impact h2 {
-            text-align: center;
-            font-size: 30px;
-            margin-bottom: 45px;
-        }
-
-        .impact-grid {
-            max-width: 1150px;
-            margin: auto;
-
-            display: grid;
-            grid-template-columns: repeat(5,1fr);
-        }
-
-        .impact-item {
-            text-align: center;
-            padding: 10px 20px;
-            border-right: 1px solid rgba(255,255,255,.45);
-        }
-
-        .impact-item:last-child {
-            border-right: none;
-        }
-
-        .number {
-            display: block;
-            font-size: 30px;
-            font-weight: 800;
-        }
-
-        .impact-item span:last-child {
-            font-size: 13px;
-        }
-
-
-        /* ================================
-           GALLERY
-        ================================= */
-
-        .gallery {
-            max-width: 1200px;
-            margin: auto;
-
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            gap: 18px;
-        }
-
-        .gallery-item {
-            height: 210px;
-            border-radius: 9px;
-            overflow: hidden;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-
-            transition: .4s;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.06);
-        }
-
-
-        /* ================================
-           CTA
-        ================================= */
-
-        .cta {
-            background: #f4a51c;
-            padding: 55px 25px;
-            text-align: center;
-        }
-
-        .cta h2 {
-            font-size: 34px;
-            margin-bottom: 10px;
-        }
-
-        .cta p {
-            margin-bottom: 25px;
-        }
-
-        .cta .btn {
-            background: #087c78;
-            color: white;
-        }
-
-
-        /* ================================
-           DONATE
-        ================================= */
-
-        .donate-box {
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-            background: #f7f9f8;
+html {
+    scroll-behavior: smooth;
+}
 
-            padding: 45px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #123f3d;
+    background: #fff;
+    line-height: 1.6;
+}
 
-            border-radius: 12px;
-        }
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 2px 14px rgba(0,0,0,.08);
+}
+
+.navbar {
+    max-width: 1300px;
+    height: 88px;
+    margin: auto;
+    padding: 0 25px;
 
-        .donate-box h3 {
-            margin-bottom: 15px;
-        }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 68px;
+    height: 68px;
+    object-fit: contain;
+}
+
+.logo-text {
+    line-height: 1.05;
+}
+
+.logo-text h1 {
+    color: #087c78;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.logo-text h1 span {
+    display: block;
+}
+
+.logo-text small {
+    display: block;
+    margin-top: 6px;
+    color: #555;
+    font-size: 8px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+
+/* NAVIGATION */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #087c78;
+}
+
+.nav-links a.active {
+    color: #087c78;
+    border-bottom: 3px solid #087c78;
+    padding-bottom: 7px;
+}
+
+.donate {
+    background: #087c78;
+    color: white !important;
+    padding: 14px 24px;
+    border-radius: 7px;
+}
+
+.donate:hover {
+    background: #f4a51c;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 30px;
+    color: #087c78;
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 590px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.82),
+            rgba(0,0,0,.62) 42%,
+            rgba(0,0,0,.12)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    padding: 70px 25px;
+    color: white;
+}
+
+.hero h2 {
+    max-width: 700px;
+    font-size: clamp(42px,5vw,68px);
+    line-height: 1.02;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.tagline {
+    color: #35d2ce;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn-primary {
+    background: #087c78;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #f4a51c;
+}
+
+.btn-white {
+    background: white;
+    color: #123f3d;
+}
+
+.btn-white:hover {
+    background: #f4a51c;
+    color: white;
+}
+
+
+/* =========================
+   MISSION / VISION / VALUES
+========================= */
+
+.three-columns {
+    max-width: 1200px;
+    margin: auto;
+    padding: 45px 25px;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.info {
+    padding: 10px 35px;
+    border-right: 1px solid #ddd;
+
+    display: flex;
+    gap: 20px;
+}
+
+.info:last-child {
+    border-right: none;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.teal {
+    background: #087c78;
+}
+
+.green {
+    background: #72b82b;
+}
+
+.orange {
+    background: #f4a51c;
+}
+
+.info h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.info p {
+    color: #555;
+    font-size: 13px;
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+.section {
+    padding: 70px 25px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    color: #666;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 55px;
+    align-items: center;
+}
+
+.about-image {
+    height: 410px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   PROGRAMS
+========================= */
+
+.programs {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 9px;
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.10);
+
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.15);
+}
+
+.card-image {
+    height: 185px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 21px;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 13px;
+}
+
+
+/* =========================
+   IMPACT
+========================= */
+
+.impact {
+    padding: 65px 25px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0,91,89,.94),
+            rgba(0,91,89,.94)
+        ),
+        url("images/gallery-1.jpg")
+        center/cover no-repeat;
+}
+
+.impact h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+.impact-grid {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.impact-item {
+    text-align: center;
+    padding: 10px 20px;
+
+    border-right:
+        1px solid rgba(255,255,255,.45);
+}
+
+.impact-item:last-child {
+    border-right: none;
+}
+
+.number {
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.impact-item span:last-child {
+    font-size: 13px;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 18px;
+}
+
+.gallery-item {
+    height: 210px;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    background: #f4a51c;
+    padding: 55px 25px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+}
+
+.cta .btn {
+    background: #087c78;
+    color: white;
+}
+
+
+/* =========================
+   DONATE
+========================= */
+
+.donate-box {
+    max-width: 800px;
+    margin: auto;
+
+    text-align: center;
+
+    background: #f7f9f8;
+
+    padding: 45px;
+
+    border-radius: 12px;
+}
+
+.donate-box h3 {
+    margin-bottom: 15px;
+}
+
+.donate-box p {
+    color: #666;
+    margin-bottom: 25px;
+}
 
-        .donate-box p {
-            color: #666;
-            margin-bottom: 25px;
-        }
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    background: #f7f9f8;
+}
+
+.contact-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+.contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.07);
+}
+
+.contact-card h3 {
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+.contact-card input,
+.contact-card textarea {
+
+    width: 100%;
+
+    padding: 13px;
 
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
 
-        /* ================================
-           CONTACT
-        ================================= */
+    margin-bottom: 15px;
+
+    outline: none;
+}
 
-        .contact-section {
-            background: #f7f9f8;
-        }
+.contact-card textarea {
+    height: 130px;
+    resize: vertical;
+}
 
-        .contact-grid {
-            max-width: 1100px;
-            margin: auto;
+.contact-card button {
 
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-        }
+    border: none;
 
-        .contact-card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
+    background: #087c78;
 
-            box-shadow:
-                0 5px 20px rgba(0,0,0,.07);
-        }
+    color: white;
 
-        .contact-card h3 {
-            margin-bottom: 20px;
-        }
+    padding: 13px 25px;
 
-        .contact-item {
-            margin-bottom: 14px;
-            font-size: 14px;
-        }
+    border-radius: 5px;
 
-        .contact-card input,
-        .contact-card textarea {
+    cursor: pointer;
 
-            width: 100%;
+    font-weight: bold;
+}
 
-            padding: 13px;
 
-            border: 1px solid #ddd;
+/* =========================
+   FOOTER
+========================= */
 
-            border-radius: 5px;
+footer {
+    background: white;
+}
 
-            margin-bottom: 15px;
+.footer-main {
+    max-width: 1200px;
+    margin: auto;
 
-            outline: none;
-        }
+    padding: 50px 25px;
 
-        .contact-card textarea {
-            height: 130px;
-            resize: vertical;
-        }
+    display: grid;
 
-        .contact-card button {
+    grid-template-columns:
+        1.3fr .8fr 1fr 1fr;
 
-            border: none;
+    gap: 45px;
+}
 
-            background: #087c78;
+.footer-logo img {
+    width: 190px;
+    margin-bottom: 15px;
+}
 
-            color: white;
+.footer-logo p {
+    color: #555;
+    font-size: 13px;
+}
 
-            padding: 13px 25px;
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
 
-            border-radius: 5px;
+.footer-column ul {
+    list-style: none;
+}
 
-            cursor: pointer;
+.footer-column li {
+    margin-bottom: 8px;
+    font-size: 13px;
+}
 
-            font-weight: bold;
-        }
+.footer-column a:hover {
+    color: #087c78;
+}
 
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
 
-        /* ================================
-           FOOTER
-        ================================= */
+.socials a {
+    width: 35px;
+    height: 35px;
 
-        footer {
-            background: white;
-        }
+    background: #087c78;
 
-        .footer-main {
+    color: white;
 
-            max-width: 1200px;
+    border-radius: 50%;
 
-            margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-            padding: 50px 25px;
+    font-size: 13px;
+    font-weight: bold;
+}
 
-            display: grid;
+.newsletter input {
 
-            grid-template-columns:
-                1.3fr .8fr 1fr 1fr;
+    width: 100%;
 
-            gap: 45px;
-        }
+    padding: 12px;
 
-        .footer-logo img {
-            width: 190px;
-            margin-bottom: 15px;
-        }
+    border: 1px solid #ddd;
 
-        .footer-logo p {
-            color: #555;
-            font-size: 13px;
-        }
+    border-radius: 5px;
 
-        .footer-column h3 {
-            margin-bottom: 15px;
-            font-size: 17px;
-        }
+    margin-bottom: 10px;
+}
 
-        .footer-column ul {
-            list-style: none;
-        }
+.newsletter button {
 
-        .footer-column li {
-            margin-bottom: 8px;
-            font-size: 13px;
-        }
+    background: #087c78;
 
-        .footer-column a:hover {
-            color: #087c78;
-        }
+    color: white;
 
-        .socials {
-            display: flex;
-            gap: 10px;
-            margin-top: 20px;
-        }
+    border: none;
 
-        .socials a {
+    padding: 12px 18px;
 
-            width: 35px;
-            height: 35px;
+    border-radius: 5px;
 
-            background: #087c78;
+    cursor: pointer;
 
-            color: white;
+    font-weight: bold;
+}
 
-            border-radius: 50%;
+.footer-bottom {
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    background: #005b59;
 
-            font-size: 13px;
-            font-weight: bold;
-        }
+    color: white;
 
-        .newsletter input {
+    padding: 18px 25px;
 
-            width: 100%;
+    display: flex;
 
-            padding: 12px;
+    justify-content: space-between;
 
-            border: 1px solid #ddd;
+    align-items: center;
 
-            border-radius: 5px;
+    font-size: 12px;
+}
 
-            margin-bottom: 10px;
-        }
 
-        .newsletter button {
+/* =========================
+   MOBILE
+========================= */
 
-            background: #087c78;
+@media(max-width:1000px) {
 
-            color: white;
+    .programs {
+        grid-template-columns: repeat(2,1fr);
+    }
 
-            border: none;
+    .gallery {
+        grid-template-columns: repeat(2,1fr);
+    }
 
-            padding: 12px 18px;
+    .impact-grid {
+        grid-template-columns: repeat(3,1fr);
+        gap: 25px;
+    }
 
-            border-radius: 5px;
+    .impact-item {
+        border-right: none;
+    }
 
-            cursor: pointer;
+    .footer-main {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 
-            font-weight: bold;
-        }
 
-        .footer-bottom {
+@media(max-width:768px) {
 
-            background: #005b59;
+    .navbar {
+        height: 78px;
+    }
 
-            color: white;
+    .menu-btn {
+        display: block;
+    }
 
-            padding: 18px 25px;
+    .nav-links {
 
-            display: flex;
+        position: absolute;
 
-            justify-content: space-between;
+        top: 78px;
 
-            align-items: center;
+        left: 0;
 
-            font-size: 12px;
-        }
+        width: 100%;
 
+        background: white;
 
-        /* ================================
-           MOBILE
-        ================================= */
+        display: none;
 
-        @media(max-width:1000px) {
+        flex-direction: column;
 
-            .nav-links {
-                gap: 15px;
-            }
+        align-items: flex-start;
 
-            .programs {
-                grid-template-columns: repeat(2,1fr);
-            }
+        padding: 25px;
 
-            .gallery {
-                grid-template-columns: repeat(2,1fr);
-            }
+        box-shadow:
+            0 8px 15px rgba(0,0,0,.1);
+    }
 
-            .impact-grid {
-                grid-template-columns: repeat(3,1fr);
-                gap: 25px;
-            }
+    .nav-links.show {
+        display: flex;
+    }
 
-            .impact-item {
-                border-right: none;
-            }
+    .nav-links a.active {
+        border-bottom: none;
+    }
 
-            .footer-main {
-                grid-template-columns: repeat(2,1fr);
-            }
-        }
+    .three-columns {
+        grid-template-columns: 1fr;
+    }
 
+    .info {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding: 25px 10px;
+    }
 
-        @media(max-width:768px) {
+    .info:last-child {
+        border-bottom: none;
+    }
 
-            .navbar {
-                height: 78px;
-            }
+    .hero {
+        min-height: 580px;
+    }
 
-            .menu-btn {
-                display: block;
-            }
+    .hero h2 {
+        font-size: 43px;
+    }
 
-            .nav-links {
+    .about {
+        grid-template-columns: 1fr;
+    }
 
-                position: absolute;
+    .programs {
+        grid-template-columns: 1fr;
+    }
 
-                top: 78px;
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
 
-                left: 0;
+    .impact-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
 
-                width: 100%;
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
 
-                background: white;
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
 
-                display: none;
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
 
-                flex-direction: column;
 
-                align-items: flex-start;
+@media(max-width:480px) {
 
-                padding: 25px;
-            }
+    .logo img {
+        width: 52px;
+        height: 52px;
+    }
 
-            .nav-links.show {
-                display: flex;
-            }
+    .logo-text h1 {
+        font-size: 15px;
+    }
 
-            .nav-links a.active {
-                border-bottom: none;
-            }
+    .hero h2 {
+        font-size: 36px;
+    }
 
-            .three-columns {
-                grid-template-columns: 1fr;
-            }
+    .tagline {
+        font-size: 17px;
+    }
 
-            .info {
-                border-right: none;
-                border-bottom: 1px solid #ddd;
-                padding: 25px 10px;
-            }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
 
-            .info:last-child {
-                border-bottom: none;
-            }
-
-            .hero {
-                min-height: 580px;
-            }
-
-            .hero h2 {
-                font-size: 43px;
-            }
-
-            .about {
-                grid-template-columns: 1fr;
-            }
-
-            .programs {
-                grid-template-columns: 1fr;
-            }
-
-            .gallery {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .impact-grid {
-                grid-template-columns: repeat(2,1fr);
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-main {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                gap: 8px;
-                text-align: center;
-            }
-        }
-
-
-        @media(max-width:480px) {
-
-            .logo img {
-                width: 52px;
-                height: 52px;
-            }
-
-            .logo-text h1 {
-                font-size: 15px;
-            }
-
-            .hero h2 {
-                font-size: 36px;
-            }
-
-            .tagline {
-                font-size: 17px;
-            }
-
-            .gallery {
-                grid-template-columns: 1fr;
-            }
-        }
-
-    </style>
+</style>
 
 </head>
 
@@ -944,1150 +934,1219 @@
 <body>
 
 
-<!-- =================================
+<!-- =========================
      HEADER
-================================== -->
+========================= -->
 
 <header>
 
-    <nav class="navbar">
+<nav class="navbar">
 
 
-        <a href="#home" class="logo">
+<a href="#home" class="logo">
 
-            <img
-                src="images/logo.png"
-                alt="Mtoto wa Kambo Foundation Logo"
-            >
+<img
+src="images/logo.png"
+alt="Mtoto wa Kambo Foundation Logo"
+>
 
-            <div class="logo-text">
+<div class="logo-text">
 
-                <h1>
-                    Mtoto wa Kambo
-                    <span>FOUNDATION</span>
-                </h1>
+<h1>
+Mtoto wa Kambo
+<span>FOUNDATION</span>
+</h1>
 
-                <small>
-                    BUILDING HOPE. CHANGING LIVES.
-                </small>
+<small>
+BUILDING HOPE. CHANGING LIVES.
+</small>
 
-            </div>
+</div>
 
-        </a>
-
-
-        <div
-            class="menu-btn"
-            onclick="toggleMenu()"
-        >
-            ☰
-        </div>
+</a>
 
 
-        <ul
-            class="nav-links"
-            id="navLinks"
-        >
+<div
+class="menu-btn"
+onclick="toggleMenu()"
+>
+☰
+</div>
 
-            <li>
-                <a href="#home" class="active">
-                    Home
-                </a>
-            </li>
 
-            <li>
-                <a href="#about">
-                    About Us
-                </a>
-            </li>
+<ul
+class="nav-links"
+id="navLinks"
+>
 
-            <li>
-                <a href="#programs">
-                    Programs
-                </a>
-            </li>
 
-            <li>
-                <a href="#impact">
-                    Our Impact
-                </a>
-            </li>
+<li>
+<a
+href="#home"
+class="active"
+>
+Home
+</a>
+</li>
 
-            <li>
-                <a href="#gallery">
-                    Gallery
-                </a>
-            </li>
 
-            <li>
-                <a href="#involved">
-                    Get Involved
-                </a>
-            </li>
+<li>
+<a href="#about">
+About Us
+</a>
+</li>
 
-            <li>
-                <a href="#contact">
-                    Contact
-                </a>
-            </li>
 
-            <li>
-                <a href="#donate" class="donate">
-                    Donate Now ♡
-                </a>
-            </li>
+<li>
+<a href="#programs">
+Programs
+</a>
+</li>
 
-        </ul>
 
-    </nav>
+<li>
+<a href="#impact">
+Our Impact
+</a>
+</li>
+
+
+<li>
+<a href="#gallery">
+Gallery
+</a>
+</li>
+
+
+<li>
+<a href="#involved">
+Get Involved
+</a>
+</li>
+
+
+<li>
+<a href="#contact">
+Contact
+</a>
+</li>
+
+
+<li>
+<a
+href="#donate"
+class="donate"
+>
+Donate Now ♡
+</a>
+</li>
+
+
+</ul>
+
+</nav>
 
 </header>
 
 
 
-<!-- =================================
+<!-- =========================
      HERO
-================================== -->
+========================= -->
 
 <section
-    class="hero"
-    id="home"
+class="hero"
+id="home"
 >
 
-    <div class="hero-content">
+<div class="hero-content">
 
-        <h2>
-            Mtoto wa Kambo Foundation
-        </h2>
 
-        <div class="tagline">
-            Building Hope. Changing Lives.
-            Strengthening Communities.
-        </div>
+<h2>
+Mtoto wa Kambo Foundation
+</h2>
 
-        <p>
 
-            We create opportunities,
-            support vulnerable communities
-            and contribute to positive and
-            sustainable change across Tanzania.
+<div class="tagline">
 
-        </p>
+Building Hope.
+Changing Lives.
+Strengthening Communities.
 
-        <div class="buttons">
+</div>
 
-            <a
-                href="#about"
-                class="btn btn-primary"
-            >
-                Learn More →
-            </a>
 
-            <a
-                href="#donate"
-                class="btn btn-white"
-            >
-                Support Our Work ♡
-            </a>
+<p>
 
-        </div>
+We create opportunities,
+support vulnerable communities
+and contribute to positive and
+sustainable change across Tanzania.
 
-    </div>
+</p>
+
+
+<div class="buttons">
+
+
+<a
+href="#about"
+class="btn btn-primary"
+>
+Learn More →
+</a>
+
+
+<a
+href="#donate"
+class="btn btn-white"
+>
+Support Our Work ♡
+</a>
+
+
+</div>
+
+</div>
 
 </section>
 
 
 
-<!-- =================================
+<!-- =========================
      MISSION / VISION / VALUES
-================================== -->
+========================= -->
 
 <section class="three-columns">
 
 
-    <div class="info">
+<div class="info">
 
-        <div class="icon teal">
-            ◎
-        </div>
+<div class="icon teal">
+◎
+</div>
 
-        <div>
+<div>
 
-            <h3>
-                Our Mission
-            </h3>
+<h3>
+Our Mission
+</h3>
 
-            <p>
+<p>
 
-                To create opportunities and
-                improve the well-being of
-                children and vulnerable
-                communities through education,
-                health, empowerment and
-                sustainable initiatives.
+To create opportunities and
+improve the well-being of
+children and vulnerable
+communities through education,
+health, empowerment and
+sustainable initiatives.
 
-            </p>
+</p>
 
-        </div>
+</div>
 
-    </div>
-
-
-    <div class="info">
-
-        <div class="icon green">
-            ◉
-        </div>
-
-        <div>
-
-            <h3>
-                Our Vision
-            </h3>
-
-            <p>
-
-                A society where every child
-                and community member has
-                access to opportunities that
-                enable them to live a dignified
-                and fulfilled life.
-
-            </p>
-
-        </div>
-
-    </div>
+</div>
 
 
-    <div class="info">
 
-        <div class="icon orange">
-            ♡
-        </div>
+<div class="info">
 
-        <div>
+<div class="icon green">
+◉
+</div>
 
-            <h3>
-                Our Values
-            </h3>
+<div>
 
-            <p>
+<h3>
+Our Vision
+</h3>
 
-                Compassion, Integrity,
-                Accountability, Respect,
-                Teamwork and a commitment
-                to making a lasting positive
-                impact.
+<p>
 
-            </p>
+A society where every child
+and community member has
+access to opportunities that
+enable them to live a dignified
+and fulfilled life.
 
-        </div>
+</p>
 
-    </div>
+</div>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icon orange">
+♡
+</div>
+
+<div>
+
+<h3>
+Our Values
+</h3>
+
+<p>
+
+Compassion, Integrity,
+Accountability, Respect,
+Teamwork and a commitment
+to making a lasting positive
+impact.
+
+</p>
+
+</div>
+
+</div>
+
 
 </section>
 
 
 
-<!-- =================================
+<!-- =========================
      ABOUT
-================================== -->
+========================= -->
 
 <section
-    class="section"
-    id="about"
+class="section"
+id="about"
 >
 
-    <div class="about">
+<div class="about">
 
 
-        <div class="about-image">
+<div class="about-image">
 
-            <img
-                src="images/gallery-1.jpg"
-                alt="Mtoto wa Kambo Foundation community"
-            >
+<img
+src="images/gallery-1.jpg"
+alt="Mtoto wa Kambo Foundation community"
+>
 
-        </div>
+</div>
 
 
-        <div>
+<div>
 
-            <h2>
-                Building a Better
-                Future Together
-            </h2>
+<h2>
+Building a Better
+Future Together
+</h2>
 
-            <p>
 
-                Mtoto wa Kambo Foundation
-                is committed to creating
-                opportunities and supporting
-                vulnerable children, families
-                and communities across Tanzania.
+<p>
 
-            </p>
+Mtoto wa Kambo Foundation
+is committed to creating
+opportunities and supporting
+vulnerable children, families
+and communities across Tanzania.
 
-            <p>
+</p>
 
-                Through education, health,
-                economic empowerment and
-                community development, we work
-                with communities and partners
-                to create sustainable solutions.
 
-            </p>
+<p>
 
-            <p>
+Through education, health,
+economic empowerment and
+community development, we work
+with communities and partners
+to create sustainable solutions.
 
-                We believe that every child
-                deserves hope, opportunity,
-                protection and a chance to
-                build a better future.
+</p>
 
-            </p>
 
-            <a
-                href="#contact"
-                class="btn btn-primary"
-            >
-                Work With Us →
-            </a>
+<p>
 
-        </div>
+We believe that every child
+deserves hope, opportunity,
+protection and a chance to
+build a better future.
 
-    </div>
+</p>
+
+
+<a
+href="#contact"
+class="btn btn-primary"
+>
+Work With Us →
+</a>
+
+
+</div>
+
+</div>
 
 </section>
 
 
 
-<!-- =================================
+<!-- =========================
      PROGRAMS
-================================== -->
+========================= -->
 
 <section
-    class="section"
-    id="programs"
+class="section"
+id="programs"
 >
 
-    <div class="section-title">
+<div class="section-title">
 
-        <h2>
-            Our Programs
-        </h2>
+<h2>
+Our Programs
+</h2>
 
-        <p>
-            We focus on key areas that create
-            real and lasting change.
-        </p>
+<p>
+We focus on key areas that create
+real and lasting change.
+</p>
 
-    </div>
-
-
-    <div class="programs">
+</div>
 
 
-        <div class="card">
-
-            <div class="card-image">
-
-                <img
-                    src="images/education.jpg"
-                    alt="Education and Learning"
-                >
-
-            </div>
-
-            <div class="card-content">
-
-                <h3>
-                    Education & Learning
-                </h3>
-
-                <p>
-
-                    Supporting access to quality
-                    education, school supplies and
-                    learning environments for a
-                    brighter future.
-
-                </p>
-
-            </div>
-
-        </div>
+<div class="programs">
 
 
+<div class="card">
 
-        <div class="card">
+<div class="card-image">
 
-            <div class="card-image">
+<img
+src="images/education.jpg"
+alt="Education and Learning"
+>
 
-                <img
-                    src="images/health.jpg"
-                    alt="Health and Wellbeing"
-                >
+</div>
 
-            </div>
+<div class="card-content">
 
-            <div class="card-content">
+<h3>
+Education & Learning
+</h3>
 
-                <h3>
-                    Health & Wellbeing
-                </h3>
+<p>
 
-                <p>
+Supporting access to quality
+education, school supplies and
+learning environments for a
+brighter future.
 
-                    Improving access to health
-                    services, nutrition and hygiene
-                    awareness for healthier
-                    communities.
+</p>
 
-                </p>
+</div>
 
-            </div>
-
-        </div>
+</div>
 
 
 
-        <div class="card">
+<div class="card">
 
-            <div class="card-image">
+<div class="card-image">
 
-                <img
-                    src="images/empowerment.jpg"
-                    alt="Community Empowerment"
-                >
+<img
+src="images/health.jpg"
+alt="Health and Wellbeing"
+>
 
-            </div>
+</div>
 
-            <div class="card-content">
+<div class="card-content">
 
-                <h3>
-                    Empowerment
-                </h3>
+<h3>
+Health & Wellbeing
+</h3>
 
-                <p>
+<p>
 
-                    Equipping individuals with
-                    skills, resources and confidence
-                    to build sustainable livelihoods.
+Improving access to health
+services, nutrition and hygiene
+awareness for healthier
+communities.
 
-                </p>
+</p>
 
-            </div>
+</div>
 
-        </div>
-
-
-
-        <div class="card">
-
-            <div class="card-image">
-
-                <img
-                    src="images/community.jpg"
-                    alt="Community Development"
-                >
-
-            </div>
-
-            <div class="card-content">
-
-                <h3>
-                    Community Development
-                </h3>
-
-                <p>
-
-                    Investing in community projects
-                    that improve infrastructure,
-                    clean water and local development.
-
-                </p>
-
-            </div>
-
-        </div>
+</div>
 
 
-    </div>
+
+<div class="card">
+
+<div class="card-image">
+
+<img
+src="images/empowerment.jpg"
+alt="Community Empowerment"
+>
+
+</div>
+
+<div class="card-content">
+
+<h3>
+Empowerment
+</h3>
+
+<p>
+
+Equipping individuals with
+skills, resources and confidence
+to build sustainable livelihoods.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="card-image">
+
+<img
+src="images/community.jpg"
+alt="Community Development"
+>
+
+</div>
+
+<div class="card-content">
+
+<h3>
+Community Development
+</h3>
+
+<p>
+
+Investing in community projects
+that improve infrastructure,
+clean water and local development.
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
 
 </section>
 
 
 
-<!-- =================================
+<!-- =========================
      IMPACT
-================================== -->
+========================= -->
 
 <section
-    class="impact"
-    id="impact"
+class="impact"
+id="impact"
 >
 
-    <h2>
-        Our Impact So Far
-    </h2>
+<h2>
+Our Impact So Far
+</h2>
 
 
-    <div class="impact-grid">
+<div class="impact-grid">
 
 
-        <div class="impact-item">
+<div class="impact-item">
 
-            <span class="number">
-                2,500+
-            </span>
+<span class="number">
+2,500+
+</span>
 
-            <span>
-                Children Supported
-            </span>
+<span>
+Children Supported
+</span>
 
-        </div>
-
-
-        <div class="impact-item">
-
-            <span class="number">
-                15+
-            </span>
-
-            <span>
-                Health Programs
-            </span>
-
-        </div>
+</div>
 
 
-        <div class="impact-item">
+<div class="impact-item">
 
-            <span class="number">
-                1,200+
-            </span>
+<span class="number">
+15+
+</span>
 
-            <span>
-                Families Empowered
-            </span>
+<span>
+Health Programs
+</span>
 
-        </div>
-
-
-        <div class="impact-item">
-
-            <span class="number">
-                10+
-            </span>
-
-            <span>
-                Communities Reached
-            </span>
-
-        </div>
+</div>
 
 
-        <div class="impact-item">
+<div class="impact-item">
 
-            <span class="number">
-                25+
-            </span>
+<span class="number">
+1,200+
+</span>
 
-            <span>
-                Partners & Supporters
-            </span>
+<span>
+Families Empowered
+</span>
 
-        </div>
+</div>
 
-    </div>
+
+<div class="impact-item">
+
+<span class="number">
+10+
+</span>
+
+<span>
+Communities Reached
+</span>
+
+</div>
+
+
+<div class="impact-item">
+
+<span class="number">
+25+
+</span>
+
+<span>
+Partners & Supporters
+</span>
+
+</div>
+
+
+</div>
 
 </section>
 
 
 
-<!-- =================================
+<!-- =========================
      GALLERY
-================================== -->
+========================= -->
 
 <section
-    class="section"
-    id="gallery"
+class="section"
+id="gallery"
 >
 
-    <div class="section-title">
+<div class="section-title">
 
-        <h2>
-            Our Gallery
-        </h2>
+<h2>
+Our Gallery
+</h2>
 
-        <p>
-            Together we create opportunities
-            and change lives.
-        </p>
+<p>
+Together we create opportunities
+and change lives.
+</p>
 
-    </div>
-
-
-    <div class="gallery">
+</div>
 
 
-        <div class="gallery-item">
-
-            <img
-                src="images/gallery-1.jpg"
-                alt="Mtoto wa Kambo Foundation"
-            >
-
-        </div>
+<div class="gallery">
 
 
-        <div class="gallery-item">
+<div class="gallery-item">
 
-            <img
-                src="images/gallery-2.jpg"
-                alt="Community activity"
-            >
+<img
+src="images/gallery-1.jpg"
+alt="Mtoto wa Kambo Foundation"
+>
 
-        </div>
-
-
-        <div class="gallery-item">
-
-            <img
-                src="images/gallery-3.jpg"
-                alt="Children learning"
-            >
-
-        </div>
+</div>
 
 
-        <div class="gallery-item">
+<div class="gallery-item">
 
-            <img
-                src="images/gallery-4.jpg"
-                alt="Community support"
-            >
+<img
+src="images/gallery-2.jpg"
+alt="Community activity"
+>
 
-        </div>
+</div>
 
 
-    </div>
+<div class="gallery-item">
+
+<img
+src="images/gallery-3.jpg"
+alt="Children learning"
+>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="images/gallery-4.jpg"
+alt="Community support"
+>
+
+</div>
+
+
+</div>
 
 </section>
 
 
 
-<!-- =================================
+<!-- =========================
      GET INVOLVED
-================================== -->
+========================= -->
 
 <section
-    class="cta"
-    id="involved"
+class="cta"
+id="involved"
 >
 
-    <h2>
-        You Can Make a Difference
-    </h2>
+<h2>
+You Can Make a Difference
+</h2>
 
-    <p>
-        Join us in building hope,
-        changing lives and strengthening
-        communities.
-    </p>
+<p>
 
-    <a
-        href="#contact"
-        class="btn"
-    >
-        Get Involved →
-    </a>
+Join us in building hope,
+changing lives and strengthening
+communities.
+
+</p>
+
+
+<a
+href="#contact"
+class="btn"
+>
+Get Involved →
+</a>
 
 </section>
 
 
 
-<!-- =================================
+<!-- =========================
      DONATE
-================================== -->
+========================= -->
 
 <section
-    class="section"
-    id="donate"
+class="section"
+id="donate"
 >
 
-    <div class="section-title">
+<div class="section-title">
 
-        <h2>
-            Support Our Work
-        </h2>
+<h2>
+Support Our Work
+</h2>
 
-        <p>
-            Your support can help create
-            opportunities for children and
-            vulnerable communities across Tanzania.
-        </p>
+<p>
 
-    </div>
+Your support can help create
+opportunities for children and
+vulnerable communities across
+Tanzania.
+
+</p>
+
+</div>
 
 
-    <div class="donate-box">
+<div class="donate-box">
 
-        <h3>
-            Every Contribution Matters
-        </h3>
+<h3>
+Every Contribution Matters
+</h3>
 
-        <p>
+<p>
 
-            You can partner with Mtoto wa Kambo
-            Foundation through donations,
-            volunteering, partnerships and
-            community support.
+You can partner with Mtoto wa Kambo
+Foundation through donations,
+volunteering, partnerships and
+community support.
 
-        </p>
+</p>
 
-        <a
-            href="#contact"
-            class="btn btn-primary"
-        >
-            Contact Us to Support
-        </a>
 
-    </div>
+<a
+href="#contact"
+class="btn btn-primary"
+>
+Contact Us to Support
+</a>
+
+
+</div>
 
 </section>
 
 
 
-<!-- =================================
+<!-- =========================
      CONTACT
-================================== -->
+========================= -->
 
 <section
-    class="section contact-section"
-    id="contact"
+class="section contact-section"
+id="contact"
 >
 
-    <div class="section-title">
+<div class="section-title">
 
-        <h2>
-            Contact Us
-        </h2>
+<h2>
+Contact Us
+</h2>
 
-        <p>
-            We would love to hear from you.
-        </p>
+<p>
+We would love to hear from you.
+</p>
 
-    </div>
-
-
-    <div class="contact-grid">
+</div>
 
 
-        <div class="contact-card">
+<div class="contact-grid">
 
-            <h3>
-                Get In Touch
-            </h3>
 
-            <div class="contact-item">
+<div class="contact-card">
 
-                📍 Mwanalugali, Near Mosque,
-                Kibaha, Pwani Region, Tanzania
+<h3>
+Get In Touch
+</h3>
 
-            </div>
 
-            <div class="contact-item">
+<div class="contact-item">
+📍 Mwanalugali, Near Mosque,
+Kibaha, Pwani Region, Tanzania
+</div>
 
-                📞 0766 669 666
 
-            </div>
+<div class="contact-item">
+📞 0766 669 666
+</div>
 
-            <div class="contact-item">
 
-                📞 0617 618 000
+<div class="contact-item">
+📞 0617 618 000
+</div>
 
-            </div>
 
-            <div class="contact-item">
+<div class="contact-item">
+✉️ mtotowakambofoundation@gmail.com
+</div>
 
-                ✉️ mtotowakambofoundation@gmail.com
 
-            </div>
+<div class="contact-item">
+🌍 Tanzania
+</div>
 
-            <div class="contact-item">
 
-                🌍 Tanzania
-
-            </div>
-
-        </div>
+</div>
 
 
 
-        <div class="contact-card">
+<div class="contact-card">
 
-            <h3>
-                Send Us a Message
-            </h3>
+<h3>
+Send Us a Message
+</h3>
 
 
-            <form
-                action="mailto:mtotowakambofoundation@gmail.com"
-                method="post"
-                enctype="text/plain"
-            >
+<form
+action="mailto:mtotowakambofoundation@gmail.com"
+method="post"
+enctype="text/plain"
+>
 
-                <input
-                    type="text"
-                    name="Name"
-                    placeholder="Your Name"
-                    required
-                >
 
-                <input
-                    type="email"
-                    name="Email"
-                    placeholder="Your Email"
-                    required
-                >
+<input
+type="text"
+name="Name"
+placeholder="Your Name"
+required
+>
 
-                <input
-                    type="text"
-                    name="Subject"
-                    placeholder="Subject"
-                >
 
-                <textarea
-                    name="Message"
-                    placeholder="Your Message"
-                    required
-                ></textarea>
+<input
+type="email"
+name="Email"
+placeholder="Your Email"
+required
+>
 
-                <button type="submit">
-                    Send Message →
-                </button>
 
-            </form>
+<input
+type="text"
+name="Subject"
+placeholder="Subject"
+>
 
-        </div>
 
-    </div>
+<textarea
+name="Message"
+placeholder="Your Message"
+required
+></textarea>
+
+
+<button type="submit">
+Send Message →
+</button>
+
+
+</form>
+
+</div>
+
+</div>
 
 </section>
 
 
 
-<!-- =================================
+<!-- =========================
      FOOTER
-================================== -->
+========================= -->
 
 <footer>
 
 
-    <div class="footer-main">
+<div class="footer-main">
 
 
-        <div class="footer-logo">
+<div class="footer-logo">
 
-            <img
-                src="images/logo.png"
-                alt="Mtoto wa Kambo Foundation"
-            >
-
-            <p>
-
-                Together, we can build a
-                better tomorrow for children
-                and communities in Tanzania.
-
-            </p>
+<img
+src="images/logo.png"
+alt="Mtoto wa Kambo Foundation"
+>
 
 
-            <div class="socials">
+<p>
 
-                <a href="#">
-                    f
-                </a>
+Together, we can build a
+better tomorrow for children
+and communities in Tanzania.
 
-                <a href="#">
-                    ◎
-                </a>
+</p>
 
-                <a href="#">
-                    X
-                </a>
 
-                <a href="#">
-                    ▶
-                </a>
+<div class="socials">
 
-            </div>
+<a href="#">f</a>
 
-        </div>
+<a href="#">◎</a>
+
+<a href="#">X</a>
+
+<a href="#">▶</a>
+
+</div>
+
+</div>
 
 
 
-        <div class="footer-column">
+<div class="footer-column">
 
-            <h3>
-                Quick Links
-            </h3>
-
-            <ul>
-
-                <li>
-                    <a href="#home">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#about">
-                        About Us
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#programs">
-                        Programs
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#impact">
-                        Our Impact
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#gallery">
-                        Gallery
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#involved">
-                        Get Involved
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contact">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
+<h3>
+Quick Links
+</h3>
 
 
+<ul>
 
-        <div class="footer-column">
+<li>
+<a href="#home">
+Home
+</a>
+</li>
 
-            <h3>
-                Contact Us
-            </h3>
+<li>
+<a href="#about">
+About Us
+</a>
+</li>
 
-            <div class="contact-item">
-                📍 Mwanalugali, Near Mosque,
-                Kibaha, Pwani Region, Tanzania
-            </div>
+<li>
+<a href="#programs">
+Programs
+</a>
+</li>
 
-            <div class="contact-item">
-                📞 0766 669 666
-            </div>
+<li>
+<a href="#impact">
+Our Impact
+</a>
+</li>
 
-            <div class="contact-item">
-                📞 0617 618 000
-            </div>
+<li>
+<a href="#gallery">
+Gallery
+</a>
+</li>
 
-            <div class="contact-item">
-                ✉️ mtotowakambofoundation@gmail.com
-            </div>
+<li>
+<a href="#involved">
+Get Involved
+</a>
+</li>
 
-        </div>
+<li>
+<a href="#contact">
+Contact
+</a>
+</li>
+
+</ul>
+
+</div>
 
 
 
-        <div class="footer-column newsletter">
+<div class="footer-column">
 
-            <h3>
-                Newsletter
-            </h3>
-
-            <p
-                style="
-                    color:#666;
-                    font-size:13px;
-                    margin-bottom:15px;
-                "
-            >
-
-                Subscribe to get updates
-                on our programs and impact.
-
-            </p>
+<h3>
+Contact Us
+</h3>
 
 
-            <form
-                onsubmit="subscribe(event)"
-            >
+<div class="contact-item">
 
-                <input
-                    type="email"
-                    id="newsletterEmail"
-                    placeholder="Enter your email"
-                    required
-                >
+📍 Mwanalugali, Near Mosque,
+Kibaha, Pwani Region, Tanzania
 
-                <button type="submit">
-                    Subscribe
-                </button>
-
-            </form>
-
-        </div>
+</div>
 
 
-    </div>
+<div class="contact-item">
+📞 0766 669 666
+</div>
 
 
-    <div class="footer-bottom">
+<div class="contact-item">
+📞 0617 618 000
+</div>
 
-        <div>
-            © 2026 Mtoto wa Kambo Foundation.
-            All Rights Reserved.
-        </div>
 
-        <div>
-            Building Hope. Changing Lives.
-            Strengthening Communities. ♡
-        </div>
+<div class="contact-item">
+✉️ mtotowakambofoundation@gmail.com
+</div>
 
-    </div>
+</div>
+
+
+
+<div class="footer-column newsletter">
+
+<h3>
+Newsletter
+</h3>
+
+
+<p
+style="
+color:#666;
+font-size:13px;
+margin-bottom:15px;
+"
+>
+
+Subscribe to get updates
+on our programs and impact.
+
+</p>
+
+
+<form
+onsubmit="subscribe(event)"
+>
+
+
+<input
+type="email"
+id="newsletterEmail"
+placeholder="Enter your email"
+required
+>
+
+
+<button type="submit">
+Subscribe
+</button>
+
+
+</form>
+
+</div>
+
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+<div>
+
+© 2026 Mtoto wa Kambo Foundation.
+All Rights Reserved.
+
+</div>
+
+
+<div>
+
+Building Hope. Changing Lives.
+Strengthening Communities. ♡
+
+</div>
+
+</div>
+
 
 </footer>
 
 
 
-<!-- =================================
-     JAVASCRIPT
-================================== -->
-
 <script>
 
 
-    function toggleMenu() {
+/* MOBILE MENU */
 
-        const menu =
-            document.getElementById("navLinks");
+function toggleMenu() {
 
-        menu.classList.toggle("show");
+    const menu =
+        document.getElementById("navLinks");
 
-    }
+    menu.classList.toggle("show");
 
-
-    document
-        .querySelectorAll(".nav-links a")
-        .forEach(function(link) {
-
-            link.addEventListener(
-                "click",
-                function() {
-
-                    document
-                        .getElementById("navLinks")
-                        .classList.remove("show");
-
-                }
-            );
-
-        });
+}
 
 
-    function subscribe(event) {
+/* CLOSE MENU */
 
-        event.preventDefault();
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link) {
 
-        const email =
-            document.getElementById(
-                "newsletterEmail"
-            ).value;
-
-        if (email) {
-
-            alert(
-                "Thank you for subscribing to Mtoto wa Kambo Foundation."
-            );
-
-            document
-                .getElementById(
-                    "newsletterEmail"
-                )
-                .value = "";
-
-        }
-
-    }
-
-
-    /* Active navigation */
-
-    const sections =
-        document.querySelectorAll("section[id]");
-
-    const navLinks =
-        document.querySelectorAll(".nav-links a");
-
-
-    window.addEventListener(
-        "scroll",
+    link.addEventListener(
+        "click",
         function() {
 
-            let current = "";
-
-            sections.forEach(
-                function(section) {
-
-                    const sectionTop =
-                        section.offsetTop - 120;
-
-                    if (
-                        window.scrollY >= sectionTop
-                    ) {
-
-                        current =
-                            section.getAttribute("id");
-
-                    }
-
-                }
-            );
-
-
-            navLinks.forEach(
-                function(link) {
-
-                    link.classList.remove("active");
-
-                    if (
-                        link.getAttribute("href")
-                        === "#" + current
-                    ) {
-
-                        link.classList.add("active");
-
-                    }
-
-                }
-            );
+            document
+            .getElementById("navLinks")
+            .classList.remove("show");
 
         }
     );
+
+});
+
+
+/* NEWSLETTER */
+
+function subscribe(event) {
+
+    event.preventDefault();
+
+    const email =
+        document.getElementById(
+            "newsletterEmail"
+        ).value;
+
+    if(email) {
+
+        alert(
+            "Thank you for subscribing to Mtoto wa Kambo Foundation."
+        );
+
+        document
+        .getElementById(
+            "newsletterEmail"
+        )
+        .value = "";
+
+    }
+
+}
+
+
+/* ACTIVE NAVIGATION */
+
+const sections =
+    document.querySelectorAll(
+        "section[id]"
+    );
+
+const navLinks =
+    document.querySelectorAll(
+        ".nav-links a"
+    );
+
+
+window.addEventListener(
+    "scroll",
+    function() {
+
+        let current = "";
+
+        sections.forEach(
+            function(section) {
+
+                const sectionTop =
+                    section.offsetTop - 120;
+
+                if(
+                    window.scrollY >=
+                    sectionTop
+                ) {
+
+                    current =
+                        section.getAttribute(
+                            "id"
+                        );
+
+                }
+
+            }
+        );
+
+
+        navLinks.forEach(
+            function(link) {
+
+                link.classList.remove(
+                    "active"
+                );
+
+                if(
+                    link.getAttribute(
+                        "href"
+                    ) === "#" + current
+                ) {
+
+                    link.classList.add(
+                        "active"
+                    );
+
+                }
+
+            }
+        );
+
+    }
+);
 
 </script>
 
