@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
           content="Mtoto wa Kambo Foundation, Tanzania, children, community, opportunities, empowerment, foundation">
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -29,6 +31,7 @@
             color: #222;
             background: #ffffff;
         }
+
 
         /* =========================
            HEADER
@@ -47,9 +50,11 @@
             max-width: 1200px;
             margin: auto;
             padding: 12px 25px;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             gap: 25px;
         }
 
@@ -60,8 +65,8 @@
         }
 
         .logo-area img {
-            width: 72px;
-            height: 72px;
+            width: 65px;
+            height: 65px;
             object-fit: contain;
             display: block;
         }
@@ -97,20 +102,24 @@
             color: #0b7a75;
         }
 
+
         /* =========================
            HERO
         ========================== */
 
         .hero {
             min-height: 600px;
+
             display: flex;
             align-items: center;
+
             background:
                 linear-gradient(
                     rgba(10, 50, 70, 0.72),
                     rgba(10, 50, 70, 0.72)
                 ),
                 url("hero.png") center/cover no-repeat;
+
             color: white;
         }
 
@@ -173,6 +182,7 @@
             background: #eeeeee;
         }
 
+
         /* =========================
            GENERAL SECTIONS
         ========================== */
@@ -203,12 +213,30 @@
             margin: auto;
         }
 
+
         /* =========================
            ABOUT
         ========================== */
 
         .about {
             background: #f8fafb;
+        }
+
+        .about-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 45px;
+        }
+
+        .about-intro h2 {
+            color: #17365d;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .about-intro p {
+            color: #666;
+            font-size: 17px;
         }
 
         .about-grid {
@@ -223,6 +251,7 @@
             max-height: 420px;
             object-fit: cover;
             border-radius: 10px;
+            display: block;
         }
 
         .about-text h3 {
@@ -235,6 +264,7 @@
             margin-bottom: 15px;
             color: #555;
         }
+
 
         /* =========================
            PROGRAMS
@@ -250,7 +280,10 @@
             background: white;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.08);
+
             transition: 0.3s;
         }
 
@@ -266,6 +299,7 @@
         .program-card p {
             color: #666;
         }
+
 
         /* =========================
            IMPACT
@@ -303,6 +337,7 @@
             font-size: 15px;
         }
 
+
         /* =========================
            GALLERY
         ========================== */
@@ -324,6 +359,7 @@
             border-radius: 8px;
             display: block;
         }
+
 
         /* =========================
            GET INVOLVED
@@ -348,6 +384,7 @@
             color: #555;
             margin-bottom: 25px;
         }
+
 
         /* =========================
            CONTACT
@@ -378,7 +415,9 @@
             background: white;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.07);
         }
 
         input,
@@ -386,8 +425,10 @@
             width: 100%;
             padding: 13px;
             margin-bottom: 15px;
+
             border: 1px solid #ddd;
             border-radius: 5px;
+
             font-family: inherit;
             font-size: 15px;
         }
@@ -400,9 +441,12 @@
         button {
             border: none;
             cursor: pointer;
+
             padding: 13px 25px;
+
             background: #0b7a75;
             color: white;
+
             border-radius: 5px;
             font-weight: bold;
             font-size: 15px;
@@ -411,6 +455,7 @@
         button:hover {
             background: #075b57;
         }
+
 
         /* =========================
            FOOTER
@@ -425,8 +470,10 @@
         .footer-grid {
             max-width: 1100px;
             margin: auto;
+
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
+
             gap: 40px;
         }
 
@@ -459,12 +506,18 @@
         .copyright {
             max-width: 1100px;
             margin: 30px auto 0;
+
             padding-top: 20px;
-            border-top: 1px solid rgba(255,255,255,0.15);
+
+            border-top:
+                1px solid rgba(255,255,255,0.15);
+
             text-align: center;
+
             font-size: 13px;
             color: #c5ccd2;
         }
+
 
         /* =========================
            MOBILE
@@ -507,6 +560,7 @@
             }
         }
 
+
         @media (max-width: 600px) {
 
             .logo-area {
@@ -515,8 +569,8 @@
             }
 
             .logo-area img {
-                width: 80px;
-                height: 80px;
+                width: 70px;
+                height: 70px;
             }
 
             .brand h1 {
@@ -551,7 +605,8 @@
                 padding: 60px 20px;
             }
 
-            .section-title h2 {
+            .section-title h2,
+            .about-intro h2 {
                 font-size: 30px;
             }
 
@@ -580,42 +635,63 @@
                 grid-template-columns: 1fr;
             }
         }
+
     </style>
 </head>
 
+
 <body>
+
 
 <!-- =========================
      HEADER
 ========================== -->
 
 <header>
+
     <div class="header-container">
 
         <div class="logo-area">
 
-            <!--
-                IMPORTANT:
-             
+            <!-- ONE LOGO ONLY -->
+            <img src="logo.png"
+                 alt="Mtoto wa Kambo Foundation Logo">
+
             <div class="brand">
+
                 <h1>Mtoto wa Kambo Foundation</h1>
-                <p>BUILDING HOPE. CHANGING LIVES.</p>
+
+                <p>
+                    BUILDING HOPE. CHANGING LIVES.
+                </p>
+
             </div>
 
         </div>
 
+
         <nav>
+
             <a href="#home">Home</a>
+
             <a href="#about">About Us</a>
+
             <a href="#programs">Programs</a>
+
             <a href="#impact">Our Impact</a>
+
             <a href="#gallery">Gallery</a>
+
             <a href="#involved">Get Involved</a>
+
             <a href="#contact">Contact</a>
+
         </nav>
 
     </div>
+
 </header>
+
 
 
 <!-- =========================
@@ -626,10 +702,13 @@
 
     <div class="hero-content">
 
-        <h2>Mtoto wa Kambo Foundation</h2>
+        <h2>
+            Mtoto wa Kambo Foundation
+        </h2>
 
         <h3>
-            Building Hope. Changing Lives. Strengthening Communities.
+            Building Hope. Changing Lives.
+            Strengthening Communities.
         </h3>
 
         <p>
@@ -638,18 +717,23 @@
         </p>
 
         <div class="buttons">
-            <a href="#about" class="btn btn-primary">
+
+            <a href="#about"
+               class="btn btn-primary">
                 Learn More
             </a>
 
-            <a href="#contact" class="btn btn-light">
+            <a href="#contact"
+               class="btn btn-light">
                 Support Our Work
             </a>
+
         </div>
 
     </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -660,48 +744,59 @@
 
     <div class="container">
 
-       <h2>About Mtoto wa Kambo Foundation</h2>
-          
-    
 
-    <p>
- 
-Creating hope, opportunities and stronger communities across Tanzania.
-</p>
+        <div class="about-intro">
+
+            <h2>
+                About Mtoto wa Kambo Foundation
+            </h2>
+
+            <p>
+                Creating hope, opportunities and stronger communities
+                across Tanzania.
+            </p>
+
         </div>
+
 
         <div class="about-grid">
 
+
+            <!-- ONE ABOUT IMAGE ONLY -->
+
             <div class="about-image">
 
-               <img src="about.png" alt="Mtoto wa Kambo Foundation community activities">
-               
+                <img src="about.png"
+                     alt="Mtoto wa Kambo Foundation community activities">
+
             </div>
-<h3>Building Hope. Changing Lives.</h3>
+
+
+            <!-- ABOUT TEXT -->
+
             <div class="about-text">
-<p>
-Mtoto wa Kambo Foundation is a community-focused organization committed to creating opportunities, supporting vulnerable communities and contributing to sustainable development in Tanzania.
-</p>
 
-<p>
-We believe that every child, family and community deserves an opportunity to grow, participate and build a better future. Through partnerships, community programs and empowerment initiatives, we work to create meaningful and lasting change.
-</p>
-                <h3>Building Hope. Changing Lives.</h3>
+                <h3>
+                    Building Hope. Changing Lives.
+                </h3>
 
                 <p>
-                    Mtoto wa Kambo Foundation is a community-focused organization
-                    committed to creating opportunities, supporting vulnerable
-                    communities and contributing to sustainable development.
+                    Mtoto wa Kambo Foundation is a community-focused
+                    organization committed to creating opportunities,
+                    supporting vulnerable communities and contributing
+                    to sustainable development in Tanzania.
                 </p>
 
                 <p>
-                    We believe that every child, family and community deserves
-                    an opportunity to grow, participate and build a better future.
+                    We believe that every child, family and community
+                    deserves an opportunity to grow, participate and
+                    build a better future.
                 </p>
 
                 <p>
-                    Through partnerships, community programs and empowerment
-                    initiatives, we work to create meaningful and lasting impact.
+                    Through partnerships, community programs and
+                    empowerment initiatives, we work to create
+                    meaningful and lasting impact.
                 </p>
 
             </div>
@@ -711,6 +806,7 @@ We believe that every child, family and community deserves an opportunity to gro
     </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -721,9 +817,12 @@ We believe that every child, family and community deserves an opportunity to gro
 
     <div class="container">
 
+
         <div class="section-title">
 
-            <h2>Our Programs</h2>
+            <h2>
+                Our Programs
+            </h2>
 
             <p>
                 Our programs are designed to address community needs
@@ -732,11 +831,15 @@ We believe that every child, family and community deserves an opportunity to gro
 
         </div>
 
+
         <div class="programs-grid">
+
 
             <div class="program-card">
 
-                <h3>Child & Family Support</h3>
+                <h3>
+                    Child & Family Support
+                </h3>
 
                 <p>
                     Supporting vulnerable children and families with
@@ -745,9 +848,12 @@ We believe that every child, family and community deserves an opportunity to gro
 
             </div>
 
+
             <div class="program-card">
 
-                <h3>Community Empowerment</h3>
+                <h3>
+                    Community Empowerment
+                </h3>
 
                 <p>
                     Strengthening communities through skills development,
@@ -756,9 +862,12 @@ We believe that every child, family and community deserves an opportunity to gro
 
             </div>
 
+
             <div class="program-card">
 
-                <h3>Education & Skills</h3>
+                <h3>
+                    Education & Skills
+                </h3>
 
                 <p>
                     Supporting education, learning and practical skills
@@ -767,9 +876,12 @@ We believe that every child, family and community deserves an opportunity to gro
 
             </div>
 
+
             <div class="program-card">
 
-                <h3>Economic Opportunities</h3>
+                <h3>
+                    Economic Opportunities
+                </h3>
 
                 <p>
                     Creating pathways for individuals and families to
@@ -778,9 +890,12 @@ We believe that every child, family and community deserves an opportunity to gro
 
             </div>
 
+
             <div class="program-card">
 
-                <h3>Community Development</h3>
+                <h3>
+                    Community Development
+                </h3>
 
                 <p>
                     Working with communities to identify needs and develop
@@ -789,9 +904,12 @@ We believe that every child, family and community deserves an opportunity to gro
 
             </div>
 
+
             <div class="program-card">
 
-                <h3>Partnerships</h3>
+                <h3>
+                    Partnerships
+                </h3>
 
                 <p>
                     Collaborating with organizations, institutions,
@@ -800,11 +918,13 @@ We believe that every child, family and community deserves an opportunity to gro
 
             </div>
 
+
         </div>
 
     </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -815,9 +935,12 @@ We believe that every child, family and community deserves an opportunity to gro
 
     <div class="container">
 
+
         <div class="section-title">
 
-            <h2>Our Impact</h2>
+            <h2>
+                Our Impact
+            </h2>
 
             <p>
                 Together we can create meaningful and sustainable change.
@@ -825,33 +948,68 @@ We believe that every child, family and community deserves an opportunity to gro
 
         </div>
 
+
         <div class="impact-grid">
 
-            <div class="impact-card">
-                <h3>100+</h3>
-                <p>Community Members Reached</p>
-            </div>
 
             <div class="impact-card">
-                <h3>20+</h3>
-                <p>Community Activities</p>
+
+                <h3>
+                    100+
+                </h3>
+
+                <p>
+                    Community Members Reached
+                </p>
+
             </div>
 
-            <div class="impact-card">
-                <h3>10+</h3>
-                <p>Partners & Supporters</p>
-            </div>
 
             <div class="impact-card">
-                <h3>1</h3>
-                <p>Shared Vision for Change</p>
+
+                <h3>
+                    20+
+                </h3>
+
+                <p>
+                    Community Activities
+                </p>
+
             </div>
+
+
+            <div class="impact-card">
+
+                <h3>
+                    10+
+                </h3>
+
+                <p>
+                    Partners & Supporters
+                </p>
+
+            </div>
+
+
+            <div class="impact-card">
+
+                <h3>
+                    1
+                </h3>
+
+                <p>
+                    Shared Vision for Change
+                </p>
+
+            </div>
+
 
         </div>
 
     </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -862,9 +1020,12 @@ We believe that every child, family and community deserves an opportunity to gro
 
     <div class="container">
 
+
         <div class="section-title">
 
-            <h2>Gallery</h2>
+            <h2>
+                Gallery
+            </h2>
 
             <p>
                 A glimpse of our community activities and initiatives.
@@ -872,31 +1033,40 @@ We believe that every child, family and community deserves an opportunity to gro
 
         </div>
 
+
         <div class="gallery-grid">
+
 
             <img src="gallery1.jpg"
                  alt="Mtoto wa Kambo Foundation activity">
 
+
             <img src="gallery2.jpg"
                  alt="Community activity">
+
 
             <img src="gallery3.jpg"
                  alt="Community empowerment">
 
+
             <img src="gallery4.jpg"
                  alt="Foundation activity">
+
 
             <img src="gallery5.jpg"
                  alt="Community members">
 
+
             <img src="gallery6.jpg"
                  alt="Mtoto wa Kambo Foundation project">
+
 
         </div>
 
     </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -907,17 +1077,21 @@ We believe that every child, family and community deserves an opportunity to gro
 
     <div class="container">
 
+
         <div class="involved-content">
 
-            <h2>Get Involved</h2>
+            <h2>
+                Get Involved
+            </h2>
 
             <p>
-                You can support our work by volunteering, partnering with us,
-                contributing resources or helping us reach more vulnerable
-                children, families and communities.
+                You can support our work by volunteering, partnering
+                with us, contributing resources or helping us reach
+                more vulnerable children, families and communities.
             </p>
 
-            <a href="#contact" class="btn btn-primary">
+            <a href="#contact"
+               class="btn btn-primary">
                 Contact Us
             </a>
 
@@ -928,6 +1102,7 @@ We believe that every child, family and community deserves an opportunity to gro
 </section>
 
 
+
 <!-- =========================
      CONTACT
 ========================== -->
@@ -936,9 +1111,12 @@ We believe that every child, family and community deserves an opportunity to gro
 
     <div class="container">
 
+
         <div class="section-title">
 
-            <h2>Contact Us</h2>
+            <h2>
+                Contact Us
+            </h2>
 
             <p>
                 Get in touch with Mtoto wa Kambo Foundation.
@@ -946,11 +1124,15 @@ We believe that every child, family and community deserves an opportunity to gro
 
         </div>
 
+
         <div class="contact-grid">
+
 
             <div class="contact-info">
 
-                <h3>Mtoto wa Kambo Foundation</h3>
+                <h3>
+                    Mtoto wa Kambo Foundation
+                </h3>
 
                 <p>
                     <strong>Location:</strong><br>
@@ -970,31 +1152,42 @@ We believe that every child, family and community deserves an opportunity to gro
             </div>
 
 
-            <form action="mailto:mtotowakambofoundation@gmail.com"
-                  method="post"
-                  enctype="text/plain">
+            <form
+                action="mailto:mtotowakambofoundation@gmail.com"
+                method="post"
+                enctype="text/plain">
 
-                <input type="text"
-                       name="name"
-                       placeholder="Your Name"
-                       required>
 
-                <input type="email"
-                       name="email"
-                       placeholder="Your Email"
-                       required>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required>
 
-                <input type="text"
-                       name="subject"
-                       placeholder="Subject">
 
-                <textarea name="message"
-                          placeholder="Your Message"
-                          required></textarea>
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required>
+
+
+                <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject">
+
+
+                <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    required></textarea>
+
 
                 <button type="submit">
                     Send Message
                 </button>
+
 
             </form>
 
@@ -1005,6 +1198,7 @@ We believe that every child, family and community deserves an opportunity to gro
 </section>
 
 
+
 <!-- =========================
      FOOTER
 ========================== -->
@@ -1013,17 +1207,21 @@ We believe that every child, family and community deserves an opportunity to gro
 
     <div class="footer-grid">
 
+
         <div>
 
-            <h3>Mtoto wa Kambo Foundation</h3>
+            <h3>
+                Mtoto wa Kambo Foundation
+            </h3>
 
             <p>
-                Building Hope. Changing Lives. Strengthening Communities.
+                Building Hope. Changing Lives.
+                Strengthening Communities.
             </p>
 
             <p style="margin-top:12px;">
-                Creating hope, opportunities and stronger communities
-                across Tanzania.
+                Creating hope, opportunities and stronger
+                communities across Tanzania.
             </p>
 
         </div>
@@ -1031,28 +1229,40 @@ We believe that every child, family and community deserves an opportunity to gro
 
         <div>
 
-            <h3>Quick Links</h3>
+            <h3>
+                Quick Links
+            </h3>
 
             <ul>
 
                 <li>
-                    <a href="#home">Home</a>
+                    <a href="#home">
+                        Home
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#about">About Us</a>
+                    <a href="#about">
+                        About Us
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#programs">Programs</a>
+                    <a href="#programs">
+                        Programs
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#impact">Our Impact</a>
+                    <a href="#impact">
+                        Our Impact
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact">
+                        Contact
+                    </a>
                 </li>
 
             </ul>
@@ -1062,7 +1272,9 @@ We believe that every child, family and community deserves an opportunity to gro
 
         <div>
 
-            <h3>Contact</h3>
+            <h3>
+                Contact
+            </h3>
 
             <p>
                 Kibaha, Pwani, Tanzania
@@ -1073,6 +1285,7 @@ We believe that every child, family and community deserves an opportunity to gro
             </p>
 
         </div>
+
 
     </div>
 
