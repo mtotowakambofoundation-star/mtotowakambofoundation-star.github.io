@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -7,25 +8,33 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Mtoto wa Kambo Foundation - Building Hope. Changing Lives. Strengthening Communities across Tanzania.">
-
-    <meta name="keywords"
-          content="Mtoto wa Kambo Foundation, Tanzania Foundation, Education, Health, Community Development, Kibaha, Pwani">
-
-    <meta name="author"
-          content="Mtoto wa Kambo Foundation">
-
     <title>
         Mtoto wa Kambo Foundation | Building Hope. Changing Lives.
     </title>
 
+    <meta name="description"
+          content="Mtoto wa Kambo Foundation creates opportunities, supports vulnerable communities and contributes to positive and sustainable change across Tanzania.">
+
+    <meta name="keywords"
+          content="Mtoto wa Kambo Foundation, Tanzania Foundation, children, education, health, community development, Kibaha, Pwani, Tanzania">
+
+    <meta name="author"
+          content="Mtoto wa Kambo Foundation">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <meta property="og:title"
+          content="Mtoto wa Kambo Foundation">
+
+    <meta property="og:description"
+          content="Building Hope. Changing Lives. Strengthening Communities.">
+
+    <meta property="og:type"
+          content="website">
+
 
     <style>
-
-        /* =====================================
-           RESET
-        ====================================== */
 
         * {
             margin: 0;
@@ -38,15 +47,9 @@
         }
 
         body {
-            font-family:
-                Arial,
-                Helvetica,
-                sans-serif;
-
-            color: #173f3d;
-
+            font-family: Arial, Helvetica, sans-serif;
+            color: #123f3d;
             background: #ffffff;
-
             line-height: 1.6;
         }
 
@@ -60,888 +63,564 @@
             color: inherit;
         }
 
-        button,
-        input,
-        textarea {
-            font-family: inherit;
-        }
 
-
-        /* =====================================
+        /* ================================
            HEADER
-        ====================================== */
+        ================================= */
 
         header {
             position: sticky;
             top: 0;
-            z-index: 9999;
-
-            width: 100%;
-
+            z-index: 1000;
             background: #ffffff;
-
-            box-shadow:
-                0 2px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 14px rgba(0,0,0,.08);
         }
 
-
         .navbar {
-
-            max-width: 1280px;
-
+            max-width: 1300px;
             height: 88px;
-
             margin: auto;
-
             padding: 0 25px;
 
             display: flex;
-
             align-items: center;
-
             justify-content: space-between;
         }
 
 
-        /* =====================================
-           LOGO
-        ====================================== */
+        /* LOGO */
 
         .logo {
-
             display: flex;
-
             align-items: center;
-
             gap: 12px;
         }
 
-
         .logo img {
-
-            width: 65px;
-
-            height: 65px;
-
+            width: 68px;
+            height: 68px;
             object-fit: contain;
         }
 
-
         .logo-text {
-
             line-height: 1.05;
         }
 
-
         .logo-text h1 {
-
+            color: #087c78;
             font-size: 20px;
-
-            color: #087b76;
-
             font-weight: 800;
         }
 
-
         .logo-text h1 span {
-
             display: block;
         }
 
-
         .logo-text small {
-
             display: block;
-
             margin-top: 6px;
-
-            font-size: 8px;
-
-            letter-spacing: 1.1px;
-
             color: #555;
-
+            font-size: 8px;
+            letter-spacing: 1px;
             font-weight: bold;
         }
 
 
-        /* =====================================
-           NAVIGATION
-        ====================================== */
+        /* NAV */
 
         .nav-links {
-
             display: flex;
-
             align-items: center;
-
-            gap: 28px;
-
+            gap: 27px;
             list-style: none;
         }
 
-
         .nav-links a {
-
             font-size: 14px;
-
             font-weight: 600;
-
             color: #333;
-
-            transition: 0.3s;
+            transition: .3s;
         }
-
 
         .nav-links a:hover {
-
-            color: #087b76;
+            color: #087c78;
         }
 
-
         .nav-links a.active {
-
-            color: #087b76;
-
-            border-bottom:
-                3px solid #087b76;
-
+            color: #087c78;
+            border-bottom: 3px solid #087c78;
             padding-bottom: 7px;
         }
 
-
-        .donate-btn {
-
-            background: #087b76;
-
-            color: #ffffff !important;
-
-            padding: 14px 23px;
-
+        .donate {
+            background: #087c78;
+            color: white !important;
+            padding: 14px 24px;
             border-radius: 7px;
-
-            font-weight: bold !important;
         }
 
-
-        .donate-btn:hover {
-
-            background: #f2a51c;
+        .donate:hover {
+            background: #f4a51c;
         }
-
 
         .menu-btn {
-
             display: none;
-
             font-size: 30px;
-
-            color: #087b76;
-
+            color: #087c78;
             cursor: pointer;
         }
 
 
-        /* =====================================
+        /* ================================
            HERO
-        ====================================== */
+        ================================= */
 
         .hero {
 
             min-height: 590px;
 
             display: flex;
-
             align-items: center;
-
-            position: relative;
 
             background-image:
 
                 linear-gradient(
                     90deg,
-                    rgba(0,0,0,0.82) 0%,
-                    rgba(0,0,0,0.65) 40%,
-                    rgba(0,0,0,0.15) 100%
+                    rgba(0,0,0,.82),
+                    rgba(0,0,0,.62) 42%,
+                    rgba(0,0,0,.12)
                 ),
 
                 url("images/hero.jpg");
 
             background-size: cover;
-
             background-position: center;
-
             background-repeat: no-repeat;
         }
 
-
         .hero-content {
-
-            max-width: 1280px;
-
+            max-width: 1300px;
             width: 100%;
-
             margin: auto;
-
             padding: 70px 25px;
-
             color: white;
         }
 
-
-        .hero-content h2 {
-
+        .hero h2 {
             max-width: 700px;
-
-            font-size:
-                clamp(42px, 5vw, 68px);
-
+            font-size: clamp(42px, 5vw, 68px);
             line-height: 1.02;
-
             margin-bottom: 20px;
-
             font-weight: 800;
         }
 
-
-        .hero-tagline {
-
+        .tagline {
+            color: #35d2ce;
             font-size: 21px;
-
             font-weight: bold;
-
             margin-bottom: 15px;
         }
 
-
-        .hero-description {
-
+        .hero p {
             max-width: 650px;
-
             font-size: 17px;
-
             margin-bottom: 30px;
         }
 
-
-        .hero-buttons {
-
+        .buttons {
             display: flex;
-
             gap: 15px;
-
             flex-wrap: wrap;
         }
 
-
         .btn {
-
             display: inline-block;
-
             padding: 15px 25px;
-
             border-radius: 7px;
-
             font-weight: bold;
-
-            transition: 0.3s;
+            transition: .3s;
         }
-
 
         .btn-primary {
-
-            background: #087b76;
-
+            background: #087c78;
             color: white;
         }
-
 
         .btn-primary:hover {
-
-            background: #f2a51c;
+            background: #f4a51c;
         }
 
-
-        .btn-light {
-
+        .btn-white {
             background: white;
-
-            color: #173f3d;
+            color: #123f3d;
         }
 
-
-        .btn-light:hover {
-
-            background: #f2a51c;
-
+        .btn-white:hover {
+            background: #f4a51c;
             color: white;
         }
 
 
-        /* =====================================
-           MISSION / VISION / VALUES
-        ====================================== */
+        /* ================================
+           MISSION
+        ================================= */
 
         .three-columns {
-
             max-width: 1200px;
-
             margin: auto;
-
             padding: 45px 25px;
 
             display: grid;
-
-            grid-template-columns:
-                repeat(3,1fr);
+            grid-template-columns: repeat(3,1fr);
         }
 
-
-        .info-box {
-
-            padding:
-                10px 35px;
-
-            border-right:
-                1px solid #ddd;
+        .info {
+            padding: 10px 35px;
+            border-right: 1px solid #ddd;
 
             display: flex;
-
             gap: 20px;
         }
 
-
-        .info-box:last-child {
-
+        .info:last-child {
             border-right: none;
         }
 
-
-        .circle-icon {
-
-            min-width: 50px;
-
+        .icon {
             width: 50px;
-
             height: 50px;
+            min-width: 50px;
 
             border-radius: 50%;
 
             display: flex;
-
             align-items: center;
-
             justify-content: center;
 
             color: white;
-
             font-size: 22px;
-
             font-weight: bold;
         }
 
-
         .teal {
-
-            background: #087b76;
+            background: #087c78;
         }
 
-
         .green {
-
             background: #72b82b;
         }
 
-
         .orange {
-
-            background: #f2a51c;
+            background: #f4a51c;
         }
 
-
-        .info-box h3 {
-
+        .info h3 {
             margin-bottom: 8px;
-
             font-size: 18px;
         }
 
-
-        .info-box p {
-
-            font-size: 13px;
-
+        .info p {
             color: #555;
+            font-size: 13px;
         }
 
 
-        /* =====================================
-           GENERAL SECTION
-        ====================================== */
+        /* ================================
+           GENERAL
+        ================================= */
 
         .section {
-
             padding: 70px 25px;
         }
 
-
         .section-title {
-
             text-align: center;
-
             margin-bottom: 40px;
         }
 
-
         .section-title h2 {
-
             font-size: 34px;
-
-            color: #173f3d;
-
             margin-bottom: 8px;
         }
 
-
         .section-title p {
-
             color: #666;
         }
 
 
-        /* =====================================
+        /* ================================
            ABOUT
-        ====================================== */
+        ================================= */
 
         .about {
-
             max-width: 1150px;
-
             margin: auto;
 
             display: grid;
-
-            grid-template-columns:
-                1fr 1fr;
-
+            grid-template-columns: 1fr 1fr;
             gap: 55px;
-
             align-items: center;
         }
 
-
         .about-image {
-
             height: 410px;
-
             border-radius: 12px;
-
             overflow: hidden;
         }
 
-
         .about-image img {
-
             width: 100%;
-
             height: 100%;
-
             object-fit: cover;
         }
 
-
-        .about-content h2 {
-
+        .about h2 {
             font-size: 36px;
-
             margin-bottom: 20px;
         }
 
-
-        .about-content p {
-
+        .about p {
             color: #666;
-
             margin-bottom: 15px;
         }
 
 
-        /* =====================================
+        /* ================================
            PROGRAMS
-        ====================================== */
+        ================================= */
 
         .programs {
-
             max-width: 1200px;
-
             margin: auto;
 
             display: grid;
-
-            grid-template-columns:
-                repeat(4,1fr);
-
+            grid-template-columns: repeat(4,1fr);
             gap: 20px;
         }
 
-
-        .program-card {
-
-            background: #ffffff;
-
+        .card {
+            background: white;
             border-radius: 9px;
-
             overflow: hidden;
 
             box-shadow:
-                0 5px 20px
-                rgba(0,0,0,0.10);
+                0 5px 20px rgba(0,0,0,.10);
 
-            transition: 0.3s;
+            transition: .3s;
         }
 
-
-        .program-card:hover {
-
-            transform:
-                translateY(-7px);
-
+        .card:hover {
+            transform: translateY(-7px);
             box-shadow:
-                0 12px 30px
-                rgba(0,0,0,0.15);
+                0 12px 30px rgba(0,0,0,.15);
         }
 
-
-        .program-image {
-
-            height: 190px;
-
+        .card-image {
+            height: 185px;
             overflow: hidden;
         }
 
-
-        .program-image img {
-
+        .card-image img {
             width: 100%;
-
             height: 100%;
-
             object-fit: cover;
-
-            transition: 0.4s;
+            transition: .4s;
         }
 
-
-        .program-card:hover
-        .program-image img {
-
+        .card:hover img {
             transform: scale(1.05);
         }
 
-
-        .program-content {
-
-            padding: 22px;
+        .card-content {
+            padding: 21px;
         }
 
-
-        .program-content h3 {
-
+        .card-content h3 {
             font-size: 18px;
-
             margin-bottom: 10px;
         }
 
-
-        .program-content p {
-
+        .card-content p {
             color: #666;
-
             font-size: 13px;
         }
 
 
-        /* =====================================
-           EDUCATION PAGE SECTION
-        ====================================== */
-
-        .education-section {
-
-            background: #f8fbfa;
-
-            padding: 70px 25px;
-        }
-
-
-        .education-grid {
-
-            max-width: 1200px;
-
-            margin: auto;
-
-            display: grid;
-
-            grid-template-columns:
-                1fr 1fr;
-
-            gap: 35px;
-
-            align-items: center;
-        }
-
-
-        .education-image {
-
-            height: 420px;
-
-            overflow: hidden;
-
-            border-radius: 12px;
-        }
-
-
-        .education-image img {
-
-            width: 100%;
-
-            height: 100%;
-
-            object-fit: cover;
-        }
-
-
-        .education-text h2 {
-
-            font-size: 36px;
-
-            margin-bottom: 15px;
-        }
-
-
-        .education-text p {
-
-            color: #666;
-
-            margin-bottom: 20px;
-        }
-
-
-        .focus-list {
-
-            list-style: none;
-
-            margin-top: 20px;
-        }
-
-
-        .focus-list li {
-
-            display: flex;
-
-            gap: 12px;
-
-            align-items: flex-start;
-
-            margin-bottom: 15px;
-
-            font-size: 14px;
-        }
-
-
-        .focus-list span {
-
-            width: 30px;
-
-            height: 30px;
-
-            min-width: 30px;
-
-            border-radius: 50%;
-
-            background: #72b82b;
-
-            color: white;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            font-weight: bold;
-        }
-
-
-        /* =====================================
+        /* ================================
            IMPACT
-        ====================================== */
+        ================================= */
 
         .impact {
 
             padding: 65px 25px;
 
-            background:
+            color: white;
+
+            background-image:
 
                 linear-gradient(
-                    rgba(0,91,89,0.95),
-                    rgba(0,91,89,0.95)
+                    rgba(0,91,89,.94),
+                    rgba(0,91,89,.94)
                 ),
 
-                url("images/education.jpg")
-                center/cover no-repeat;
+                url("images/gallery-1.jpg");
 
-            color: white;
+            background-size: cover;
+            background-position: center;
         }
 
-
         .impact h2 {
-
             text-align: center;
-
             font-size: 30px;
-
             margin-bottom: 45px;
         }
 
-
         .impact-grid {
-
             max-width: 1150px;
-
             margin: auto;
 
             display: grid;
-
-            grid-template-columns:
-                repeat(5,1fr);
+            grid-template-columns: repeat(5,1fr);
         }
-
 
         .impact-item {
-
             text-align: center;
-
-            padding:
-                10px 20px;
-
-            border-right:
-                1px solid
-                rgba(255,255,255,0.45);
+            padding: 10px 20px;
+            border-right: 1px solid rgba(255,255,255,.45);
         }
 
-
         .impact-item:last-child {
-
             border-right: none;
         }
 
-
-        .impact-number {
-
+        .number {
             display: block;
-
             font-size: 30px;
-
             font-weight: 800;
         }
 
-
         .impact-item span:last-child {
-
             font-size: 13px;
         }
 
 
-        /* =====================================
-           CTA
-        ====================================== */
+        /* ================================
+           GALLERY
+        ================================= */
 
-        .cta {
+        .gallery {
+            max-width: 1200px;
+            margin: auto;
 
-            background: #f2a51c;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 18px;
+        }
 
-            padding: 55px 25px;
+        .gallery-item {
+            height: 210px;
+            border-radius: 9px;
+            overflow: hidden;
+        }
 
-            text-align: center;
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
 
-            color: #173f3d;
+            transition: .4s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.06);
         }
 
 
+        /* ================================
+           CTA
+        ================================= */
+
+        .cta {
+            background: #f4a51c;
+            padding: 55px 25px;
+            text-align: center;
+        }
+
         .cta h2 {
-
             font-size: 34px;
-
             margin-bottom: 10px;
         }
 
-
         .cta p {
-
             margin-bottom: 25px;
         }
 
-
         .cta .btn {
-
-            background: #087b76;
-
+            background: #087c78;
             color: white;
         }
 
 
-        /* =====================================
+        /* ================================
+           DONATE
+        ================================= */
+
+        .donate-box {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+
+            background: #f7f9f8;
+
+            padding: 45px;
+
+            border-radius: 12px;
+        }
+
+        .donate-box h3 {
+            margin-bottom: 15px;
+        }
+
+        .donate-box p {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+
+        /* ================================
            CONTACT
-        ====================================== */
+        ================================= */
 
         .contact-section {
-
             background: #f7f9f8;
         }
 
-
         .contact-grid {
-
             max-width: 1100px;
-
             margin: auto;
 
             display: grid;
-
-            grid-template-columns:
-                1fr 1fr;
-
+            grid-template-columns: 1fr 1fr;
             gap: 30px;
         }
 
-
         .contact-card {
-
             background: white;
-
             padding: 30px;
-
             border-radius: 10px;
 
             box-shadow:
-                0 5px 20px
-                rgba(0,0,0,0.07);
+                0 5px 20px rgba(0,0,0,.07);
         }
 
-
         .contact-card h3 {
-
             margin-bottom: 20px;
         }
 
-
         .contact-item {
-
             margin-bottom: 14px;
-
             font-size: 14px;
         }
-
 
         .contact-card input,
         .contact-card textarea {
@@ -959,20 +638,16 @@
             outline: none;
         }
 
-
         .contact-card textarea {
-
             height: 130px;
-
             resize: vertical;
         }
-
 
         .contact-card button {
 
             border: none;
 
-            background: #087b76;
+            background: #087c78;
 
             color: white;
 
@@ -986,17 +661,13 @@
         }
 
 
-        /* =====================================
+        /* ================================
            FOOTER
-        ====================================== */
+        ================================= */
 
         footer {
-
             background: white;
-
-            color: #333;
         }
-
 
         .footer-main {
 
@@ -1009,94 +680,63 @@
             display: grid;
 
             grid-template-columns:
-                1.3fr
-                0.8fr
-                1fr
-                1fr;
+                1.3fr .8fr 1fr 1fr;
 
             gap: 45px;
         }
 
-
         .footer-logo img {
-
-            width: 180px;
-
+            width: 190px;
             margin-bottom: 15px;
         }
-
 
         .footer-logo p {
-
-            font-size: 13px;
-
             color: #555;
+            font-size: 13px;
         }
 
-
         .footer-column h3 {
-
-            color: #173f3d;
-
             margin-bottom: 15px;
-
             font-size: 17px;
         }
 
-
         .footer-column ul {
-
             list-style: none;
         }
 
-
         .footer-column li {
-
             margin-bottom: 8px;
-
             font-size: 13px;
         }
 
-
         .footer-column a:hover {
-
-            color: #087b76;
+            color: #087c78;
         }
-
 
         .socials {
-
             display: flex;
-
             gap: 10px;
-
             margin-top: 20px;
         }
-
 
         .socials a {
 
             width: 35px;
-
             height: 35px;
+
+            background: #087c78;
+
+            color: white;
 
             border-radius: 50%;
 
             display: flex;
-
             align-items: center;
-
             justify-content: center;
 
-            color: white;
-
-            background: #087b76;
-
             font-size: 13px;
-
             font-weight: bold;
         }
-
 
         .newsletter input {
 
@@ -1104,32 +744,29 @@
 
             padding: 12px;
 
-            border:
-                1px solid #ddd;
+            border: 1px solid #ddd;
 
             border-radius: 5px;
 
             margin-bottom: 10px;
         }
 
-
         .newsletter button {
 
-            border: none;
-
-            background: #087b76;
+            background: #087c78;
 
             color: white;
+
+            border: none;
 
             padding: 12px 18px;
 
             border-radius: 5px;
 
-            font-weight: bold;
-
             cursor: pointer;
-        }
 
+            font-weight: bold;
+        }
 
         .footer-bottom {
 
@@ -1149,44 +786,35 @@
         }
 
 
-        /* =====================================
+        /* ================================
            MOBILE
-        ====================================== */
+        ================================= */
 
         @media(max-width:1000px) {
 
             .nav-links {
-
                 gap: 15px;
             }
 
-
             .programs {
-
-                grid-template-columns:
-                    repeat(2,1fr);
+                grid-template-columns: repeat(2,1fr);
             }
 
+            .gallery {
+                grid-template-columns: repeat(2,1fr);
+            }
 
             .impact-grid {
-
-                grid-template-columns:
-                    repeat(3,1fr);
-
+                grid-template-columns: repeat(3,1fr);
                 gap: 25px;
             }
 
-
             .impact-item {
-
                 border-right: none;
             }
 
-
             .footer-main {
-
-                grid-template-columns:
-                    repeat(2,1fr);
+                grid-template-columns: repeat(2,1fr);
             }
         }
 
@@ -1194,16 +822,12 @@
         @media(max-width:768px) {
 
             .navbar {
-
                 height: 78px;
             }
 
-
             .menu-btn {
-
                 display: block;
             }
-
 
             .nav-links {
 
@@ -1224,97 +848,65 @@
                 align-items: flex-start;
 
                 padding: 25px;
-
-                box-shadow:
-                    0 8px 15px
-                    rgba(0,0,0,0.1);
             }
 
-
             .nav-links.show {
-
                 display: flex;
             }
 
-
             .nav-links a.active {
-
                 border-bottom: none;
             }
 
-
             .three-columns {
-
                 grid-template-columns: 1fr;
             }
 
-
-            .info-box {
-
+            .info {
                 border-right: none;
-
-                border-bottom:
-                    1px solid #ddd;
-
+                border-bottom: 1px solid #ddd;
                 padding: 25px 10px;
             }
 
-
-            .info-box:last-child {
-
+            .info:last-child {
                 border-bottom: none;
             }
 
-
             .hero {
-
                 min-height: 580px;
             }
 
-
-            .hero-content h2 {
-
+            .hero h2 {
                 font-size: 43px;
             }
 
+            .about {
+                grid-template-columns: 1fr;
+            }
 
             .programs {
-
                 grid-template-columns: 1fr;
             }
 
-
-            .education-grid {
-
-                grid-template-columns: 1fr;
+            .gallery {
+                grid-template-columns: 1fr 1fr;
             }
-
 
             .impact-grid {
-
-                grid-template-columns:
-                    repeat(2,1fr);
+                grid-template-columns: repeat(2,1fr);
             }
-
 
             .contact-grid {
-
                 grid-template-columns: 1fr;
             }
-
 
             .footer-main {
-
                 grid-template-columns: 1fr;
             }
 
-
             .footer-bottom {
-
                 flex-direction: column;
-
                 gap: 8px;
-
                 text-align: center;
             }
         }
@@ -1323,28 +915,24 @@
         @media(max-width:480px) {
 
             .logo img {
-
                 width: 52px;
-
                 height: 52px;
             }
 
-
             .logo-text h1 {
-
                 font-size: 15px;
             }
 
-
-            .hero-content h2 {
-
+            .hero h2 {
                 font-size: 36px;
             }
 
-
-            .hero-tagline {
-
+            .tagline {
                 font-size: 17px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -1356,9 +944,9 @@
 <body>
 
 
-<!-- =====================================
+<!-- =================================
      HEADER
-====================================== -->
+================================== -->
 
 <header>
 
@@ -1402,14 +990,10 @@
         >
 
             <li>
-                <a
-                    href="#home"
-                    class="active"
-                >
+                <a href="#home" class="active">
                     Home
                 </a>
             </li>
-
 
             <li>
                 <a href="#about">
@@ -1417,13 +1001,11 @@
                 </a>
             </li>
 
-
             <li>
                 <a href="#programs">
                     Programs
                 </a>
             </li>
-
 
             <li>
                 <a href="#impact">
@@ -1431,13 +1013,11 @@
                 </a>
             </li>
 
-
             <li>
                 <a href="#gallery">
                     Gallery
                 </a>
             </li>
-
 
             <li>
                 <a href="#involved">
@@ -1445,19 +1025,14 @@
                 </a>
             </li>
 
-
             <li>
                 <a href="#contact">
                     Contact
                 </a>
             </li>
 
-
             <li>
-                <a
-                    href="#donate"
-                    class="donate-btn"
-                >
+                <a href="#donate" class="donate">
                     Donate Now ♡
                 </a>
             </li>
@@ -1470,9 +1045,9 @@
 
 
 
-<!-- =====================================
+<!-- =================================
      HERO
-====================================== -->
+================================== -->
 
 <section
     class="hero"
@@ -1481,22 +1056,16 @@
 
     <div class="hero-content">
 
-
         <h2>
             Mtoto wa Kambo Foundation
         </h2>
 
-
-        <div class="hero-tagline">
-
-            Building Hope.
-            Changing Lives.
+        <div class="tagline">
+            Building Hope. Changing Lives.
             Strengthening Communities.
-
         </div>
 
-
-        <p class="hero-description">
+        <p>
 
             We create opportunities,
             support vulnerable communities
@@ -1505,9 +1074,7 @@
 
         </p>
 
-
-        <div class="hero-buttons">
-
+        <div class="buttons">
 
             <a
                 href="#about"
@@ -1516,10 +1083,9 @@
                 Learn More →
             </a>
 
-
             <a
                 href="#donate"
-                class="btn btn-light"
+                class="btn btn-white"
             >
                 Support Our Work ♡
             </a>
@@ -1532,20 +1098,18 @@
 
 
 
-<!-- =====================================
+<!-- =================================
      MISSION / VISION / VALUES
-====================================== -->
+================================== -->
 
 <section class="three-columns">
 
 
-    <div class="info-box">
+    <div class="info">
 
-
-        <div class="circle-icon teal">
+        <div class="icon teal">
             ◎
         </div>
-
 
         <div>
 
@@ -1553,12 +1117,11 @@
                 Our Mission
             </h3>
 
-
             <p>
 
-                To create opportunities
-                and improve the well-being
-                of children and vulnerable
+                To create opportunities and
+                improve the well-being of
+                children and vulnerable
                 communities through education,
                 health, empowerment and
                 sustainable initiatives.
@@ -1570,21 +1133,17 @@
     </div>
 
 
+    <div class="info">
 
-    <div class="info-box">
-
-
-        <div class="circle-icon green">
+        <div class="icon green">
             ◉
         </div>
-
 
         <div>
 
             <h3>
                 Our Vision
             </h3>
-
 
             <p>
 
@@ -1601,21 +1160,17 @@
     </div>
 
 
+    <div class="info">
 
-    <div class="info-box">
-
-
-        <div class="circle-icon orange">
+        <div class="icon orange">
             ♡
         </div>
-
 
         <div>
 
             <h3>
                 Our Values
             </h3>
-
 
             <p>
 
@@ -1635,15 +1190,14 @@
 
 
 
-<!-- =====================================
+<!-- =================================
      ABOUT
-====================================== -->
+================================== -->
 
 <section
     class="section"
     id="about"
 >
-
 
     <div class="about">
 
@@ -1658,16 +1212,12 @@
         </div>
 
 
-        <div class="about-content">
-
+        <div>
 
             <h2>
-
                 Building a Better
                 Future Together
-
             </h2>
-
 
             <p>
 
@@ -1679,7 +1229,6 @@
 
             </p>
 
-
             <p>
 
                 Through education, health,
@@ -1690,16 +1239,14 @@
 
             </p>
 
-
             <p>
 
                 We believe that every child
                 deserves hope, opportunity,
-                protection and a chance to build
-                a better future.
+                protection and a chance to
+                build a better future.
 
             </p>
-
 
             <a
                 href="#contact"
@@ -1716,42 +1263,35 @@
 
 
 
-<!-- =====================================
+<!-- =================================
      PROGRAMS
-====================================== -->
+================================== -->
 
 <section
     class="section"
     id="programs"
 >
 
-
     <div class="section-title">
-
 
         <h2>
             Our Programs
         </h2>
 
-
         <p>
-            We focus on key areas that
-            create real and lasting change.
+            We focus on key areas that create
+            real and lasting change.
         </p>
 
     </div>
 
 
-
     <div class="programs">
 
 
-        <!-- EDUCATION -->
+        <div class="card">
 
-        <div class="program-card">
-
-
-            <div class="program-image">
+            <div class="card-image">
 
                 <img
                     src="images/education.jpg"
@@ -1760,22 +1300,18 @@
 
             </div>
 
-
-            <div class="program-content">
-
+            <div class="card-content">
 
                 <h3>
                     Education & Learning
                 </h3>
 
-
                 <p>
 
-                    Supporting access to
-                    quality education, school
-                    supplies and learning
-                    environments for a brighter
-                    future.
+                    Supporting access to quality
+                    education, school supplies and
+                    learning environments for a
+                    brighter future.
 
                 </p>
 
@@ -1785,12 +1321,9 @@
 
 
 
-        <!-- HEALTH -->
+        <div class="card">
 
-        <div class="program-card">
-
-
-            <div class="program-image">
+            <div class="card-image">
 
                 <img
                     src="images/health.jpg"
@@ -1799,21 +1332,18 @@
 
             </div>
 
-
-            <div class="program-content">
-
+            <div class="card-content">
 
                 <h3>
                     Health & Wellbeing
                 </h3>
 
-
                 <p>
 
                     Improving access to health
-                    services, nutrition and
-                    hygiene awareness for
-                    healthier communities.
+                    services, nutrition and hygiene
+                    awareness for healthier
+                    communities.
 
                 </p>
 
@@ -1823,12 +1353,9 @@
 
 
 
-        <!-- EMPOWERMENT -->
+        <div class="card">
 
-        <div class="program-card">
-
-
-            <div class="program-image">
+            <div class="card-image">
 
                 <img
                     src="images/empowerment.jpg"
@@ -1837,21 +1364,17 @@
 
             </div>
 
-
-            <div class="program-content">
-
+            <div class="card-content">
 
                 <h3>
                     Empowerment
                 </h3>
 
-
                 <p>
 
                     Equipping individuals with
-                    skills, resources and
-                    confidence to build
-                    sustainable livelihoods.
+                    skills, resources and confidence
+                    to build sustainable livelihoods.
 
                 </p>
 
@@ -1861,12 +1384,9 @@
 
 
 
-        <!-- COMMUNITY -->
+        <div class="card">
 
-        <div class="program-card">
-
-
-            <div class="program-image">
+            <div class="card-image">
 
                 <img
                     src="images/community.jpg"
@@ -1875,21 +1395,17 @@
 
             </div>
 
-
-            <div class="program-content">
-
+            <div class="card-content">
 
                 <h3>
                     Community Development
                 </h3>
 
-
                 <p>
 
-                    Investing in community
-                    projects that improve
-                    infrastructure, clean water
-                    and local development.
+                    Investing in community projects
+                    that improve infrastructure,
+                    clean water and local development.
 
                 </p>
 
@@ -1904,185 +1420,14 @@
 
 
 
-<!-- =====================================
-     EDUCATION FEATURE
-====================================== -->
-
-<section
-    class="education-section"
-    id="education"
->
-
-
-    <div class="section-title">
-
-
-        <h2>
-            Education & Learning
-        </h2>
-
-
-        <p>
-            Investing in knowledge.
-            Building brighter futures.
-        </p>
-
-    </div>
-
-
-
-    <div class="education-grid">
-
-
-        <div class="education-image">
-
-            <img
-                src="images/education.jpg"
-                alt="Children learning in classroom"
-            >
-
-        </div>
-
-
-
-        <div class="education-text">
-
-
-            <h2>
-                Every Child Deserves
-                a Chance to Learn
-            </h2>
-
-
-            <p>
-
-                We support access to quality
-                education, school supplies,
-                safe learning environments
-                and skills development for
-                children and young people
-                across Tanzania.
-
-            </p>
-
-
-            <ul class="focus-list">
-
-
-                <li>
-
-                    <span>
-                        ✓
-                    </span>
-
-                    <div>
-
-                        <strong>
-                            Access to Quality Education
-                        </strong>
-
-                        <br>
-
-                        Supporting school enrolment,
-                        learning materials and quality
-                        teaching for every child.
-
-                    </div>
-
-                </li>
-
-
-
-                <li>
-
-                    <span>
-                        ✓
-                    </span>
-
-                    <div>
-
-                        <strong>
-                            School Supplies & Resources
-                        </strong>
-
-                        <br>
-
-                        Providing books, uniforms,
-                        stationery and essential
-                        learning materials.
-
-                    </div>
-
-                </li>
-
-
-
-                <li>
-
-                    <span>
-                        ✓
-                    </span>
-
-                    <div>
-
-                        <strong>
-                            Safe Learning Environments
-                        </strong>
-
-                        <br>
-
-                        Improving classrooms,
-                        water, sanitation and
-                        school infrastructure.
-
-                    </div>
-
-                </li>
-
-
-
-                <li>
-
-                    <span>
-                        ✓
-                    </span>
-
-                    <div>
-
-                        <strong>
-                            Skills Development
-                        </strong>
-
-                        <br>
-
-                        Empowering youth with life
-                        skills, digital literacy and
-                        vocational training opportunities.
-
-                    </div>
-
-                </li>
-
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================
+<!-- =================================
      IMPACT
-====================================== -->
+================================== -->
 
 <section
     class="impact"
     id="impact"
 >
-
 
     <h2>
         Our Impact So Far
@@ -2094,7 +1439,7 @@
 
         <div class="impact-item">
 
-            <span class="impact-number">
+            <span class="number">
                 2,500+
             </span>
 
@@ -2105,10 +1450,9 @@
         </div>
 
 
-
         <div class="impact-item">
 
-            <span class="impact-number">
+            <span class="number">
                 15+
             </span>
 
@@ -2119,10 +1463,9 @@
         </div>
 
 
-
         <div class="impact-item">
 
-            <span class="impact-number">
+            <span class="number">
                 1,200+
             </span>
 
@@ -2133,10 +1476,9 @@
         </div>
 
 
-
         <div class="impact-item">
 
-            <span class="impact-number">
+            <span class="number">
                 10+
             </span>
 
@@ -2147,10 +1489,9 @@
         </div>
 
 
-
         <div class="impact-item">
 
-            <span class="impact-number">
+            <span class="number">
                 25+
             </span>
 
@@ -2166,15 +1507,14 @@
 
 
 
-<!-- =====================================
+<!-- =================================
      GALLERY
-====================================== -->
+================================== -->
 
 <section
     class="section"
     id="gallery"
 >
-
 
     <div class="section-title">
 
@@ -2190,65 +1530,45 @@
     </div>
 
 
+    <div class="gallery">
 
-    <div class="programs">
 
+        <div class="gallery-item">
 
-        <div class="program-card">
-
-            <div class="program-image">
-
-                <img
-                    src="images/gallery-1.jpg"
-                    alt="Mtoto wa Kambo Foundation"
-                >
-
-            </div>
+            <img
+                src="images/gallery-1.jpg"
+                alt="Mtoto wa Kambo Foundation"
+            >
 
         </div>
 
 
+        <div class="gallery-item">
 
-        <div class="program-card">
-
-            <div class="program-image">
-
-                <img
-                    src="images/gallery-2.jpg"
-                    alt="Community activity"
-                >
-
-            </div>
+            <img
+                src="images/gallery-2.jpg"
+                alt="Community activity"
+            >
 
         </div>
 
 
+        <div class="gallery-item">
 
-        <div class="program-card">
-
-            <div class="program-image">
-
-                <img
-                    src="images/gallery-3.jpg"
-                    alt="Children learning"
-                >
-
-            </div>
+            <img
+                src="images/gallery-3.jpg"
+                alt="Children learning"
+            >
 
         </div>
 
 
+        <div class="gallery-item">
 
-        <div class="program-card">
-
-            <div class="program-image">
-
-                <img
-                    src="images/gallery-4.jpg"
-                    alt="Community support"
-                >
-
-            </div>
+            <img
+                src="images/gallery-4.jpg"
+                alt="Community support"
+            >
 
         </div>
 
@@ -2259,106 +1579,74 @@
 
 
 
-<!-- =====================================
+<!-- =================================
      GET INVOLVED
-====================================== -->
+================================== -->
 
 <section
     class="cta"
     id="involved"
 >
 
-
     <h2>
         You Can Make a Difference
     </h2>
 
-
     <p>
-
         Join us in building hope,
         changing lives and strengthening
         communities.
-
     </p>
-
 
     <a
         href="#contact"
         class="btn"
     >
         Get Involved →
-
     </a>
 
 </section>
 
 
 
-<!-- =====================================
+<!-- =================================
      DONATE
-====================================== -->
+================================== -->
 
 <section
     class="section"
     id="donate"
 >
 
-
     <div class="section-title">
-
 
         <h2>
             Support Our Work
         </h2>
 
-
         <p>
-
             Your support can help create
             opportunities for children and
-            vulnerable communities across
-            Tanzania.
-
+            vulnerable communities across Tanzania.
         </p>
 
     </div>
 
 
+    <div class="donate-box">
 
-    <div
-        style="
-            max-width:800px;
-            margin:auto;
-            text-align:center;
-            background:#f7f9f8;
-            padding:40px;
-            border-radius:12px;
-        "
-    >
-
-
-        <h3
-            style="margin-bottom:15px;"
-        >
+        <h3>
             Every Contribution Matters
         </h3>
 
+        <p>
 
-        <p
-            style="
-                color:#666;
-                margin-bottom:25px;
-            "
-        >
-
-            You can partner with
-            Mtoto wa Kambo Foundation
-            through donations, volunteering,
-            partnerships and community support.
+            You can partner with Mtoto wa Kambo
+            Foundation through donations,
+            volunteering, partnerships and
+            community support.
 
         </p>
-
 
         <a
             href="#contact"
@@ -2367,30 +1655,26 @@
             Contact Us to Support
         </a>
 
-
     </div>
 
 </section>
 
 
 
-<!-- =====================================
+<!-- =================================
      CONTACT
-====================================== -->
+================================== -->
 
 <section
     class="section contact-section"
     id="contact"
 >
 
-
     <div class="section-title">
-
 
         <h2>
             Contact Us
         </h2>
-
 
         <p>
             We would love to hear from you.
@@ -2399,28 +1683,21 @@
     </div>
 
 
-
     <div class="contact-grid">
 
 
         <div class="contact-card">
 
-
             <h3>
                 Get In Touch
             </h3>
 
-
             <div class="contact-item">
 
-                📍 Mwanalugali,
-                Near Mosque,
-                Kibaha,
-                Pwani Region,
-                Tanzania
+                📍 Mwanalugali, Near Mosque,
+                Kibaha, Pwani Region, Tanzania
 
             </div>
-
 
             <div class="contact-item">
 
@@ -2428,21 +1705,17 @@
 
             </div>
 
-
             <div class="contact-item">
 
                 📞 0617 618 000
 
             </div>
 
-
             <div class="contact-item">
 
-                ✉️
-                mtotowakambofoundation@gmail.com
+                ✉️ mtotowakambofoundation@gmail.com
 
             </div>
-
 
             <div class="contact-item">
 
@@ -2456,7 +1729,6 @@
 
         <div class="contact-card">
 
-
             <h3>
                 Send Us a Message
             </h3>
@@ -2468,14 +1740,12 @@
                 enctype="text/plain"
             >
 
-
                 <input
                     type="text"
                     name="Name"
                     placeholder="Your Name"
                     required
                 >
-
 
                 <input
                     type="email"
@@ -2484,13 +1754,11 @@
                     required
                 >
 
-
                 <input
                     type="text"
                     name="Subject"
                     placeholder="Subject"
                 >
-
 
                 <textarea
                     name="Message"
@@ -2498,11 +1766,9 @@
                     required
                 ></textarea>
 
-
                 <button type="submit">
                     Send Message →
                 </button>
-
 
             </form>
 
@@ -2514,9 +1780,9 @@
 
 
 
-<!-- =====================================
+<!-- =================================
      FOOTER
-====================================== -->
+================================== -->
 
 <footer>
 
@@ -2526,12 +1792,10 @@
 
         <div class="footer-logo">
 
-
             <img
                 src="images/logo.png"
                 alt="Mtoto wa Kambo Foundation"
             >
-
 
             <p>
 
@@ -2544,26 +1808,21 @@
 
             <div class="socials">
 
-
                 <a href="#">
                     f
                 </a>
-
 
                 <a href="#">
                     ◎
                 </a>
 
-
                 <a href="#">
                     X
                 </a>
 
-
                 <a href="#">
                     ▶
                 </a>
-
 
             </div>
 
@@ -2573,11 +1832,9 @@
 
         <div class="footer-column">
 
-
             <h3>
                 Quick Links
             </h3>
-
 
             <ul>
 
@@ -2587,13 +1844,11 @@
                     </a>
                 </li>
 
-
                 <li>
                     <a href="#about">
                         About Us
                     </a>
                 </li>
-
 
                 <li>
                     <a href="#programs">
@@ -2601,13 +1856,11 @@
                     </a>
                 </li>
 
-
                 <li>
                     <a href="#impact">
                         Our Impact
                     </a>
                 </li>
-
 
                 <li>
                     <a href="#gallery">
@@ -2615,13 +1868,11 @@
                     </a>
                 </li>
 
-
                 <li>
                     <a href="#involved">
                         Get Involved
                     </a>
                 </li>
-
 
                 <li>
                     <a href="#contact">
@@ -2637,62 +1888,41 @@
 
         <div class="footer-column">
 
-
             <h3>
                 Contact Us
             </h3>
 
-
             <div class="contact-item">
-
-                📍 Mwanalugali,
-                Near Mosque,
-                Kibaha,
-                Pwani Region,
-                Tanzania
-
+                📍 Mwanalugali, Near Mosque,
+                Kibaha, Pwani Region, Tanzania
             </div>
 
-
             <div class="contact-item">
-
                 📞 0766 669 666
-
             </div>
 
-
             <div class="contact-item">
-
                 📞 0617 618 000
-
             </div>
 
-
             <div class="contact-item">
-
-                ✉️
-                mtotowakambofoundation@gmail.com
-
+                ✉️ mtotowakambofoundation@gmail.com
             </div>
 
         </div>
 
 
 
-        <div
-            class="footer-column newsletter"
-        >
-
+        <div class="footer-column newsletter">
 
             <h3>
                 Newsletter
             </h3>
 
-
             <p
                 style="
-                    font-size:13px;
                     color:#666;
+                    font-size:13px;
                     margin-bottom:15px;
                 "
             >
@@ -2707,7 +1937,6 @@
                 onsubmit="subscribe(event)"
             >
 
-
                 <input
                     type="email"
                     id="newsletterEmail"
@@ -2715,38 +1944,28 @@
                     required
                 >
 
-
                 <button type="submit">
                     Subscribe
                 </button>
-
 
             </form>
 
         </div>
 
-    </div>
 
+    </div>
 
 
     <div class="footer-bottom">
 
-
         <div>
-
-            © 2026
-            Mtoto wa Kambo Foundation.
+            © 2026 Mtoto wa Kambo Foundation.
             All Rights Reserved.
-
         </div>
 
-
         <div>
-
-            Building Hope.
-            Changing Lives.
+            Building Hope. Changing Lives.
             Strengthening Communities. ♡
-
         </div>
 
     </div>
@@ -2755,9 +1974,9 @@
 
 
 
-<!-- =====================================
+<!-- =================================
      JAVASCRIPT
-====================================== -->
+================================== -->
 
 <script>
 
@@ -2765,34 +1984,24 @@
     function toggleMenu() {
 
         const menu =
-            document.getElementById(
-                "navLinks"
-            );
+            document.getElementById("navLinks");
 
         menu.classList.toggle("show");
 
     }
 
 
-
     document
-        .querySelectorAll(
-            ".nav-links a"
-        )
+        .querySelectorAll(".nav-links a")
         .forEach(function(link) {
-
 
             link.addEventListener(
                 "click",
                 function() {
 
                     document
-                        .getElementById(
-                            "navLinks"
-                        )
-                        .classList.remove(
-                            "show"
-                        );
+                        .getElementById("navLinks")
+                        .classList.remove("show");
 
                 }
             );
@@ -2800,24 +2009,20 @@
         });
 
 
-
     function subscribe(event) {
 
         event.preventDefault();
-
 
         const email =
             document.getElementById(
                 "newsletterEmail"
             ).value;
 
-
-        if(email) {
+        if (email) {
 
             alert(
                 "Thank you for subscribing to Mtoto wa Kambo Foundation."
             );
-
 
             document
                 .getElementById(
@@ -2830,44 +2035,33 @@
     }
 
 
+    /* Active navigation */
 
     const sections =
-        document.querySelectorAll(
-            "section[id]"
-        );
-
+        document.querySelectorAll("section[id]");
 
     const navLinks =
-        document.querySelectorAll(
-            ".nav-links a"
-        );
+        document.querySelectorAll(".nav-links a");
 
 
     window.addEventListener(
         "scroll",
         function() {
 
-
             let current = "";
-
 
             sections.forEach(
                 function(section) {
 
-
                     const sectionTop =
                         section.offsetTop - 120;
 
-
-                    if(
-                        window.scrollY >=
-                        sectionTop
+                    if (
+                        window.scrollY >= sectionTop
                     ) {
 
                         current =
-                            section.getAttribute(
-                                "id"
-                            );
+                            section.getAttribute("id");
 
                     }
 
@@ -2878,21 +2072,14 @@
             navLinks.forEach(
                 function(link) {
 
+                    link.classList.remove("active");
 
-                    link.classList.remove(
-                        "active"
-                    );
-
-
-                    if(
-                        link.getAttribute(
-                            "href"
-                        ) === "#" + current
+                    if (
+                        link.getAttribute("href")
+                        === "#" + current
                     ) {
 
-                        link.classList.add(
-                            "active"
-                        );
+                        link.classList.add("active");
 
                     }
 
